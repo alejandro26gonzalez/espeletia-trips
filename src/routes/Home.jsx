@@ -13,13 +13,14 @@ import ExperienciasSection from "../components/ExperienciasSection"
 import FormSection from "../components/FormSection"
 import CtaFinalHome from "../components/CtaFinalHome"
 import { IMAGES_URLS } from "../constants/images";
-import useCloudinaryImages from "../hooks/useCloudinaryImages"
+import { useCloudinaryImages } from "../hooks/useCloudinaryImages"
 
 
 const Home = () => {
-
+    
     const [currentIndex, setCurrentIndex] = useState(0);
-
+    const { imagesCarousel, loading } = useCloudinaryImages("hero");
+    
     const isResponsive = useBreakpoint("(max-width: 768px)");
 
     const cardsData = [
@@ -49,17 +50,26 @@ const Home = () => {
         }
     ]
 
-    const heroImages = useCloudinaryImages("hero");
 
     useEffect(() => {
+
+        if (!imagesCarousel || imagesCarousel.length === 0) return;
+
         const interval = setInterval(() => {
             setCurrentIndex( prev => 
-                prev === heroImages.length - 1 ? 0 : prev + 1 
+                prev === imagesCarousel.length - 1 ? 0 : prev + 1 
             );
         }, 8000);
-        return () => clearInterval(interval);
-    }, []);
 
+        return () => clearInterval(interval);
+    }, [imagesCarousel]);
+
+    if (loading || !imagesCarousel.length === 0 || !imagesCarousel) {
+        return <div className="loading-state">Cargando experiencia Espeletia...</div>
+    }
+
+    const currentImageUrl = imagesCarousel[currentIndex];
+  
 
     return (
         <GlobalContainer>
@@ -67,7 +77,9 @@ const Home = () => {
 {/* titulo y encabezdo */}
             {isResponsive ? <MobileSideBar color="white"/> : <NavbarComponent colorNavbar={"#fff"} />}
 
-            <HeaderPicture bgImage={heroImages[currentIndex]}/>
+            <HeaderPicture 
+            style={{ backgroundImage: `url(${currentImageUrl})` }}
+            />
 
             <MainContainer>
                 <Title>DESCUBRE UN DESTINO MÁGICO Y CULTURAL DE COLOMBIA</Title>
@@ -226,7 +238,6 @@ const HeaderPicture = styled.div`
     position: absolute;
     width: 100%;
     height: 550px;
-    background-image: url(${props => props.bgImage});
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -1,12 +1,11 @@
 import ToursTemplate from "./ToursTemplate"
 import { IMAGES_URLS } from "../constants/images"
 import { ICONS_URLS } from "../constants/iconsLinks"
+import { useCloudinaryImages } from "../hooks/useCloudinaryImages"
 
 const Campanita = () => {
 
-    const imagesCarousel = Object.values(
-        import.meta.glob("../assets/Fotos/CANON DEL RECIO TERMAL DE LA CAMPANITA/*.{jpg,png,jpeg}", { eager: true })
-    ).map((module) => module.default);
+    const { imagesCarousel, loading} = useCloudinaryImages("campanita");
 
     const paragraphsText = [
         <>
@@ -174,6 +173,9 @@ const Campanita = () => {
             ]
         }
 
+    if (loading) {
+        return <div className="text-center p-10">Cargando galería de tour la Campanita</div>
+    }
     return (
         <ToursTemplate 
         bgImage={IMAGES_URLS.CAMPANITA_TOURS_BKG_IMG}
