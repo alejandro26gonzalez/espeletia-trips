@@ -13,6 +13,7 @@ import ExperienciasSection from "../components/ExperienciasSection"
 import FormSection from "../components/FormSection"
 import CtaFinalHome from "../components/CtaFinalHome"
 import { IMAGES_URLS } from "../constants/images";
+import useCloudinaryImages from "../hooks/useCloudinaryImages"
 
 
 const Home = () => {
@@ -48,9 +49,7 @@ const Home = () => {
         }
     ]
 
-    const heroImages = Object.keys(IMAGES_URLS)
-    .filter(key => key.startsWith('Hero'))
-    .map(key => IMAGES_URLS[key]);
+    const heroImages = useCloudinaryImages("hero");
 
     useEffect(() => {
         const interval = setInterval(() => {
