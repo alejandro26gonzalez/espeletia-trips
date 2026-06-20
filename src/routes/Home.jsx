@@ -2,12 +2,6 @@ import { useState, useEffect } from "react";
 import NavbarComponent from "../components/NavbarComponent";
 import styled from "styled-components";
 import GlobalContainer from "../components/GlobalContainer";
-<<<<<<< HEAD
-=======
-import Card1Home from "../assets/Backgrounds/Card1Home.jpg";
-import Card2Home from "../assets/Backgrounds/Card2Home.jpg";
-import Card3Home from "../assets/Backgrounds/Card3Home.jpg";
->>>>>>> 88c39204cbacba948a56e84fc2a0cc83541813c2
 import CardHome from "../components/CardHome";
 import MobileSideBar from "../components/Mobilesidebar";
 import ResponsiveCardContainer from "../components/responsiveComponents/CardsColumn"
