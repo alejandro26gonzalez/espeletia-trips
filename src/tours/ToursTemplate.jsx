@@ -7,11 +7,6 @@ import GalleryTourSection from "./GalleryTourSection"
 import useBreakpoint from "../hooks/useBreakpoint";
 import PricesComponent from "./PricesComp";
 import ItineraryComp from "./ItineraryComp";
-<<<<<<< HEAD
-=======
-import BootIC from "../assets/icons/BotaIC.svg";
-import EscudoIC from "../assets/icons/securityIC.svg"
->>>>>>> 88c39204cbacba948a56e84fc2a0cc83541813c2
 import ListedContainer from "../blogPages/ListedContainer";
 import CtaFinalHome from "../components/CtaFinalHome";
 import StyledAccordion from "../components/StyledAccordion";

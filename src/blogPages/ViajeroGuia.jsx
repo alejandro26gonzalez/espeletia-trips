@@ -1,16 +1,6 @@
 import styled from "styled-components"
 import Subtitle from "../components/Subtitle"
 import PicTextComp from "./PicTextComp.jsx";
-<<<<<<< HEAD
-=======
-import Pic1 from "../assets/Backgrounds/Blog1.jpg"
-import Pic2 from "../assets/Backgrounds/Blog2.png"
-import Pic3 from "../assets/Backgrounds/Blog3.png"
-import Pic4 from "../assets/Backgrounds/Blog4.png"
-import Pic5 from "../assets/Backgrounds/Blog5.png"
-import Pic6 from "../assets/Backgrounds/Blog6.jpg"
-import CtaPicture from "../assets/Backgrounds/toursSection.png"
->>>>>>> 88c39204cbacba948a56e84fc2a0cc83541813c2
 import Button from "../components/Button"
 import Container from "react-bootstrap/Container"
 import Card from 'react-bootstrap/Card';

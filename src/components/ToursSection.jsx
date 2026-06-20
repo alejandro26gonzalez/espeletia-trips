@@ -1,15 +1,6 @@
 import styled from "styled-components"
 import Title from "./Title"
 import CardZoomed from "./CardZoomed"
-<<<<<<< HEAD
-=======
-import Home1 from "../assets/Backgrounds/Home1.jpg"
-import Home2 from "../assets/Backgrounds/Home2.jpg"
-import Home3 from "../assets/Backgrounds/Home3.jpg"
-import Home4 from "../assets/Backgrounds/Home4.jpg"
-import Home5 from "../assets/Backgrounds/Home5.jpg"
-import Home6 from "../assets/Backgrounds/Home6.jpeg"
->>>>>>> 88c39204cbacba948a56e84fc2a0cc83541813c2
 import useBreakpoint from "../hooks/useBreakpoint"
 import ResponsiveCardItem from "../components/responsiveComponents/CardItem"
 import ResponsiveCardTitle from "../components/responsiveComponents/CardTitle"

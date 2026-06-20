@@ -1,11 +1,5 @@
 import styled from "styled-components"
 import Subtitle from "../components/Subtitle"
-<<<<<<< HEAD
-=======
-import Pic1 from "../assets/Backgrounds/SI1.png"
-import Pic2 from "../assets/Backgrounds/SI2.jpg"
-import Pic3 from "../assets/Backgrounds/SI3.png"
->>>>>>> 88c39204cbacba948a56e84fc2a0cc83541813c2
 import Container from "react-bootstrap/Container"
 import { useState } from "react";
 import Card from "react-bootstrap/Card";
