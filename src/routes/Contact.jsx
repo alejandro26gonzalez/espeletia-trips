@@ -1,9 +1,5 @@
 import styled from "styled-components"
 import NavBar from "../components/NavbarComponent"
-<<<<<<< HEAD
-=======
-import TitleBackground from "../assets/Backgrounds/Blog6.jpg"
->>>>>>> 88c39204cbacba948a56e84fc2a0cc83541813c2
 import { Col } from "react-bootstrap"
 import useBreakpoint from "../hooks/useBreakpoint"
 import MobileSidebar from "../components/Mobilesidebar"

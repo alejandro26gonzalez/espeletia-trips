@@ -92,8 +92,6 @@ export const IMAGES_URLS = {
     TUMBAS_EXTRA5: `${CLOUDINARY_BASE_URL}v1781745899/Home6_s2zwji.jpg`,
     TITULO_IMG: `${CLOUDINARY_BASE_URL}v1781745942/Tumbas1_yn4uuq.png`,
     TOURS_TEMPLATE_IMG: `${CLOUDINARY_BASE_URL}v1781745944/Tumbas2_ltga4v.jpg`,
-
-
     //BlogImages
 
     Blog1 : `${CLOUDINARY_BASE_URL}v1781745854/Blog1_umsqv0.jpg`,
