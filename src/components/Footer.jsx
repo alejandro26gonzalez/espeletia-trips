@@ -14,8 +14,9 @@ const Footer = () => {
 
                 {/* Primera columna con el logo */}
                 <Columns>
-                    <LogoReset to="/" style={{}}>
+                    <LogoReset to="/">
                         <Logo color="#fff" />
+                        <img  src="https://res.cloudinary.com/db6hw9lcg/image/upload/v1782163978/turismo_logo_qwpf2z.png" alt="Logo turismo responsable gobierno" />
                     </LogoReset>
                 </Columns>
 
@@ -160,6 +161,18 @@ const LogoReset = styled(NavLink)`
     background: none;
     border: none;
     outline: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    img {
+        width: 200px;
+
+        @media (max-width: 768px) {
+            width: 150px;  
+        }
+    }
 
     &:visited {
         color: white;
@@ -288,6 +301,7 @@ const Rights = styled.p`
     @media ${device.mobile} {
         text-align: center;
         margin-bottom: 2rem;
+        width: 70%;
     }
 `
 const SocialStyled = styled.div`

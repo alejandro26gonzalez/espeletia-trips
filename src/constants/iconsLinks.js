@@ -1,4 +1,5 @@
-const CLOUDINARY_BASE_URL = 'https://res.cloudinary.com/db6hw9lcg/image/upload/'
+const CLOUD_NAME = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || "dago9";
+const CLOUDINARY_BASE_URL = `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/`
 
 export const ICONS_URLS = {
     FACEBOOK : `${CLOUDINARY_BASE_URL}v1781745746/Facebook_oefeqt.svg`,

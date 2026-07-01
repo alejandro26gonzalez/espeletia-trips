@@ -3,22 +3,25 @@ import Form from 'react-bootstrap/Form';
 import {Container } from "react-bootstrap";
 import { forwardRef, useState } from "react";
 import SliderComp from "./SliderComp";
+import { useCloudinaryImages } from '../../hooks/useCloudinaryImages' 
 
 
 const PhotoMainer = forwardRef(({selectedTour, setSelectedTour}, ref) => {
     
     const imageFolders = {
-        campanita: import.meta.glob("../../assets/Fotos/CANON DEL RECIO TERMAL DE LA CAMPANITA/*.{jpeg,png,jpg}", {eager:true, import: "default"}),
-        mirador: import.meta.glob("../../assets/Fotos/HIKING MIRADOR DE LOS NEVADOS/*.{jpeg,png,jpg}", {eager:true, import: "default"}),
-        nevado: import.meta.glob("../../assets/FoXtos/NEVADO DE SANTA ISABEL/*.{jpeg,png,jpg}", {eager:true, import: "default"}),
-        valle: import.meta.glob("../../assets/Fotos/Nevado del Ruiz Valle de las Tumbas/*.{jpeg,png,jpg}", {eager:true, import: "default"}),
-        canaan: import.meta.glob("../../assets/Fotos/TERMAL DE CANAAN/*.{jpeg,png,jpg}", {eager:true, import: "default"}),
-        oso: import.meta.glob("../../assets/Fotos/TREKKING OSO MOSUL/*.{jpeg,png,jpg}", {eager:true, import: "default"}),
+        campanita: "campanita",
+        mirador: "mirador",
+        nevado: "nevado",
+        valle: "tumbas",
+        canaan: "canaan",
+        oso: "oso",
     }
 
     const [loading, setLoading] = useState(false);
+    
+    const currentTag = imageFolders[selectedTour] || "campanita";
 
-    const images = Object.values(imageFolders[selectedTour] || {});
+    const { imagesCarousel} = useCloudinaryImages(currentTag);
 
     const handleChange = (e) => {
         const newTour = e.target.value;
@@ -54,7 +57,7 @@ const PhotoMainer = forwardRef(({selectedTour, setSelectedTour}, ref) => {
         {/* slider con las imagenes moviendose automaticamente */}
         <SliderWrapper className={loading ? "fade-out" : "fade-in"}>
             {loading && <Loader />}
-            <SliderComp ref={ref} images={images}/>
+            <SliderComp ref={ref} images={imagesCarousel}/>
         </SliderWrapper>
     
     </ContainerMain>)

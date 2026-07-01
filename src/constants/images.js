@@ -1,5 +1,6 @@
 
-const CLOUDINARY_BASE_URL = 'https://res.cloudinary.com/db6hw9lcg/image/upload/'
+const CLOUD_NAME = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME || "dago9";
+const CLOUDINARY_BASE_URL = `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/`
 
 export const IMAGES_URLS = {
     LOGO : `${CLOUDINARY_BASE_URL}v1781745074/logo_j1est2.png`,
@@ -130,8 +131,8 @@ export const IMAGES_URLS = {
     //Logos images
 
     LogoColasistencia: `${CLOUDINARY_BASE_URL}v1781745701/logoColasistencia_m5kr5j.png`,
-    LogoCortolima: `${CLOUDINARY_BASE_URL}v1781745703/logoCortolima_jfaz8m.png`,
-    LogoEscnna: `${CLOUDINARY_BASE_URL}v1781745705/logoESCNN_udht6h.png`,
+    LogoCortolima: `${CLOUDINARY_BASE_URL}v1782163984/cortolima-removebg-preview_txybvb.png`,
+    LogoEscnna: `${CLOUDINARY_BASE_URL}v1782163969/Group_190_dtc0eq.png`,
     ECOLOGICLOGO:`${CLOUDINARY_BASE_URL}v1781745704/logoEcologico_pbypwq.svg`,
     SEGUROLOGO: `${CLOUDINARY_BASE_URL}v1781745707/logoSeguro_vhcec2.svg`,
     ESCUDOLOGO: `${CLOUDINARY_BASE_URL}v1781745706/logoEscudo_lvewrk.svg`,
@@ -157,8 +158,6 @@ export const IMAGES_URLS = {
 
     //Video
     VIDEO: 'https://res.cloudinary.com/db6hw9lcg/video/upload/v1781745116/VidHome_nxyppy.mp4'
-
-
 };
 
 

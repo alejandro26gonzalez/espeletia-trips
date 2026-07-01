@@ -7,10 +7,17 @@ import Button from "../components/Button"
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import {IMAGES_URLS} from '../constants/images'
+import emailjs from '@emailjs/browser';
 
 const FormSection = () => {
 
     const [show, setShow] = useState(false);
+    const [formData, setFormData] = useState({
+        email: '',
+        name: '',
+        phone: '',
+        authorize: false
+    });
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -38,6 +45,46 @@ const FormSection = () => {
             logo: IMAGES_URLS.AMIGABLELOGO
         }
     ];
+
+    //Manejador de actualizar el estado cuando el usuario escribe
+    const handleChange = (e) => {
+        const {type, name, value, checked} = e.target;
+        setFormData({
+            ...formData,
+            [name]: type === 'checkbox' ? checked : value
+        });
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (!formData.authorize) {
+            alert("Debes autorizar el envío de datos");
+            return;
+        }
+
+        const serviceID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+        const templateID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+        const publicKey = import.meta.env.VITE_EMAIL_PUBLIC_KEY;
+
+        const templateParams = {
+            from_name: formData.name,
+            from_email: formData.email,
+            from_phone: formData.phone,
+            to_name: 'Espeletia Trips'
+        };
+
+        emailjs.send(serviceID, templateID, templateParams, publicKey)
+        .then((response) => {
+            console.log('¡Éxito!', response.status, response.text);
+            handleShow();
+            setFormData({ email: '', name: '', phone: '', authorize: false});
+        })
+        .catch((error) => {
+            console.error('Error al enviar: ', error);
+            alert('Hubo un problema al enviar el formulario. Inténtalo de nuevo más tarde.');
+        })
+    }
 
     return (
     <Container className='mt-2 mb-5 '>
@@ -70,10 +117,17 @@ const FormSection = () => {
 
 
 
-                    <Form className='text-white'>
+                    <Form className='text-white' onSubmit={handleSubmit}>
                         <Form.Group className='mb-3' controlId='formBasicEmail'>
                             <Form.Label>Correo electrónico</Form.Label>
-                            <Form.Control type='email' placeholder='Ingresa tu correo electrónico' />
+                            <Form.Control 
+                            type='email' 
+                            name='email'
+                            placeholder='Ingresa tu correo electrónico' 
+                            required
+                            value={formData.email}
+                            onChange={handleChange}
+                            />
                             <Form.Text className='text-white'>
                                 Jamás compartiremos tu correo electrónico con nadie.
                             </Form.Text>
@@ -81,16 +135,37 @@ const FormSection = () => {
 
                         <Form.Group className='mb-3' controlId='formBasicText'>
                             <Form.Label>Nombre</Form.Label>
-                            <Form.Control type='text' placeholder='Ingresa tu nombre' />
+                            <Form.Control 
+                            type='text' 
+                            placeholder='Ingresa tu nombre' 
+                            required
+                            name='name'
+                            value={formData.name}
+                            onChange={handleChange}
+                            />
                         </Form.Group>
 
                         <Form.Group className='mb-3' controlId='formBasicText'>
                             <Form.Label>Número de teléfono</Form.Label>
-                            <Form.Control type='text' placeholder='Ingresa el mejor número de teléfono' />
+                            <Form.Control 
+                            type='text' 
+                            placeholder='Ingresa el mejor número de teléfono' 
+                            name='phone'
+                            value={formData.phone}
+                            onChange={handleChange}
+                            required
+                            />
                         </Form.Group>
 
                         <Form.Group className='mb-3' controlId='formBasicCheckbox'>
-                            <Form.Check type='checkbox' label='Autorizo enviar datos.' />
+                            <Form.Check 
+                            type='checkbox' 
+                            label='Autorizo enviar datos.' 
+                            name='authorize'
+                            checked={formData.authorize}
+                            onChange={handleChange}
+                            required
+                            />
                         </Form.Group>
 
                         <ButtonCont>
@@ -98,7 +173,6 @@ const FormSection = () => {
                             color='black'
                             tipo='submit'
                             text="Te llamamos"
-                            onClick={handleShow}
                             />
                         </ButtonCont>
 
@@ -115,11 +189,11 @@ const FormSection = () => {
         keyboard={false}
         >
             <Modal.Header closeButton>
-                <Modal.Title>Modal de prueba del form</Modal.Title>
+                <Modal.Title>¡Gracias por tu interés!</Modal.Title>
             </Modal.Header>
 
             <Modal.Body>
-                I will not close if you click outside me. Do not even try to press escape key.
+                Hemos recibido tu información con éxito. Nos pondremos en contacto contigo lo antes posible.
             </Modal.Body>
 
             <Modal.Footer>
