@@ -8,7 +8,7 @@ export const destinations = [
         description:"Un valle lleno de historia, frailejones y paisajes que te dejarán sin aliento.",
         image:IMAGES.componentes.destinationCards.home1,
         icon: ICONOS.destination.montana,
-        link:"/tours/valle-tumbas"
+        link:"/tours/valle-de-las-tumbas"
     },
     {
         id:2,
@@ -16,7 +16,7 @@ export const destinations = [
         description:"Aguas termales naturales para relajarte.",
         image:IMAGES.componentes.destinationCards.home2,
         icon: ICONOS.destination.calor,
-        link:"/tours/campanita"
+        link:"/tours/termal-de-la-campanita"
     },
     {
         id:3,
@@ -24,7 +24,7 @@ export const destinations = [
         description: 'Bienestar y descanso en aguas termales increíbles.',
         image: IMAGES.componentes.destinationCards.home3,
         icon: ICONOS.destination.gota,
-        link: '/tours/canaan'
+        link: '/tours/termal-de-canaan'
     },
     {
         id:4,
@@ -32,7 +32,7 @@ export const destinations = [
         description: 'Un punto estratégico para admirar la grandeza de los nevados.',
         image: IMAGES.componentes.destinationCards.home4,
         icon: ICONOS.destination.binoculares,
-        link: '/tours/mirador'
+        link: '/tours/mirador-de-los-nevados'
     },
     {
         id:5,
@@ -40,7 +40,7 @@ export const destinations = [
         description: 'Ruta de tradición, naturaleza y cultura local.',
         image: IMAGES.componentes.destinationCards.home5,
         icon: ICONOS.destination.walk,
-        link: '/tours/camino-oso'
+        link: '/tours/camino-del-oso-mosul'
     },
     {
         id:6,
@@ -48,7 +48,7 @@ export const destinations = [
         description: 'Aventura y desafíos en uno de los nevados más importantes.',
         image: IMAGES.componentes.destinationCards.home6,
         icon: ICONOS.destination.nevado,
-        link: '/tours/nevado-santa-isabel'
+        link: '/tours/expedicion-nevado-santa-isabel'
     }
 ]
 
