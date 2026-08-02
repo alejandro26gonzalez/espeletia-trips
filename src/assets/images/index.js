@@ -28,7 +28,7 @@ import videoCard2 from "./pages/components/videoCta/backcard2_ocsmov.jpg";
 import videoCard3 from "./pages/components/videoCta/backcard3_ylrwi8.jpg";
 import videoCard4 from "./pages/components/videoCta/backcard4_uda1m8.jpg";
 import videoBackground from "./pages/components/videoCta/fondo.png";
-import Video from "./pages/components/videoCta/VidHome_nxyppy.mp4";
+const Video = "https://res.cloudinary.com/db6hw9lcg/video/upload/v1785694860/VidHome_nxyppy_ac93ml.mp4";
 import aboutMainBkg from "./pages/about/fondoContact1_otxxnh.png";
 import aboutSecondBkg from "./pages/about/segundaIMGContact_bmfczf.png";
 import aboutFootImg from "./pages/about/Blog6_pkpere.jpg";

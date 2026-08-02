@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
     FiMapPin,
     FiUsers,
@@ -26,6 +27,8 @@ import { heroData } from "./topHero.data";
 
 const TopHero = () => {
 
+    const navigate = useNavigate();
+
     return (
 
         <HeroSection background={heroData.background}> 
@@ -52,7 +55,7 @@ const TopHero = () => {
                         {heroData.subtitle}
                     </Subtitle>
 
-                    <CTAButton>
+                    <CTAButton onClick={() => navigate("/tours")}>
 
                         <FiArrowRight />
 

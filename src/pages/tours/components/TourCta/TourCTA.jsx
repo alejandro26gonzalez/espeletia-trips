@@ -13,6 +13,8 @@ import {
     CTAOverlay
 } from "./TourCTA.styles";
 
+import openWhatsappMessage from "../../../../helpers/openWhatsappMessage";
+
 import IMAGES from "../../../../assets/images";
 
 import { ctaData } from "./TourCTA.data";
@@ -51,12 +53,12 @@ const TourCTA = () => {
                 </Content>
 
                 <Buttons>
-                    <PrimaryButton>
+                    <PrimaryButton onClick={openWhatsappMessage}>
                         <FiMessageCircle />
                         {ctaData.primaryButton}
                     </PrimaryButton>
 
-                    <SecondaryButton>
+                    <SecondaryButton onClick={openWhatsappMessage}>
                         {ctaData.secondaryButton}
                         <FiArrowRight />
                     </SecondaryButton>

@@ -33,11 +33,6 @@ export const exploreLinks = [
         icon: FiArrowRight
     },
     {
-        title: "Galería",
-        href: "/galery",
-        icon: FiArrowRight
-    },
-    {
         title: "Aviso de privacidad",
         href: "/privacy",
         icon: FiArrowRight

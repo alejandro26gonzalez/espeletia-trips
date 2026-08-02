@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 import TourCard from './components/TourCard/TourCard';
 import TourCTA from './components/TourCta/TourCTA';
 import ToursBottomFeatures from './components/ToursBottomFeatures/ToursBottomFeatures';
@@ -13,6 +15,15 @@ import {
 
 const Tours = () => {
 
+    const toursSectionRef = useRef(null);
+
+    const scrollToTours = () => {
+        toursSectionRef.current?.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    };
+
     return (
         <ToursContainer>
 
@@ -20,11 +31,15 @@ const Tours = () => {
 
                 <NavbarHero />
 
-                <ToursHero />
+                <ToursHero 
+                onExplore={scrollToTours}
+                />
 
                 <ToursFeatures />
 
-                <ToursSection />
+                <section ref={toursSectionRef}>
+                    <ToursSection />
+                </section>
 
                 <TourCTA />
 

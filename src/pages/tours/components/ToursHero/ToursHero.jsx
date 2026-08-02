@@ -14,6 +14,7 @@ import {
     SecondaryButton,
     HeroScrollIndicator
 } from "./ToursHero.styles";
+import openWhatsappMessage from "../../../../helpers/openWhatsappMessage";
 
 import { heroData } from "./ToursHero.data";
 
@@ -23,7 +24,8 @@ import {
     FiChevronDown
 } from "react-icons/fi";
 
-const ToursHero = () => {
+const ToursHero = ({ onExplore }) => {
+
     return (
         <HeroSection>
 
@@ -57,7 +59,7 @@ const ToursHero = () => {
 
                     <HeroButtons>
 
-                        <PrimaryButton>
+                        <PrimaryButton onClick={onExplore}>
 
                             Explorar experiencias
 
@@ -65,7 +67,7 @@ const ToursHero = () => {
 
                         </PrimaryButton>
 
-                        <SecondaryButton>
+                        <SecondaryButton onClick={openWhatsappMessage}>
 
                             <FiMessageCircle />
 
