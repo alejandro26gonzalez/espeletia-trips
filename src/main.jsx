@@ -1,11 +1,20 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from "react-router-dom";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import { ThemeProvider } from 'styled-components';
+
+import { theme } from "./theme/theme.js"
+import GlobalStyles from "./theme/GlobalStyles.js"
 import App from './App.jsx'
+
+import "bootstrap-icons/font/bootstrap-icons.css";
 import './styles.css'
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+  </ThemeProvider>
 )

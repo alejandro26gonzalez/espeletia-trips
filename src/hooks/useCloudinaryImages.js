@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 
 export const useCloudinaryImages = ( tag ) => {
+
+    const [loading, setLoading] = useState(true);
     const [images, setImages] = useState([]);
-    const [loading, setLoading] = useState(null);
 
     useEffect(() => {
+
         const CLOUD_NAME = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME   || "dago9";
         const URL = `https://res.cloudinary.com/${CLOUD_NAME}/image/list/${tag}.json`;
 
@@ -19,12 +21,15 @@ export const useCloudinaryImages = ( tag ) => {
             );
             setImages(urls);
             setLoading(false);
+
         })
         .catch((error) => {
             console.log("Cloudinary Error", error);
             setLoading(false);
         });
+        
     }, [tag]);
+    
+    return { images, loading };
 
-    return { imagesCarousel: images, loading };
 };
