@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
     ArrowRight,
     Mail
@@ -24,6 +25,8 @@ import {
 import IMAGES from "../../../../assets/images";
 
 const BlogComingSoon = () => {
+
+    const navigate = useNavigate();
 
     const {
         title,
@@ -59,7 +62,7 @@ const BlogComingSoon = () => {
                 </Description>
 
                 <Buttons>
-                    <PrimaryButton>
+                    <PrimaryButton onClick={() => navigate("/tours")}>
                         {primaryButton}
                         <ArrowRight size={18}/>
                     </PrimaryButton>
