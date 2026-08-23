@@ -36,12 +36,15 @@ import {
 
 } from "./ContactCertification.styles";
 
-import { certifications } from "./ContactCertification.data";
+import { contactCertificationConfig } from "../../config/components/contact";
+import { useTranslation, Trans } from "react-i18next";
 
 import { useContactForm } from "../../hooks/useContactForm";
 import SuccessModal from './SuccessModal';
 
 const ContactCertification = () => {
+
+    const { t } = useTranslation("contact");
 
     const {
         formData,
@@ -55,148 +58,136 @@ const ContactCertification = () => {
 
     return (
         <Section>
-
             <Container>
-
                 <LeftColumn>
-
                     <Badge>
-
                         <BsLeafFill />
-
                         <span>
-                            COMPROMISO QUE NOS CERTIFICA
+                            {t(contactCertificationConfig.titlesConfig.badge)}
                         </span>
-
                     </Badge>
 
                     <Title>
 
-                        Certificados en
-
-                        <Highlight>
-                            ecoturismo y sostenibilidad
-                        </Highlight>
+                        <Trans 
+                            ns="contact"
+                            i18nKey={contactCertificationConfig.titlesConfig.title}
+                            components={[
+                                <Highlight />
+                            ]}
+                        />
 
                     </Title>
 
                     <Description>
 
-                        Priorizamos la naturaleza e infundamos el sentimiento
-                        de <strong>pertenencia</strong> a los nuevos viajeros.
+                        <Trans 
+                            ns="contact"
+                            i18nKey={contactCertificationConfig.titlesConfig.title_description}
+                            components={[
+                                <strong />
+                            ]}
+                        />
 
                     </Description>
 
                     <FeaturesGrid>
 
-                        {certifications.map((item) => {
+                        {contactCertificationConfig.certificationsConfig.map((item) => {
 
                             const Icon = item.icon;
 
                             return (
 
                                 <FeatureCard key={item.title}>
-
                                     <IconWrapper>
-
                                         < Icon />
-
                                     </IconWrapper>
 
                                     <div>
-
                                         <FeatureTitle>
-                                            {item.title}
-
+                                            {t(item.title)}
                                         </FeatureTitle>
 
                                         <FeatureText>
-                                            {item.description}
+                                            {t(item.description)}
                                         </FeatureText>
-
                                     </div>
-
                                 </FeatureCard>
-
                             )
                         })}
-
                     </FeaturesGrid>
-
                 </LeftColumn>
 
                 <RightColumn>
-
                     <Overlay>
-
                         <FormTitle>
-
-                            Te llamamos <Accent>gratis</Accent>
-
+                            <Trans 
+                                ns="contact"
+                                i18nKey={contactCertificationConfig.titlesConfig.form_title}
+                                components={[
+                                    <Accent />
+                                ]}
+                            />
                         </FormTitle>
 
                         <FormDescription>
-
-                            Por favor llena el formulario para poderte
-                            contactar <Accent>gratis.</Accent>
-
+                            <Trans 
+                                ns="contact"
+                                i18nKey={contactCertificationConfig.titlesConfig.form_description}
+                                components={[
+                                    <Accent />
+                                ]}
+                            />
                         </FormDescription>
 
                         <Form onSubmit={handleSubmit}>
-
                             <div>
-
                                 <Label>
-                                    Correo electrónico
+                                    {t(contactCertificationConfig.titlesConfig.email_label)}
                                 </Label>
 
                                 <Input
                                     type="email"
                                     name="email"
-                                    placeholder="Ingresa tu correo electrónico"
+                                    placeholder={t(contactCertificationConfig.titlesConfig.name_place)}
                                     value={formData.email}
                                     onChange={handleChange}
                                     required
                                 />
-
                             </div>
 
                             <div>
-
                                 <Label>
-                                    Nombre
+                                    {t(contactCertificationConfig.titlesConfig.name_label)}
                                 </Label>
 
                                 <Input
                                     type="text"
                                     name="name"
-                                    placeholder="Ingresa tu nombre"
+                                    placeholder={t(contactCertificationConfig.titlesConfig.name_place)}
                                     value={formData.name}
                                     onChange={handleChange}
                                     required
                                 />
-
                             </div>
 
                             <div>
-
                                 <Label>
-                                    Número de teléfono
+                                    {t(contactCertificationConfig.titlesConfig.phone_label)}
                                 </Label>
 
                                 <Input
                                     type="tel"
                                     name="phone"
-                                    placeholder="Ingresa el mejor número de teléfono"
+                                    placeholder={t(contactCertificationConfig.titlesConfig.phone_place)}
                                     value={formData.phone}
                                     onChange={handleChange}
                                     required
                                 />
-
                             </div>
 
                             <CheckboxContainer>
-
                                 <Checkbox
                                     type="checkbox"
                                     name="authorize"
@@ -206,38 +197,34 @@ const ContactCertification = () => {
                                 />
 
                                 <CheckboxText>
-                                    Autorizo el tratamiento de mis datos personales.
+                                    {t(contactCertificationConfig.titlesConfig.checkbox)}
                                 </CheckboxText>
-
                             </CheckboxContainer>
 
                             <Button
                                 type="submit"
                                 disabled={loading}
                             >
-
                                 <ButtonIcon>
                                     <FiPhone />
                                 </ButtonIcon>
 
-                                {loading ? "Enviando..." : "Te llamamos"}
-
+                                {loading 
+                                ? t(contactCertificationConfig.titlesConfig.submt_1) 
+                                : t(contactCertificationConfig.titlesConfig.submt_2)
+                                }
                             </Button>
-
                         </Form>
-
                     </Overlay>
-
                 </RightColumn>
-
             </Container>
             
             
             <SuccessModal
                 open={showModal}
                 onClose={closeModal}
-                title="¡Gracias por tu interés!"
-                description="Hemos recibido tu información correctamente. Muy pronto nos pondremos en contacto contigo."
+                title={t(contactCertificationConfig.titlesConfig.success_1)}
+                description={t(contactCertificationConfig.titlesConfig.success_2)}
             />
 
         </Section>

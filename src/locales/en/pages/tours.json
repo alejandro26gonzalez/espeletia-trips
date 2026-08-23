@@ -1,0 +1,880 @@
+{
+    "hero": {
+        "eyebrow": "All available tours",
+        "title": "National Natural Park",
+        "subtitle": "Nature, adventure, and sustainable tourism in one place.",
+        "description": "Discover hiking trails, hot springs, moorlands, glaciers, high Andean forests, and experiences designed for all levels. Find the perfect destination and live an unforgettable adventure with Espeletia Trips.",
+        "primButton": "Explore experiences",
+        "secndButton": "Talk to an advisor",
+        "features": {
+            "one": {
+                "title": "6 Incredible Destinations",
+                "description": "Explore moorlands, glaciers, hot springs, and unique trails of Los Nevados National Natural Park."
+            },
+            "two": {
+                "title": "Certified Guides",
+                "description": "Explore each destination accompanied by local guides trained in safety and sustainable tourism."
+            },
+            "three": {
+                "title": "Personalized Experiences",
+                "description": "We offer group and private tours tailored to each traveler's level and preferences."
+            },
+            "four": {
+                "title": "Responsible Tourism",
+                "description": "We promote the conservation of the high mountain ecosystem through responsible practices."
+            }
+        }
+    },
+    "filters":{
+        "one": "All",
+        "two": "Snow-capped peaks",
+        "three": "High-altitude grasslands",
+        "four": "Hot springs",
+        "five": "Hiking",
+        "six": "Customized"
+    },
+    "section": {
+        "main":{
+            "badge": "OUR EXPERIENCES",
+            "title": "Find the perfect tour for",
+            "highlight": "your next adventure",
+            "description": "Each tour has been designed to offer a safe, authentic, and sustainable experience in the most spectacular landscapes of Los Nevados National Natural Park. Explore our destinations and choose the adventure that best suits you."
+        },
+        "cards":{
+            "priceLabel": "From",
+            "priceLabelButton": "View Experience",
+            "tumbas":{
+                "badge": "Most Popular",
+                "description": "Explore unique rock formations and discover the history of the place.",
+                "duration": "6 - 7 hours",
+                "difficulty": "Moderate",
+                "people": "From 2 people"
+            },
+            "campanita":{
+                "badge": "Popular",
+                "description": "Relax in the warm hot springs of La Campanita, a natural oasis surrounded by breathtaking scenery.",
+                "duration": "4 - 5 hours",
+                "difficulty": "Intermediate",
+                "people": "2 or more people"
+            },
+            "canaan":{
+                "badge": "Relaxation",
+                "description": "Immerse yourself in the hot springs of Canaan, a natural haven offering a unique relaxation experience.",
+                "duration": "1 day",
+                "difficulty": "Easy",
+                "people": "5 or more people"
+            },
+            "mirador":{
+                "badge": "Adventure",
+                "description": "Admire breathtaking panoramic views from the Mirador de los Nevados, a strategic vantage point to contemplate the majesty of the mountains.",
+                "duration": "1 day",
+                "difficulty": "Moderate",
+                "people": "4 or more people"
+            },
+            "oso":{
+                "badge": "Landscapes",
+                "description": "Embark on the Bear Trail, a hiking route that will take you through breathtaking landscapes and offer the chance to spot local wildlife.",
+                "duration": "2 days / 1 night",
+                "difficulty": "Difficult",
+                "people": "4 or more people"
+            },
+            "isabel":{
+                "badge": "Adventure",
+                "description": "Join the expedition to Nevado Santa Isabel, an epic adventure that will take you to the summit of this majestic mountain.",
+                "duration": "2 days / 1 night",
+                "difficulty": "Challenging",
+                "people": "4 or more people"
+            }
+        }
+    },
+    "cta":{
+        "badge": "PERSONALIZED ADVICE",
+        "title": "Find the perfect experience",
+        "highlight": "for you",
+        "description": "Every adventure is different. Our team can help you choose the ideal tour based on your experience, group size, available time, and desired level of difficulty.",
+        "primButton": "Chat on WhatsApp",
+        "secndButton": "Request information",
+        "features":{
+            "one": {
+                "title": "Easy and Secure Booking",
+                "description": "Confirm your adventure in minutes via WhatsApp."
+            },
+            "two": {
+                "title": "Flexible Cancellation",
+                "description": "Check our policies and modify your booking when necessary."
+            },
+            "three": {
+                "title": "Continuous Support",
+                "description": "Our team is available before, during, and after your experience."
+            },
+            "four": {
+                "title": "Quality Experiences",
+                "description": "Certified local guides and responsible tourism on every tour."
+            }
+        }
+    },
+    "tourDetail":{
+        "benefits":{
+            "one": {
+                "title": "Easy and Secure Booking",
+                "subtitle": "100% Online Process"
+            },
+            "two": {
+                "title": "Flexible Cancellation",
+                "subtitle": "See Our Policies"
+            },
+            "three": {
+                "title": "24/7 Support",
+                "subtitle": "We're Here to Help"
+            },
+            "four": {
+                "title": "Best Price Guaranteed",
+                "subtitle": "No Hidden Fees"
+            }
+        },
+        "plainText":{
+            "home": "Home",
+            "comments": "Opinions",
+            "description": "About this experience",
+            "gallery": {
+                "title": "Moments of the Experience",
+                "description": "Explore some of the incredible landscapes you'll encounter during this adventure.",
+                "button": "View all photos"
+            },
+            "itinerary": {
+                "title": "Itinerary",
+                "question": "What to bring?"
+            },
+            "contact": {
+                "title": "Need help?",
+                "subtitle": "Our team is ready to help you before you book your adventure.",
+                "button": "Chat on WhatsApp",
+                "labels": {
+                    "phone": "Phone",
+                    "email": "Email",
+                    "schedule": "Hours",
+                    "days": "Mon - Sun: 8:00 a.m. - 8:00 p.m."
+                }
+            },
+            "recommendations": {
+                "title": "You might also be interested in",
+                "subtitle": "Discover other experiences you might like.",
+                "button": "View all tours"
+            },
+            "prices":{
+                "price": "From",
+                "currency": "COP / per person",
+                "national": "Nationals",
+                "strangers": "Foreigners",
+                "title": "Price per person",
+                "subtitle": "Groups of 5 people.",
+                "button": "Book via WhatsApp",
+                "benefits": {
+                    "one": {"title": "Flexible Cancellation", "subtitle": "Learn about our policies"},
+                    "two": {"title": "100% Secure Booking", "subtitle": "No Hidden Fees"},
+                    "three": {"title": "24/7 Support", "subtitle": "We're here to help"}
+                },
+                "details":{
+                    "title": "What's included?",
+                    "button": "Details",
+                    "popTitle": "Tour Details",
+                    "closePop": "Close Details",
+                    "group": "Group",
+                    "experience": "Experience",
+                    "incluye": "Includes"
+                }
+            },
+            "isabel":{
+                "expedition":{
+                    "title": "Expedition",
+                    "night": "Nights",
+                    "accomodation": {
+                        "housing": "Accommodation",
+                        "cabin": "El Cisne Mountain Refuge"
+                    },
+                    "feed":{
+                        "title": "Food",
+                        "meals":{
+                            "1": "2 breakfasts",
+                            "2": "2 lunches",
+                            "3": "1 dinner"
+                        }
+                    }
+                },
+                "experience":{
+                    "title": "Experience",
+                    "rows": {
+                        "1": {
+                            "label": "Level",
+                            "value": "Advanced"
+                        },
+                        "2": {"label": "Distance"},
+                        "3": {"label": "Maximum Altitude"},
+                        "4": {
+                            "label": "Duration",
+                            "value": "2 days"
+                        }
+                    }
+                }
+            }
+        },
+        "tours":{
+            "valle":{
+                "category": "High Mountain Hiking",
+                "duration": "1 day",
+                "summary": "Immerse yourself in a unique volcanic landscape where geological history and the beauty of the moorland create an unforgettable experience.",
+                "description":{
+                    "introduction": "Explore one of the most amazing landscapes in Los Nevados National Natural Park, where the moorland, volcanoes and geological history come together to offer an unforgettable experience.",
+                    "content": "During the trek, you'll traverse volcanic canyons, frailejón fields, and high-mountain trails until you reach the Valley of the Tombs, a lunar-like landscape that reflects the power and constant transformation of nature.",
+                    "conclusion": "Ideal for those who enjoy hiking, photography, natural history, and adventures that connect with the essence of the mountains.",
+                    "highlights":{
+                        "1": {
+                            "title": "Scenic Route",
+                            "description": "Travel along one of the most beautiful roads in Colombia, surrounded by volcanoes, mountains, and natural viewpoints."
+                        },
+                        "2":{
+                            "title": "Living Geology",
+                            "description": "Explore the Lagunilla Canyon, the Azufrado volcano, and other landscapes shaped by volcanic activity and the history of the Nevado del Ruiz volcano."
+                        },
+                        "3":{
+                            "title": "Lunar Landscape",
+                            "description": "Discover the Valley of the Tombs, a unique high-mountain environment with panoramic views of the La Olleta and Nevado del Ruiz massifs."
+                        }
+                    }                    
+                },
+                "itinerary":{
+                    "1": "Meeting at the Espeletia Trips office.",
+                    "2": "Traditional breakfast in Murillo.",
+                    "3": "Environmental interpretation in Lagunilla Canyon.",
+                    "4": "Visit to Azufrado Canyon and the El Sifón sector.",
+                    "5": "Registration and orientation at Los Nevados National Natural Park.",
+                    "6": "Hike to Aguacerales, Arenales, and Valle de las Tumbas.",
+                    "7": "Return to Murillo, lunch, and end of the experience."
+                },  
+                "equipment":{
+                    "1":{
+                        "title": "Base layer",
+                        "items":{
+                            "1": "Sleeveless or thermal base layer",
+                            "2": "Quick-drying pants"
+                        }
+                    },
+                    "2":{
+                        "title": "Second layer",
+                        "items":{
+                            "1": "Fleece jacket or sleeping bag"
+                        }
+                    },
+                    "3":{
+                        "title": "Outer layer",
+                        "items":{
+                            "1": "Waterproof jacket",
+                            "2": "Windbreaker"
+                        }
+                    },
+                    "4":{
+                        "title": "Accessories",
+                        "items":{
+                            "1": "Hiking boots",
+                            "2": "Gloves",
+                            "3": "Hat",
+                            "4": "Neck gaiter",
+                            "5": "Sunglasses"
+                        }
+                    },
+                    "5":{
+                        "title": "Essentials",
+                        "items":{
+                            "1": "Backpack 25L",
+                            "2": "1 liter of water",
+                            "3": "Snacks",
+                            "4": "Sunscreen"
+                        }
+                    }
+                },
+                "tips": {
+                    "1": {
+                        "title": "Acclimatization",
+                        "description": "Get a good night's sleep before your trip and stay hydrated to better enjoy the high-altitude experience."
+                    },
+                    "2": {
+                        "title": "Changing weather",
+                        "description": "Weather in the high mountains can change quickly, so waterproof clothing is essential."
+                    },
+                    "3": {
+                        "title": "Respect the páramo",
+                        "description": "Always stay on authorized trails and avoid disturbing the ecosystem's flora and fauna."
+                    }
+                },
+                "prices": {
+                    "group": "Group departures starting from 5 people.",
+                    "private": "Private experiences for groups of 2 to 4 people.",
+                    "includes": {
+                        "1": "Traditional local breakfast and lunch",
+                        "2": "4x4 transportation from Murillo",
+                        "3": "Entrance fee to Los Nevados National Natural Park",
+                        "4": "Certified local guide",
+                        "5": "Medical assistance insurance"
+                    }
+                }
+            },
+            "campanita": {
+                "category": "Hiking and Wellness",
+                "duration": "1 day",
+                "summary": "Relax in natural hot springs while enjoying the tranquility of the páramo and one of the most special corners of Murillo.",
+                "description": {
+                    "introduction": "Travel along ancient bridle paths that cross Andean forests and descend to the majestic Recio River Canyon, where nature and rural history meet in a unique setting.",
+                    "content": "The hike culminates at the Campanita Hot Springs, a natural refuge where thermal waters spring up in the middle of the mountain. There you can enjoy a relaxing bath and experience contrast therapy by alternating the heat of the hot spring with the cold waters of the river.",
+                    "conclusion": "An ideal experience for those looking to connect with nature, discover local history, and enjoy a peaceful tour that combines hiking, wellness, and unforgettable landscapes.",
+                    "highlights": {
+                        "1": {
+                            "title": "Hiking with history",
+                            "description": "Walk along ancient muleteer trails surrounded by Andean forest and wax palms, following routes full of tradition."
+                        },
+                        "2": {
+                            "title": "Natural hot springs",
+                            "description": "Relax in hot springs surrounded by a unique mountain environment and enjoy an outdoor wellness experience."
+                        },
+                        "3": {
+                            "title": "Rural culture",
+                            "description": "Learn about the stories, customs, and memories preserved by the region's inhabitants and their traditional paths."
+                        }
+                    }
+                },
+                "itinerary": {
+                    "1": "Traditional breakfast in Murillo.",
+                    "2": "4x4 vehicle transfer to Puerto Masato.",
+                    "3": "Start of the trek along a bridle path to the Recio River Canyon.",
+                    "4": "Bath in the Campanita Hot Springs and contrast therapy with the river.",
+                    "5": "Ascent back to Puerto Masato.",
+                    "6": "Traditional local lunch in Murillo and end of the experience."
+                },
+                "equipment": {
+                    "1": {
+                        "title": "Clothing",
+                        "items": {
+                        "1": "Thermal or lycra shirt",
+                        "2": "Quick-dry pants",
+                        "3": "Waterproof jacket"
+                        }
+                    },
+                    "2": {
+                        "title": "Footwear",
+                        "items": {
+                        "1": "Hiking boots with good grip"
+                        }
+                    },
+                    "3": {
+                        "title": "For the hot spring",
+                        "items": {
+                        "1": "Swimsuit",
+                        "2": "Towel",
+                        "3": "Change of clothes"
+                        }
+                    },
+                    "4": {
+                        "title": "Accessories",
+                        "items": {
+                        "1": "Cap or hat",
+                        "2": "Sunglasses",
+                        "3": "Buff-style neck gaiter"
+                        }
+                    },
+                    "5": {
+                        "title": "Essentials",
+                        "items": {
+                        "1": "25L backpack",
+                        "2": "1 liter of water",
+                        "3": "Snacks",
+                        "4": "Sunscreen"
+                        }
+                    }
+                },
+                "tips": {
+                    "1": {
+                        "title": "Bring a change of clothes",
+                        "description": "After the thermal bath, you will appreciate having dry clothes for the return trip."
+                    },
+                    "2": {
+                        "title": "Enjoy contrast therapy",
+                        "description": "Alternating the hot springs with the Recio River provides a revitalizing and relaxing sensation."
+                    },
+                    "3": {
+                        "title": "Walk peacefully",
+                        "description": "The route does not require speed; take your time to enjoy the forest and landscapes."
+                    }
+                },
+                "prices": {
+                    "group": "Group departures starting from 4 people. Limited to 12 travelers.",
+                    "private": "Private experiences for groups of 1 to 3 people.",
+                    "includes": {
+                        "1": "Traditional local breakfast and lunch",
+                        "2": "4x4 transportation from Murillo",
+                        "3": "Trekking poles (if required)",
+                        "4": "Rubber boots (if required)",
+                        "5": "Certified local guide",
+                        "6": "Medical assistance insurance"
+                    }
+                }
+            },
+            "canaan": {
+                "category": "Nature, Culture and Wellness",
+                "duration": "1 day",
+                "summary": "Discover an oasis of natural hot springs surrounded by nature, ideal for disconnecting, resting, and renewing body and mind.",
+                "description": {
+                    "introduction": "Travel the historic Ruta de la Templanza del Arriero on a 4x4 adventure that combines Andean landscapes, rural tradition, and some of Murillo's most iconic natural settings.",
+                    "content": "During the tour you will discover the Abuelo Waterfall, high Andean forests, the emblematic wax palm valley, and the Canaán Hot Springs, a natural oasis where hot waters emerge in the middle of the mountain to offer a space for rest and wellness.",
+                    "conclusion": "A perfect experience for those who want to discover the local culture, enjoy nature, and relax in hot springs after a day full of landscapes and stories.",
+                    "highlights": {
+                        "1": {
+                            "title": "4x4 route through the mountains",
+                            "description": "Travel rural roads surrounded by Andean forests, waterfalls, and landscapes that preserve the essence of the old muleteer path."
+                        },
+                        "2": {
+                            "title": "Nature and heritage",
+                            "description": "Visit the Abuelo Waterfall and the wax palm valley, two settings that represent Murillo's rich natural and cultural heritage."
+                        },
+                        "3": {
+                            "title": "Canaán Hot Springs",
+                            "description": "Relax in natural hot springs surrounded by mountains, an ideal space to recharge energy and connect with nature."
+                        }
+                    }
+                },
+                "itinerary": {
+                    "1": "Traditional breakfast in Murillo.",
+                    "2": "Departure in a 4x4 vehicle along the Ruta de la Templanza del Arriero.",
+                    "3": "Visit to the Abuelo Waterfall and tour through the cloud forest.",
+                    "4": "Snack at a local farm and encounter with local knowledge.",
+                    "5": "Entrance and free time at the Canaán Hot Springs.",
+                    "6": "Traditional local lunch at Finca La Esperanza.",
+                    "7": "Return to the urban area of Murillo."
+                },
+                "equipment": {
+                    "1": {
+                        "title": "Clothing",
+                        "items": {
+                            "1": "Thermal or lycra shirt",
+                            "2": "Quick-dry pants",
+                            "3": "Waterproof jacket"
+                        }
+                    },
+                    "2": {
+                        "title": "Footwear",
+                        "items": {
+                            "1": "Hiking or mountain boots"
+                        }
+                    },
+                    "3": {
+                        "title": "For the hot spring",
+                        "items": {
+                            "1": "Swimsuit",
+                            "2": "Towel",
+                            "3": "Change of clothes"
+                        }
+                    },
+                    "4": {
+                        "title": "Accessories",
+                        "items": {
+                            "1": "Beanie or hat",
+                            "2": "Gloves",
+                            "3": "Buff-style neck gaiter",
+                            "4": "Sunglasses"
+                        }
+                    },
+                    "5": {
+                        "title": "Essentials",
+                        "items": {
+                            "1": "25L backpack",
+                            "2": "1 liter of water",
+                            "3": "Snacks",
+                            "4": "Sunscreen"
+                        }
+                    }
+                },
+                "tips": {
+                    "1": {
+                        "title": "Enjoy the journey",
+                        "description": "Bring your camera or phone with fully charged battery; along the route you will find waterfalls, wax palms, and unique landscapes."
+                    },
+                    "2": {
+                        "title": "Get ready for the hot springs",
+                        "description": "Pack a change of clothes and a towel to comfortably enjoy the thermal waters."
+                    },
+                    "3": {
+                        "title": "Connect with local culture",
+                        "description": "Take advantage of the tour to learn about the stories and traditions shared by local guides and farming families."
+                    }
+                },
+                "prices": {
+                    "group": "Group departures starting from 5 people. Maximum capacity of 14 travelers.",
+                    "private": "Private experiences for groups of 1 to 4 people.",
+                    "includes": {
+                        "1": "Traditional local breakfast, snack, and lunch",
+                        "2": "4x4 transportation during the entire tour",
+                        "3": "Entrance fee to Canaán Hot Springs",
+                        "4": "Certified local guide",
+                        "5": "Trekking poles (if required)",
+                        "6": "Rubber boots (if required)",
+                        "7": "Medical assistance insurance"
+                    }
+                }
+            },
+            "mirador": {
+                "category": "High Mountain Trekking",
+                "duration": "1 day",
+                "summary": "Take in breathtaking panoramic views of the National Park's volcanoes and mountains from one of the region's most iconic viewpoints",
+                "description": {
+                    "introduction": "Venture into the Páramo del Oso and discover a route where high Andean forest, frailejones, and water springs lead to one of the most impressive natural viewpoints in Los Nevados National Natural Park.",
+                    "content": "Along the trail you will walk through high mountain ecosystems while learning about the importance of the páramo as a source of life. The trek culminates at a natural balcony from where, weather permitting, you can admire Nevado del Ruiz, Santa Isabel, Paramillo del Cisne, and Nevado del Tolima.",
+                    "conclusion": "An experience designed for those who enjoy hiking, landscape photography, and the immensity of the Colombian Andes.",
+                    "highlights": {
+                        "1": {
+                            "title": "High-altitude trekking",
+                            "description": "Trek a 9 km trail through the Páramo del Oso and high Andean forest, surrounded by frailejones and unique landscapes."
+                        },
+                        "2": {
+                            "title": "Panoramic view of snow-capped peaks",
+                            "description": "Enjoy one of the best natural viewpoints in the region with privileged views of the National Park's main snow-capped mountains."
+                        },
+                        "3": {
+                            "title": "The water factory",
+                            "description": "Discover sulfur water springs and understand the vital role of the páramo in conserving water resources."
+                        }
+                    }
+                },
+                "itinerary": {
+                    "1": "Meeting and traditional breakfast in Murillo.",
+                    "2": "4x4 vehicle transfer to the Casa Roja sector.",
+                    "3": "Start of the trek through páramo and high Andean forest.",
+                    "4": "Arrival at Mirador de los Nevados and time for reflection and photography.",
+                    "5": "Start of the descent along the same trail.",
+                    "6": "Return to Casa Roja and transfer to Murillo.",
+                    "7": "Traditional lunch and end of the experience."
+                },
+                "equipment": {
+                    "1": {
+                        "title": "Clothing",
+                        "items": {
+                            "1": "Thermal or lycra shirt",
+                            "2": "Quick-dry pants",
+                            "3": "Waterproof and windproof jacket"
+                        }
+                    },
+                    "2": {
+                        "title": "Footwear",
+                        "items": {
+                            "1": "Mid or high-cut hiking boots"
+                        }
+                    },
+                    "3": {
+                        "title": "Accessories",
+                        "items": {
+                            "1": "Beanie or hat",
+                            "2": "Gloves",
+                            "3": "Buff-style neck gaiter",
+                            "4": "Sunglasses with UV protection"
+                        }
+                    },
+                    "4": {
+                        "title": "Essentials",
+                        "items": {
+                            "1": "25L backpack",
+                            "2": "1 liter of water",
+                            "3": "Energy snacks",
+                            "4": "Sunscreen"
+                        }
+                    },
+                    "5": {
+                        "title": "Recommended",
+                        "items": {
+                            "1": "Change of clothes",
+                            "2": "Emergency thermal blanket",
+                            "3": "Extra hydration"
+                        }
+                    }
+                },
+                "tips": {
+                    "1": {
+                        "title": "Weather decides",
+                        "description": "The best views depend on weather conditions. Be patient and enjoy every moment of the journey."
+                    },
+                    "2": {
+                        "title": "Sun protection",
+                        "description": "Even if the temperature is low, UV radiation at high altitude is intense. Use sunscreen and UV-filter sunglasses."
+                    },
+                    "3": {
+                        "title": "Walk at your own pace",
+                        "description": "The altitude can make the exertion feel greater. Keep a steady pace and use breaks to admire the landscape."
+                    }
+                },
+                "prices": {
+                    "group": "Group departures starting from 4 people. Maximum capacity of 10 travelers.",
+                    "private": "Private experiences for groups of 1 to 3 people.",
+                    "includes": {
+                        "1": "Traditional breakfast and lunch",
+                        "2": "4x4 transportation from Murillo",
+                        "3": "Certified local guide",
+                        "4": "Route entry fee",
+                        "5": "Trekking poles (upon request)",
+                        "6": "Rubber boots (if required)",
+                        "7": "Medical assistance insurance"
+                    }
+                }
+            },
+            "oso": {
+                "category": "High Mountain Expedition",
+                "duration": "2 days / 1 night",
+                "summary": "Explore ancient trails surrounded by Andean forests, wildlife, and landscapes that preserve the natural essence of the National Park.",
+                "description": {
+                    "introduction": "Experience a two-day expedition through some of the most remote landscapes of Los Nevados National Natural Park. El Camino del Oso – Mosul crosses páramos, cloud forests, glacial-origin lagoons, and ancient rural routes that keep the essence of the mountain intact.",
+                    "content": "The journey traverses high mountain ecosystems until reaching Finca Mosul, where a local farming family opens the doors of their home to share the night, traditional gastronomy, and the stories that have brought life to this territory for generations.",
+                    "conclusion": "An experience designed for trekking enthusiasts seeking to disconnect, overcome new challenges, and discover the natural and cultural wealth of Murillo from an authentic perspective.",
+                    "highlights": {
+                        "1": {
+                            "title": "Two-day expedition",
+                            "description": "Cross páramos, lagoons, cloud forests, and canyons on a trek that combines adventure, nature, and rural culture."
+                        },
+                        "2": {
+                            "title": "Rural lodging",
+                            "description": "Share a night at Finca Mosul, experiencing firsthand the hospitality, gastronomy, and traditions of a local farming family."
+                        },
+                        "3": {
+                            "title": "High mountain landscapes",
+                            "description": "Hike among Laguna Verde, El Boquerón, the Blue River Canyon, and natural viewpoints surrounded by the park's most representative ecosystems."
+                        }
+                    }
+                },
+                "itinerary": {
+                    "1": {
+                        "title": "Day 1 · Morning",
+                        "activity": "Departure from Casa Roja and start of the trek through the Oso Reserve and the Siete Cabezas sector."
+                    },
+                    "2": {
+                        "title": "Day 1 · Midday",
+                        "activity": "Lunch by the Recio River, tour through Laguna Romerales, and Laguna Verde viewpoint."
+                    },
+                    "3": {
+                        "title": "Day 1 · Afternoon",
+                        "activity": "Ascent to El Boquerón (4,087 masl) and descent towards the Blue River Canyon."
+                    },
+                    "4": {
+                        "title": "Day 1 · Night",
+                        "activity": "Arrival at Finca Mosul, traditional dinner, and accommodation in a local farmhouse."
+                    },
+                    "5": {
+                        "title": "Day 2 · Morning",
+                        "activity": "Breakfast and start of the descent through the cloud forest and the Blue River Canyon."
+                    },
+                    "6": {
+                        "title": "Day 2 · Afternoon",
+                        "activity": "Arrival at La Estrella hamlet, return to Murillo, and end of the expedition."
+                    }
+                },
+                "equipment": {
+                    "1": {
+                        "title": "Clothing",
+                        "items": {
+                            "1": "Thermal shirt",
+                            "2": "Quick-dry pants",
+                            "3": "Waterproof and windproof jacket"
+                        }
+                    },
+                    "2": {
+                        "title": "Footwear",
+                        "items": {
+                            "1": "High-cut trekking boots",
+                            "2": "Comfortable footwear to rest at the farm"
+                        }
+                    },
+                    "3": {
+                        "title": "Accessories",
+                        "items": {
+                            "1": "Beanie or hat",
+                            "2": "Gloves",
+                            "3": "Buff-style neck gaiter",
+                            "4": "Sunglasses with UV protection",
+                            "5": "Sunscreen"
+                        }
+                    },
+                    "4": {
+                        "title": "Safety",
+                        "items": {
+                            "1": "Thermal blanket",
+                            "2": "Complete change of clothes protected in a waterproof bag"
+                        }
+                    },
+                    "5": {
+                        "title": "Essentials",
+                        "items": {
+                            "1": "30 to 40L backpack",
+                            "2": "2 liters of water",
+                            "3": "Energy snacks",
+                            "4": "Headlamp",
+                            "5": "Backpack rain cover"
+                        }
+                    }
+                },
+                "tips": {
+                    "1": {
+                        "title": "Prepare physically",
+                        "description": "It is a demanding expedition. Prior long-distance hiking experience and good physical condition are recommended."
+                    },
+                    "2": {
+                        "title": "Pack light",
+                        "description": "Bring only what is necessary; a light backpack will make the trek much more comfortable."
+                    },
+                    "3": {
+                        "title": "Enjoy the rural experience",
+                        "description": "The night at Finca Mosul is an essential part of the trip. Take the opportunity to learn about the stories and customs of the local community."
+                    }
+                },
+                "prices": {
+                    "group": "Group departures starting from 4 people. Maximum capacity of 10 travelers.",
+                    "private": "Private experiences for groups of 1 to 3 people.",
+                    "includes": {
+                        "1": "2 breakfasts",
+                        "2": "2 lunches",
+                        "3": "1 traditional dinner",
+                        "4": "1 night accommodation in a local farmhouse",
+                        "5": "4x4 transportation",
+                        "6": "Certified local guide",
+                        "7": "Trekking poles",
+                        "8": "Rubber boots (if required)",
+                        "9": "Medical assistance insurance"
+                    }
+                }
+            },
+            "nevado": {
+                "category": "High Mountain and Glacier",
+                "duration": "2 days / 1 night",
+                "summary": "Conquer the snows of Nevado Santa Isabel and live a high-mountain adventure surrounded by glaciers, lagoons, and breathtaking landscapes.",
+                "description": {
+                    "introduction": "Experience a high-mountain expedition to one of Colombia's last tropical glaciers. Nevado Santa Isabel offers a unique experience for those wishing to challenge their limits and discover the majesty of Los Nevados National Natural Park.",
+                    "content": "Over two days, you will hike through páramos, glacial moraines, and high-mountain trails while undergoing an acclimatization process that culminates in the glacier ascent using specialized technical equipment. Every stage is designed to ensure a safe and memorable experience.",
+                    "conclusion": "More than reaching a summit, this expedition represents an encounter with the immensity of nature and an opportunity to experience the Colombian high mountains guided by specialized experts.",
+                    "highlights": {
+                        "1": {
+                            "title": "Acclimatization at Laguna Verde",
+                            "description": "Prepare your body for the altitude by touring one of the park's most iconic landscapes, surrounded by frailejones and páramo ecosystems."
+                        },
+                        "2": {
+                            "title": "Glacier ascent",
+                            "description": "Use crampons, ice axes, and technical equipment to reach the glacier edge accompanied by certified high-mountain guides."
+                        },
+                        "3": {
+                            "title": "Andean panoramas",
+                            "description": "From the upper area, contemplate a spectacular horizon dominated by the snow-capped Ruiz, Tolima, El Cisne, and Quindío peaks."
+                        }
+                    }
+                },
+                "itinerary": {
+                    "1": {
+                        "title": "Day 1 · Morning",
+                        "activity": "Departure from Manizales, entry to Los Nevados National Natural Park, and traditional breakfast."
+                    },
+                    "2": {
+                        "title": "Day 1 · Mid-morning",
+                        "activity": "Acclimatization hike to Laguna Verde del Cisne."
+                    },
+                    "3": {
+                        "title": "Day 1 · Afternoon",
+                        "activity": "Lunch, technical talk on safety and mountain equipment usage."
+                    },
+                    "4": {
+                        "title": "Day 1 · Night",
+                        "activity": "Dinner and lodging at El Cisne Mountain Refuge."
+                    },
+                    "5": {
+                        "title": "Day 2 · Early Morning",
+                        "activity": "Start of the ascent from Conejeras toward the glacier."
+                    },
+                    "6": {
+                        "title": "Day 2 · Sunrise",
+                        "activity": "Technical gearing up with crampons, ice axe, harness, and ascent to the glacier edge."
+                    },
+                    "7": {
+                        "title": "Day 2 · Morning",
+                        "activity": "Time for reflection, photography, and controlled descent."
+                    },
+                    "8": {
+                        "title": "Day 2 · Afternoon",
+                        "activity": "Descent, lunch, and return to Manizales."
+                    }
+                },
+                "equipment": {
+                    "1": {
+                        "title": "Clothing",
+                        "items": {
+                            "1": "Thermal base layer",
+                            "2": "Quick-dry pants",
+                            "3": "Waterproof and windproof jacket"
+                        }
+                    },
+                    "2": {
+                        "title": "Footwear",
+                        "items": {
+                            "1": "High-mountain boots",
+                            "2": "Gaiters",
+                            "3": "Thermal socks"
+                        }
+                    },
+                    "3": {
+                        "title": "Accessories",
+                        "items": {
+                            "1": "Beanie or hat",
+                            "2": "Thermal gloves",
+                            "3": "Buff-style neck gaiter",
+                            "4": "High UV category protection sunglasses"
+                        }
+                    },
+                    "4": {
+                        "title": "Personal Equipment",
+                        "items": {
+                            "1": "30L backpack",
+                            "2": "1.5 liters of water",
+                            "3": "Energy snacks",
+                            "4": "Sunscreen",
+                            "5": "Lip balm"
+                        }
+                    },
+                    "5": {
+                        "title": "Technical Equipment",
+                        "items": {
+                            "1": "Crampons",
+                            "2": "Ice axe",
+                            "3": "Harness",
+                            "4": "Helmet",
+                            "5": "Headlamp"
+                        }
+                    }
+                },
+                "tips": {
+                    "1": {
+                        "title": "Acclimate properly",
+                        "description": "Rest well before the expedition, stay hydrated, and follow the guides' recommendations throughout the entire process."
+                    },
+                    "2": {
+                        "title": "Listen to the guides",
+                        "description": "Glacier safety depends on teamwork and following technical instructions."
+                    },
+                    "3": {
+                        "title": "Respect the glacier",
+                        "description": "Nevado Santa Isabel is one of the country's last tropical glaciers. Every visitor shares the responsibility of contributing to its conservation."
+                    }
+                },
+                "prices": {
+                    "group": "Group departures for 4 to 10 participants.",
+                    "private": "Private expeditions for groups of 1 to 3 people.",
+                    "includes": {
+                        "1": "4x4 transportation from Manizales",
+                        "2": "Certified high-mountain guides",
+                        "3": "Entrance fee to Los Nevados National Natural Park",
+                        "4": "Technical glacier equipment (crampons, ice axe, harness, helmet, ropes, and headlamp)",
+                        "5": "Trekking poles",
+                        "6": "Medical assistance insurance"
+                    }
+                }
+            }
+        }
+    }
+}

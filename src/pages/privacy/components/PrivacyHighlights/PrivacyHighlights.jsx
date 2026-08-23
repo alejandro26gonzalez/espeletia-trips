@@ -10,8 +10,10 @@ import {
     CardTitle,
     CardDescription
 } from "./PrivacyHighlights.styles";
+import { useTranslation } from "react-i18next";
 
-const PrivacyHighlights = ({ items }) => {
+const PrivacyHighlights = ({ items, plainText }) => {
+    const {t} = useTranslation("privacy");
 
     return (
 
@@ -19,11 +21,11 @@ const PrivacyHighlights = ({ items }) => {
             <Header>
 
                 <Subtitle>
-                    PRIVACIDAD Y SEGURIDAD
+                    {t(plainText.highlightTitleKey)}
                 </Subtitle>
 
                 <Title>
-                    Nuestros principios
+                    {t(plainText.highlightSubtitleKey)}
                 </Title>
 
                 <Divider />
@@ -43,11 +45,11 @@ const PrivacyHighlights = ({ items }) => {
                                 </IconWrapper>
 
                                 <CardTitle>
-                                    {item.title}
+                                    {t(item.titleKey)}
                                 </CardTitle>
 
                                 <CardDescription>
-                                    {item.description}
+                                    {t(item.descriptionKey)}
                                 </CardDescription>
                             </Card>
                         );

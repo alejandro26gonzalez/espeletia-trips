@@ -1,4 +1,5 @@
-import data from "../CertificateSectionRefactored.data";
+import { mainConfig } from "../../../config/components/certifications/main";
+import { useTranslation } from "react-i18next";
 import {
     Container,
     Featured,
@@ -7,30 +8,30 @@ import {
 
 export default function ResponsibleTourism() {
 
-    const { features } = data;
+    const { t } = useTranslation("certModal");
 
     return (
         <Container>
 
-            {features.map((item, index) =>
+            {mainConfig.featuresConfig.map((item, index) =>
                 item.featured ? (
                     <Featured key={index}>
 
-                        <img src={item.icon} alt={item.title} />
+                        <img src={item.icon} alt={t(item.title)} />
 
                         <div>
-                            <h3>{item.title}</h3>
-                            <p>{item.description}</p>
+                            <h3>{t(item.title)}</h3>
+                            <p>{t(item.description)}</p>
                         </div>
 
                     </Featured>
                 ) : (
                     <Item key={index}>
 
-                        <img src={item.icon} alt={item.title} />
+                        <img src={item.icon} alt={t(item.title)} />
 
-                        <span>{item.title}</span>
-                        <span>{item.description}</span>
+                        <span>{t(item.title)}</span>
+                        <span>{t(item.description)}</span>
 
                     </Item>
                 )

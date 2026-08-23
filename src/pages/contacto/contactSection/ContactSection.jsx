@@ -22,9 +22,13 @@ import {
     PlantDecoration
 } from "./ContactSection.styles";
 
-import { contactInfo, socialMedia } from "../Contact.data";
+import { ContactConfig } from "../../../config/pages/contact/contactConfig";
+import { useTranslation } from "react-i18next";
 
 const ContactSection = () => {
+
+    const {t} = useTranslation("reachUs");
+
     return (
         <Section>
 
@@ -33,30 +37,30 @@ const ContactSection = () => {
                 <FormCard>
 
                     <FormTitle>
-                        Escríbenos
+                        {t(ContactConfig.contactFormPlainConfig.titleKey)}
                     </FormTitle>
 
                     <FormSubtitle>
-                        Completa el formulario y responderemos lo antes posible.
+                        {t(ContactConfig.contactFormPlainConfig.subtitleKey)}
                     </FormSubtitle>
 
                     <ContactForm>
 
                         <Input
-                            placeholder="Nombre completo"
+                            placeholder={t(ContactConfig.contactFormPlainConfig.placeholdersKey.nameKey)}
                         />
 
                         <Input
-                            placeholder="Correo electrónico"
+                            placeholder={t(ContactConfig.contactFormPlainConfig.placeholdersKey.emailKey)}
                         />
 
                         <Input
-                            placeholder="Asunto"
+                            placeholder={t(ContactConfig.contactFormPlainConfig.placeholdersKey.subjectKey)}
                         />
 
                         <TextArea
                             rows={5}
-                            placeholder="Tu mensaje"
+                            placeholder={t(ContactConfig.contactFormPlainConfig.placeholdersKey.messageKey)}
                         />
 
                         <Checkbox>
@@ -64,14 +68,13 @@ const ContactSection = () => {
                             <input type="checkbox" />
 
                             <span>
-                                Acepto la política de privacidad y el
-                                tratamiento de mis datos.
+                                {t(ContactConfig.contactFormPlainConfig.checkboxKey)}
                             </span>
 
                         </Checkbox>
 
                         <SubmitButton>
-                            Enviar mensaje
+                            {t(ContactConfig.contactFormPlainConfig.buttonKey)}
                         </SubmitButton>
 
                     </ContactForm>
@@ -81,12 +84,12 @@ const ContactSection = () => {
                 <InfoCard>
 
                     <InfoTitle>
-                        Información de contacto
+                        {t(ContactConfig.contactFormPlainConfig.asideTitleKey)}
                     </InfoTitle>
 
                     <InfoList>
 
-                        {contactInfo.map((item) => (
+                        {ContactConfig.contactInfoConfig.map((item) => (
 
                             <InfoItem key={item.id}>
 
@@ -97,11 +100,11 @@ const ContactSection = () => {
                                 <InfoContent>
 
                                     <InfoLabel>
-                                        {item.label}
+                                        {t(item.labelKey)}
                                     </InfoLabel>
 
                                     <InfoValue>
-                                        {item.value}
+                                        {t(item.value)}
                                     </InfoValue>
 
                                 </InfoContent>
@@ -114,7 +117,7 @@ const ContactSection = () => {
 
                     <SocialContainer>
 
-                        {socialMedia.map((item) => (
+                        {ContactConfig.socialMediaConfig.map((item) => (
 
                             <SocialButton
                                 key={item.id}

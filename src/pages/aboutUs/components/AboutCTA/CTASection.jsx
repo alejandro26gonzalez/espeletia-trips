@@ -7,7 +7,12 @@ import {
     CTAButton
 } from "./CTASection.styles";
 
+import { useTranslation } from "react-i18next";
+
 const CTASection = ({ data }) => {
+
+    const {t} = useTranslation("about");
+
     return (
         <CTASectionContainer $background={data.image}>
 
@@ -16,15 +21,15 @@ const CTASection = ({ data }) => {
             <CTAContent>
 
                 <CTATitle>
-                    {data.title}
+                    {t(data.titleKey)}
                 </CTATitle>
 
                 <CTADescription>
-                    {data.description}
+                    {t(data.descriptionKey)}
                 </CTADescription>
 
                 <CTAButton href={data.button.href}>
-                    {data.button.text}
+                    {t(data.button.textKey)}
                 </CTAButton>
 
             </CTAContent>

@@ -1,0 +1,30 @@
+{
+    "bicycles": {
+        "title": "Eco-bikes",
+        "subtitle": "Explore at your own pace and experience the destination on two wheels.",
+        "button": "Adventure on Wheels",
+        "features": {
+            "one": "Bicycles provided by the agency",
+            "two": "The cost depends on the destination and mileage",
+            "three": "Check availability before booking"
+        }
+    },
+    "campings": {
+        "subtitle": "Relax under the stars in exclusive areas of Murillo.",
+        "button": "Natural Connection",
+        "features": {
+            "one": "Safe and natural camping areas",
+            "two": "Equipment included (tent, sleeping pad, and sleeping bag)",
+            "three": "A different experience to connect with the mountains"
+        }
+    },
+    "main": {
+        "eyebrow": "Additional Services",
+        "title": "To complement <0>your adventure</0>",
+        "description": "In addition to our tours, we offer experiences designed for you to enjoy Murillo in a different, comfortable way, completely connected with nature.",
+        "footer": {
+            "text": "Would you like to know availability, rates, or combine any of these services with your tour?",
+            "button": "Request information via WhatsApp"
+        }
+    }
+}

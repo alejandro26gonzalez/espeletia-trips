@@ -8,8 +8,12 @@ import {
     HeroDescription,
     HeroDivider
 } from "./HeroSection.styles";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = ({ data }) => {
+
+    const { t } = useTranslation("about");
+
     return (
         <HeroSectionContainer $background={data.background}>
 
@@ -18,24 +22,22 @@ const HeroSection = ({ data }) => {
             <HeroContent>
 
                 <HeroBadge>
-                    {data.badge}
+                    {t(data.badgeKey)}
                 </HeroBadge>
 
                 <HeroTitle>
-                    {data.title}{" "}
+                    {t(data.titleKey)}{" "}
                     <HeroHighlight>
-                        {data.highlight}
+                        {t(data.highlightKey)}
                     </HeroHighlight>
                 </HeroTitle>
 
                 <HeroDivider />
 
                 <HeroDescription>
-                    {data.description}
+                    {t(data.descriptionKey)}
                 </HeroDescription>
-
             </HeroContent>
-
         </HeroSectionContainer>
     );
 };

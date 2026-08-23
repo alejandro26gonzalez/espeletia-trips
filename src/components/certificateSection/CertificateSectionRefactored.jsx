@@ -18,12 +18,13 @@ import {
     Mountains
 } from "./CertificateSectionRefactored.styles";
 
-import data from "./CertificateSectionRefactored.data";
+import { mainConfig } from "../../config/components/certifications/main";
+import { useTranslation } from "react-i18next";
 import useCertificateModal from "../../hooks/useCertificateModals";
 
 const CertificateSectionRefactored = () => {
 
-    const {infoCards} = data;
+    const { t } = useTranslation("certModal");
 
     const {
         selectedModal,
@@ -39,12 +40,12 @@ const CertificateSectionRefactored = () => {
                     <Leaf src={ICONOS.certificateIcons.mainIcon} alt="Espeletia" />
                     <Line />
                 </Decoration>
-                <h1>Seguro y certificado</h1>
-                <p>Tu tranquilidad es nuestra prioridad. Contamos con aliados y certificaciones que respladan cada experiencia que vivimos juntos.</p>
+                <h1>{t(mainConfig.plainTextConfig.title)}</h1>
+                <p>{t(mainConfig.plainTextConfig.subtitle)}</p>
             </Title>
 
             <CardsContainer>
-                {Object.values(infoCards).map((card) => (
+                {mainConfig.infoCardsConfig.map((card) => (
 
                     <CardCertificate 
                     key={card.id} 
@@ -52,10 +53,10 @@ const CertificateSectionRefactored = () => {
                     >
                         <TopIcon src={card.topicon} alt="Top Icon" />
                         <Logo src={card.logo} alt={card.alt}/>
-                        <Description>{card.description}</Description>
+                        <Description>{t(card.description)}</Description>
                         <CertificateButton>
                             <FiSearch size={20}/>
-                            Ver certificación
+                            {t("mainCertificate.view_cert")}
                         </CertificateButton>
                         <Mountains src={card.fondo} alt="Background" />
                     </CardCertificate>

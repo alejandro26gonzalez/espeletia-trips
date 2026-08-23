@@ -17,8 +17,11 @@ import {
 } from "./CertificationModals.styles";
 
 import useLockBodyScroll from "../../../hooks/useLockBodyScroll";
+import { useTranslation, Trans } from "react-i18next";
 
 const Modal = ({ modalData, onHide }) => {
+
+    const { t } = useTranslation("certModal");
 
     useLockBodyScroll();
 
@@ -30,9 +33,18 @@ const Modal = ({ modalData, onHide }) => {
                 <ModalHeader variant={modalData.variant}>
 
                     <CloseBtn onClick={onHide}>✕</CloseBtn>
-                    <HeaderIcon>🛡️</HeaderIcon>
-                    <ModalTitle>{modalData.title}</ModalTitle>
-                    <ModalSubtitle>{modalData.subtitle}</ModalSubtitle>
+
+                    <HeaderIcon>
+                        {modalData.icon}
+                    </HeaderIcon>
+
+                    <ModalTitle>
+                        {t(`modals.${modalData.id}.title`)}
+                    </ModalTitle>
+
+                    <ModalSubtitle>
+                        {t(`modals.${modalData.id}.subtitle`)}
+                    </ModalSubtitle>
 
                 </ModalHeader>
 
@@ -42,8 +54,17 @@ const Modal = ({ modalData, onHide }) => {
                         modalData.blocks.map((block, index) => (
                             <Block key={index} variant={modalData.variant}>
                                 
-                                <h5>{block.title}</h5>
-                                <p>{block.content}</p>
+                                <h5>{t(`modals.${modalData.id}.blocks.${block.id}.title`)}</h5>
+                                <p>
+                                    <Trans 
+                                        ns="certModal"
+                                        i18nKey={`modals.${modalData.id}.blocks.${block.id}.content`}
+                                        components={[
+                                            <strong />,
+                                            <em />
+                                        ]}
+                                    />
+                                </p>
 
                             </Block>
                         ))
@@ -51,7 +72,7 @@ const Modal = ({ modalData, onHide }) => {
 
                     <CommitmentBox variant={modalData.variant}>
 
-                        <p>{modalData.commitment}</p>
+                        <p>{t(`modals.${modalData.id}.commitment`)}</p>
                         <span>— Equipo Espeletia Trips · Murillo, Tolima</span>
 
                     </CommitmentBox>
@@ -62,8 +83,8 @@ const Modal = ({ modalData, onHide }) => {
 
                     <FooterBrand>Espeletia Trips · Murillo, Tolima</FooterBrand>
                     <FooterRight>
-                        <Pill variant={modalData.variant}>{modalData.footerInfo.pill}</Pill>
-                        <ConfirmBtn variant={modalData.variant} onClick={onHide}>Entendido</ConfirmBtn>
+                        <Pill variant={modalData.variant}>{t(`modals.${modalData.id}.footer.pill`)}</Pill>
+                        <ConfirmBtn variant={modalData.variant} onClick={onHide}>{t(`modals.confirmation`)}</ConfirmBtn>
                     </FooterRight>
 
                 </ModalFooter>

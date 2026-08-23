@@ -9,14 +9,17 @@ import {
     Badge,
     Description,
 } from "./SummaryCard.styles";
+import { useTranslation } from "react-i18next";
 
 const SummaryCard = ({
     icon: Icon,
-    title,
-    badge,
+    titleKey,
+    badgeKey,
     color,
-    description,
+    descriptionKey,
 }) => {
+    const {t} = useTranslation("cancellation");
+
     return (
         <Card>
 
@@ -29,11 +32,11 @@ const SummaryCard = ({
                 <Content>
 
                     <Title>
-                        {title}
+                        {t(titleKey)}
                     </Title>
 
                     <Badge $color={color}>
-                        {badge}
+                        {t(badgeKey)}
                     </Badge>
 
                 </Content>
@@ -42,7 +45,7 @@ const SummaryCard = ({
 
             <Description>
 
-                {description}
+                {t(descriptionKey)}
 
             </Description>
 
@@ -52,10 +55,10 @@ const SummaryCard = ({
 
 SummaryCard.propTypes = {
     icon: PropTypes.elementType.isRequired,
-    title: PropTypes.string.isRequired,
-    badge: PropTypes.string.isRequired,
+    titleKey: PropTypes.string.isRequired,
+    badgeKey: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    descriptionKey: PropTypes.string.isRequired,
 };
 
 export default SummaryCard;

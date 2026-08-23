@@ -1,0 +1,75 @@
+{
+    "hero":{
+        "cards": {
+            "one": "Llámanos",
+            "two": "Correo",
+            "three": "Ubicación"
+        },
+        "plain": {
+            "badge": "CONTACTO",
+            "title": "¿Aún necesitas <0>ayuda?</0>",
+            "description": "Estamos aquí para ti. Escríbenos, llámanos o visítanos. Con gusto te ayudaremos a planear tu próxima aventura."
+        }
+    },
+    "section":{
+        "cards": {
+            "title": "Información de contacto",
+            "one": "Teléfono",
+            "two": "Correo electrónico",
+            "three": "Dirección",
+            "four": {
+                "label": "Horario",
+                "value": "Lunes a Domingo · 7:00 AM - 6:00 PM"
+            }
+        },
+        "plain": {
+            "title": "Escríbenos",
+            "subtitle": "Completa el formulario y responderemos lo antes posible.",
+            "placeholders":{
+                "name": "Nombre completo",
+                "email": "Correo electrónico",
+                "subject": "Asunto",
+                "body": "Tu mensaje",
+                "checkbox": "Acepto la política de privacidad y el tratamiento de mis datos."
+            },
+            "submit": "Enviar mensaje"
+        }
+    },
+    "features":{
+        "plain": {
+            "title": "Estamos para ayudarte",
+            "subtitle": "Queremos que tu experiencia sea inolvidable desde el primer contacto."
+        },
+        "cards": {
+            "one": {
+                "title": "Turismo sostenible",
+                "description": "Cada experiencia está diseñada para proteger el ecosistema del páramo y promover prácticas responsables con la naturaleza."
+            },
+            "two": {
+                "title": "Seguridad garantizada",
+                "description": "Contamos con protocolos, equipos y acompañamiento permanente durante cada recorrido."
+            },
+            "three": {
+                "title": "Guías locales",
+                "description": "Nuestro equipo conoce el territorio, su biodiversidad y la cultura de la región para brindarte una experiencia auténtica."
+            },
+            "four": {
+                "title": "Rutas únicas",
+                "description": "Explora senderos, lagunas y paisajes exclusivos del Parque Nacional Natural Los Nevados."
+            },
+            "five": {
+                "title": "Calidad certificada",
+                "description": "Trabajamos bajo altos estándares de atención y compromiso con el turismo responsable."
+            },
+            "six": {
+                "title": "Experiencias memorables",
+                "description": "Creamos recorridos personalizados para que vivas una aventura inolvidable junto a quienes más quieres."
+            }
+        }
+    },
+    "map":{
+        "title": "Encuéntranos",
+        "subtitle": "Estamos ubicados en Murillo, Tolima, punto de partida para descubrir la magia del Parque Nacional Natural Los Nevados.",
+        "button": "Abrir en Google Maps"
+    }
+}

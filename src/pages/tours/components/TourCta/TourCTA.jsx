@@ -14,10 +14,8 @@ import {
 } from "./TourCTA.styles";
 
 import openWhatsappMessage from "../../../../helpers/openWhatsappMessage";
-
-import IMAGES from "../../../../assets/images";
-
-import { ctaData } from "./TourCTA.data";
+import { useTranslation } from "react-i18next";
+import { ctaDataConfig } from "../../../../config/pages/allTours/cta";
 
 import {
     FiArrowRight,
@@ -26,40 +24,42 @@ import {
 
 const TourCTA = () => {
 
+    const {t} = useTranslation("tour");
+
     return (
 
         <Section>
             <Container>
-                <CTABackground image={IMAGES.tour.main.cta}/>
+                <CTABackground image={ctaDataConfig.background}/>
 
                 <CTAOverlay />
 
                 <Content>
                     <Badge>
-                        {ctaData.badge}
+                        {t(ctaDataConfig.badgeKey)}
                     </Badge>
 
                     <Title>
-                        {ctaData.title}
+                        {t(ctaDataConfig.titleKey)}
                         <Highlight>
                             {" "}
-                            {ctaData.highlight}
+                            {t(ctaDataConfig.highlightKey)}
                         </Highlight>
                     </Title>
 
                     <Description>
-                        {ctaData.description}
+                        {t(ctaDataConfig.descriptionKey)}
                     </Description>
                 </Content>
 
                 <Buttons>
                     <PrimaryButton onClick={openWhatsappMessage}>
                         <FiMessageCircle />
-                        {ctaData.primaryButton}
+                        {t(ctaDataConfig.primaryButtonKey)}
                     </PrimaryButton>
 
                     <SecondaryButton onClick={openWhatsappMessage}>
-                        {ctaData.secondaryButton}
+                        {t(ctaDataConfig.secondaryButtonKey)}
                         <FiArrowRight />
                     </SecondaryButton>
                 </Buttons>

@@ -1,11 +1,4 @@
 import {
-    FiShield,
-    FiCamera,
-    FiUsers,
-    FiFeather
-} from "react-icons/fi";
-
-import {
     FeaturesContainer,
     FeatureCard,
     FeatureIcon,
@@ -14,82 +7,39 @@ import {
     FeatureContent
 } from "./heroStyles/heroFeatures.styles";
 
-const features = [
-
-    {
-        icon: <FiFeather />,
-        title: "Turismo sostenible",
-        description:
-            "Cuidamos lo que amas explorar."
-    },
-
-    {
-        icon: <FiUsers />,
-        title: "Grupos pequeños",
-        description:
-            "Experiencias más cercanas y auténticas."
-    },
-
-    {
-        icon: <FiShield />,
-        title: "Seguridad garantizada",
-        description:
-            "Guías expertos y equipos de primera calidad."
-    },
-
-    {
-        icon: <FiCamera />,
-        title: "Recuerdos inolvidables",
-        description:
-            "Momentos únicos que te acompañarán siempre."
-    }
-
-];
+import { useTranslation } from "react-i18next";
+import { heroConfig } from "../../config/components/hero";
 
 const HeroFeatures = () => {
 
+    const { t } = useTranslation("hero");
+
     return (
-
         <FeaturesContainer>
-
             {
+                heroConfig.map((item) => {
+                    const Icon = item.icon;
+                    return (
+                        <FeatureCard key={item.id}>
+                            <FeatureIcon>
+                                <Icon />
+                            </FeatureIcon>
 
-                features.map((item) => (
+                            <FeatureContent>
+                                <FeatureTitle>
+                                    {t(item.title)}
+                                </FeatureTitle>
 
-                    <FeatureCard key={item.title}>
-
-                        <FeatureIcon>
-
-                            {item.icon}
-
-                        </FeatureIcon>
-
-                        <FeatureContent>
-
-                            <FeatureTitle>
-
-                                {item.title}
-
-                            </FeatureTitle>
-
-                            <FeatureDescription>
-
-                                {item.description}
-
-                            </FeatureDescription>
-
-                        </FeatureContent>
-
-                    </FeatureCard>
-
-                ))
-
-            }
-
+                                <FeatureDescription>
+                                    {t(item.description)}
+                                </FeatureDescription>
+                            </FeatureContent>
+                        </FeatureCard>
+                    )
+                }
+            )}
         </FeaturesContainer>
-
     );
-
 };
 
 export default HeroFeatures;

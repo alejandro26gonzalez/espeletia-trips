@@ -50,7 +50,7 @@ export const HeroOverlay = styled.div`
 export const HeroContainer = styled.div`
     position: relative;
     z-index: 2;
-    width: min(1200px, 92%);
+    width: min(1500px, 92%);
     margin: auto;
     @media (max-width:768px){
         width:94%;
@@ -60,7 +60,7 @@ export const HeroContainer = styled.div`
     }
 `;
 export const HeroContent = styled.div`
-    max-width: 760px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;

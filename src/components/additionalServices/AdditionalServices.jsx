@@ -13,78 +13,63 @@ import {
     FooterText,
     WhatsappButton
 } from "./AdditionalServices.styles";
+import { FiMessageCircle } from "react-icons/fi";
+import { useTranslation, Trans } from "react-i18next";
 
 import openWhatsappMessage from '../../helpers/openWhatsappMessage'
-
-import { additionalServices } from "./AdditionalServices.data";
-
+import { additionalConfigData } from "../../config/components/additional";
 import ServiceCard from "./components/ServiceCard";
-
-import { FiMessageCircle } from "react-icons/fi";
 
 const AdditionalServices = () => {
 
+    const { t } = useTranslation("additional");
+
     return (
         <Section>
-
             <Background />
-
             <Overlay />
-
             <Container>
 
                 <Header>
-
                     <Eyebrow>
-                        Servicios adicionales
+                        {t(additionalConfigData.plainTextConfig.eyebrow)}
                     </Eyebrow>
 
                     <Title>
-                        Para complementar
-                        <Highlight>
-                            tu aventura
-                        </Highlight>
+                        <Trans 
+                            ns="additional"
+                            i18nKey={additionalConfigData.plainTextConfig.title}
+                            components={[
+                                <Highlight />
+                            ]}
+                        />
                     </Title>
 
                     <Description>
-                        Además de nuestros tours, ofrecemos experiencias
-                        pensadas para que disfrutes Murillo de una manera
-                        diferente, cómoda y completamente conectada con la
-                        naturaleza.
+                        {t(additionalConfigData.plainTextConfig.description)}
                     </Description>
-
                 </Header>
 
                 <CardsGrid>
-
-                    {additionalServices.map((service) => (
+                    {additionalConfigData.additionalServicesConfig.map((service) => (
                         <ServiceCard
                             key={service.id}
                             service={service}
                         />
                     ))}
-
                 </CardsGrid>
 
                 <Footer>
-
                     <FooterText>
-                        ¿Quieres conocer disponibilidad, tarifas o combinar
-                        alguno de estos servicios con tu tour?
+                        {t(additionalConfigData.plainTextConfig.footer_text)}
                     </FooterText>
 
                     <WhatsappButton onClick={openWhatsappMessage}>
-
                         <FiMessageCircle />
-
-                        Solicitar información por WhatsApp
-
+                        {t(additionalConfigData.plainTextConfig.footer_button)}
                     </WhatsappButton>
-
                 </Footer>
-
             </Container>
-
         </Section>
     );
 };

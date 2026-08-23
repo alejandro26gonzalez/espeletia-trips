@@ -8,14 +8,14 @@ import {
     Description,
     Divider
 } from "./PrivacyHero.styles";
-
-import IMAGES from "../../../../assets/images";
+import { useTranslation } from "react-i18next";
 
 const PrivacyHero = ({ data }) => {
+    const {t} = useTranslation("privacy");
 
     return (
 
-        <HeroSection $background={IMAGES.privacy.hero}>
+        <HeroSection $background={data.background}>
 
             <Overlay />
 
@@ -24,17 +24,17 @@ const PrivacyHero = ({ data }) => {
                 <HeroContent>
 
                     <Badge>
-                        Privacidad • Transparencia • Confianza
+                        {t(data.badgeKey)}
                     </Badge>
 
                     <Title>
-                        {data.title}
+                        {t(data.titleKey)}
                     </Title>
 
                     <Divider />
 
                     <Description>
-                        {data.description}
+                        {t(data.descriptionKey)}
                     </Description>
 
                 </HeroContent>

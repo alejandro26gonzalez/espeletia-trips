@@ -6,8 +6,12 @@ import {
     HeroTitle,
     HeroDescription,
 } from "./CancellationHero.styles";
+import { useTranslation } from "react-i18next";
+import { cancellationConfig } from "../../../../config/pages/cancellation/cancellationConfig";
 
 const CancellationHero = () => {
+    const {t} = useTranslation("cancellation");
+
     return (
         <HeroContainer>
 
@@ -16,18 +20,15 @@ const CancellationHero = () => {
             <HeroContent>
 
                 <HeroBreadcrumb>
-                    Inicio / Políticas / Cancelaciones y Reembolsos
+                    {t(cancellationConfig.heroConfig.breadcrumbKey)}
                 </HeroBreadcrumb>
 
                 <HeroTitle>
-                    Política de Cancelaciones y Reembolsos
+                    {t(cancellationConfig.heroConfig.titleKey)}
                 </HeroTitle>
 
                 <HeroDescription>
-                    Conoce las condiciones para cancelaciones, reembolsos,
-                    reprogramaciones y demás aspectos relacionados con nuestros
-                    servicios turísticos. Buscamos brindarte total transparencia
-                    antes y durante tu experiencia con Espeletia Trips.
+                    {t(cancellationConfig.heroConfig.descriptionKey)}
                 </HeroDescription>
 
             </HeroContent>

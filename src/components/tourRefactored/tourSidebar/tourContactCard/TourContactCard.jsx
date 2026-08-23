@@ -3,17 +3,17 @@ import {
     Header,
     Title,
     Subtitle,
-
     ContactList,
     ContactItem,
     ContactIcon,
     ContactContent,
     ContactLabel,
     ContactValue,
-
     WhatsAppButton,
     WhatsAppIcon
 } from "./TourContactCard.styles";
+import { useTranslation } from "react-i18next";
+import { toursDetailPlainConfig } from "../../../../config/pages/allTours/allTours";
 
 import {
     FiPhone,
@@ -22,6 +22,8 @@ import {
 } from "react-icons/fi";
 
 const TourContactCard = () => {
+
+    const {t} = useTranslation("tour");
 
     const phoneNumber = "573170566675";
 
@@ -36,11 +38,11 @@ const TourContactCard = () => {
             <Header>
 
                 <Title>
-                    ¿Necesitas ayuda?
+                    {t(toursDetailPlainConfig.contactCard.titleKey)}
                 </Title>
 
                 <Subtitle>
-                    Nuestro equipo está listo para ayudarte antes de reservar tu aventura.
+                    {t(toursDetailPlainConfig.contactCard.subtitleKey)}
                 </Subtitle>
 
             </Header>
@@ -56,7 +58,7 @@ const TourContactCard = () => {
                     <ContactContent>
 
                         <ContactLabel>
-                            Teléfono
+                            {t(toursDetailPlainConfig.contactCard.labels.phoneKey)}
                         </ContactLabel>
 
                         <ContactValue>
@@ -78,7 +80,7 @@ const TourContactCard = () => {
                     <ContactContent>
 
                         <ContactLabel>
-                            Correo
+                            {t(toursDetailPlainConfig.contactCard.labels.emailKey)}
                         </ContactLabel>
 
                         <ContactValue>
@@ -98,11 +100,11 @@ const TourContactCard = () => {
                     <ContactContent>
 
                         <ContactLabel>
-                            Horario
+                            {t(toursDetailPlainConfig.contactCard.labels.hoursKey)}
                         </ContactLabel>
 
                         <ContactValue>
-                            Lun - Dom: 8:00 a.m. - 8:00 p.m.
+                            {t(toursDetailPlainConfig.contactCard.labels.daysKey)}
                         </ContactValue>
 
                     </ContactContent>
@@ -116,11 +118,8 @@ const TourContactCard = () => {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-
                 <WhatsAppIcon />
-
-                Hablar por WhatsApp
-
+                {t(toursDetailPlainConfig.contactCard.buttonKey)}
             </WhatsAppButton>
 
         </Card>

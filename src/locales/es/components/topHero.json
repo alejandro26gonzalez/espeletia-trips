@@ -1,0 +1,19 @@
+{
+    "eyebrow": "VIVE LA MAGIA DE",
+    "subtitle": "Naturaleza, cultura y aventura te esperan en el corazón del Tolima.",
+    "button": "Explorar Tours",
+    "features": {
+        "map": {
+            "title": "Murillo, Tolima",
+            "description": "Destino Auténtico"
+        },
+        "leaf": {
+            "title": "Turismo Sostenible",
+            "description": "Cuidamos lo que amas"
+        },
+        "users": {
+            "title": "Experiencias Únicas",
+            "description": "Recuerdos Inolvidables"
+        }
+    }
+}

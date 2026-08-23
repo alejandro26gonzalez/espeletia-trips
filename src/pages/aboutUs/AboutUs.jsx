@@ -5,11 +5,11 @@ import {
 } from "./AboutUs.styles";
 
 import {
-    aboutHero,
-    aboutStory,
-    values,
-    cta
-} from "./AboutUs.data";
+    aboutHeroConfig,
+    aboutStoryConfig,
+    valuesConfig,
+    ctaConfig
+} from "../../config/pages/aboutUs/aboutUsConfig";
 
 import NavBar from '../../components/NavbarHero/NavbarHero';
 
@@ -27,21 +27,21 @@ const AboutUs = () => {
             <AboutBackground />
 
             <HeroSection
-                data={aboutHero}
+                data={aboutHeroConfig}
             />
             <SectionContainer>
 
 
                 <StorySection
-                    data={aboutStory}
+                    data={aboutStoryConfig}
                 />
 
                 <ValuesSection
-                    values={values}
+                    values={valuesConfig}
                 />
 
                 <CTASection
-                    data={cta}
+                    data={ctaConfig}
                 />
 
             </SectionContainer>

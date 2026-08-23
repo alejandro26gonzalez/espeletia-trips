@@ -1,0 +1,46 @@
+{
+    "hero":{
+        "badge": "ACERCA DE NOSOTROS",
+        "title": "Somos Espeletia Trips",
+        "highlight": "Agencia de Turismo",
+        "description": "Nacimos en Murillo, Tolima, con el propósito de compartir la belleza de nuestro territorio de forma responsable, auténtica y sostenible, conectando a las personas con experiencias inolvidables en el corazón del páramo."
+    },
+    "story":{
+        "badge": "NUESTRA HISTORIA",
+        "title": "Pasión por nuestra tierra",
+        "description": "Somos un equipo local que conoce, ama y protege cada rincón de Murillo. Trabajamos junto a comunidades locales para ofrecer tours que generan impacto positivo, promueven la conservación y fortalecen la economía regional.",
+        "stats": {
+            "one": "Años de experiencia",
+            "two": "Viajeros felices",
+            "three": "Destinos únicos",
+            "four": "Turismo responsable"
+        }
+    },
+    "values": {
+        "badge": "NUESTROS VALORES",
+        "title": "Lo que nos guía",
+        "items": {
+            "one": {
+                "title": "Sostenibilidad",
+                "description": "Cuidamos el páramo y promovemos prácticas responsables en cada tour."
+            },
+            "two":{
+                "title": "Comunidad",
+                "description": "Trabajamos de la mano con habitantes locales y generamos beneficios compartidos."
+            },
+            "three": {
+                "title": "Seguridad",
+                "description": "Priorizamos tu bienestar con guías certificados y rutas seguras."
+            },
+            "four": {
+                "title": "Autenticidad",
+                "description": "Ofrecemos experiencias reales, culturales y transformadoras."
+            }
+        }
+    },
+    "cta":{
+        "title": "Viaja con propósito",
+        "description": "Más que un destino, te invitamos a ser parte de la conservación de un ecosistema único y de las historias que lo hacen especial.",
+        "button": "CONOCE NUESTROS TOURS"
+    }
+}

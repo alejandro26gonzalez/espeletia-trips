@@ -15,8 +15,8 @@ import {
     HeroScrollIndicator
 } from "./ToursHero.styles";
 import openWhatsappMessage from "../../../../helpers/openWhatsappMessage";
-
-import { heroData } from "./ToursHero.data";
+import { useTranslation } from "react-i18next";
+import { heroDataConfig } from "../../../../config/pages/allTours/hero";
 
 import {
     FiArrowRight,
@@ -26,10 +26,12 @@ import {
 
 const ToursHero = ({ onExplore }) => {
 
+    const {t} = useTranslation("tour");
+
     return (
         <HeroSection>
 
-            <HeroBackground image={heroData.image} />
+            <HeroBackground image={heroDataConfig.image} />
 
             <HeroOverlay />
 
@@ -38,30 +40,30 @@ const ToursHero = ({ onExplore }) => {
                 <HeroContent>
 
                     <HeroEyebrow>
-                        {heroData.eyebrow}
+                        {t(heroDataConfig.eyebrowKey)}
                     </HeroEyebrow>
 
                     <HeroTitle>
-                        {heroData.title}
+                        {t(heroDataConfig.titleKey)}
                         <HeroHighlight>
                             {" "}
-                            {heroData.highlight}
+                            {heroDataConfig.highlight}
                         </HeroHighlight>
                     </HeroTitle>
 
                     <HeroSubtitle>
-                        {heroData.subtitle}
+                        {t(heroDataConfig.subtitleKey)}
                     </HeroSubtitle>
 
                     <HeroDescription>
-                        {heroData.description}
+                        {t(heroDataConfig.descriptionKey)}
                     </HeroDescription>
 
                     <HeroButtons>
 
                         <PrimaryButton onClick={onExplore}>
 
-                            Explorar experiencias
+                            {t(heroDataConfig.eyebrowKey)}
 
                             <FiArrowRight />
 
@@ -71,7 +73,7 @@ const ToursHero = ({ onExplore }) => {
 
                             <FiMessageCircle />
 
-                            Hablar con un asesor
+                            {t(heroDataConfig.secondaryButtonKey)}
 
                         </SecondaryButton>
 

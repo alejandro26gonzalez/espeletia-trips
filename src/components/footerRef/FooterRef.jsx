@@ -34,21 +34,20 @@ import {
     Copyright,
     BottomLinks
 } from "./FooterRef.styles";
+import { useTranslation } from "react-i18next";
 
-import { footerData } from "./FooterRef.data";
+import { footerDataConfig } from "../../config/components/footer";
 
 const Footer = () => {
+
+    const { t } = useTranslation("footer");
 
     return (
 
         <FooterWrapper>
-
             <FooterBackground />
-
             <FooterOverlay />
-
             <FooterContent>
-
                 <FooterGrid>
 
                     {/* =========================
@@ -56,31 +55,23 @@ const Footer = () => {
                     ========================= */}
 
                     <BrandColumn>
-
                         <BrandHeader>
-
                             <BrandLogo
-                                src={footerData.brand.logo}
+                                src={footerDataConfig.brandInfoConfig.logo}
                                 alt="Espeletia Trips"
                             />
-
                             <LogoTitle>Espeletia</LogoTitle>
-
                             <LogoSubtitle>Trips</LogoSubtitle>
-
                         </BrandHeader>
 
                         <BrandDescription>
-
-                            {footerData.brand.description}
-
+                            {t(footerDataConfig.brandInfoConfig.key)}
                         </BrandDescription>
 
                         <ResponsibleSeal
-                            src={footerData.brand.responsibleSeal}
+                            src={footerDataConfig.brandInfoConfig.responsibleSeal}
                             alt="Turismo Responsable"
                         />
-
                     </BrandColumn>
 
                     {/* =========================
@@ -88,39 +79,25 @@ const Footer = () => {
                     ========================= */}
 
                     <FooterColumn>
-
                         <FooterTitle>
-
-                            Explora
-
+                            {t(footerDataConfig.columnTitlesConfig.first)}
                         </FooterTitle>
 
                         <FooterList>
-
-                            {footerData.exploreLinks.map((item) => {
+                            {footerDataConfig.exploreLinksConfig.map((item) => {
 
                                 const Icon = item.icon;
-
                                 return (
 
-                                    <FooterItem key={item.title}>
-
-                                        <FooterLink href={item.href}>
-
+                                    <FooterItem key={item.id}>
+                                        <FooterLink href={item.path}>
                                             <Icon />
-
-                                            {item.title}
-
+                                            {t(item.titleKey)}
                                         </FooterLink>
-
                                     </FooterItem>
-
                                 );
-
                             })}
-
                         </FooterList>
-
                     </FooterColumn>
 
                     {/* =========================
@@ -128,73 +105,45 @@ const Footer = () => {
                     ========================= */}
 
                     <FooterColumn>
-
                         <FooterTitle>
-
-                            Información de contacto
-
+                            {t(footerDataConfig.columnTitlesConfig.second)}
                         </FooterTitle>
 
                         {
-
-                            footerData.contactInfo.map((item) => {
+                            footerDataConfig.contactInfoConfig.map((item) => {
 
                                 const Icon = item.icon;
-
                                 return (
-
-                                    <ContactItem key={item.label}>
-
+                                    <ContactItem key={item.id}>
                                         <ContactIcon>
-
                                             <Icon />
-
                                         </ContactIcon>
 
                                         <ContactContent>
-
                                             <strong>
-
-                                                {item.label}
-
+                                                {t(item.labelKey)}
                                             </strong>
-
                                             {
 
                                                 Array.isArray(item.value)
-
                                                     ? item.value.map((line) => (
-
                                                         <span key={line}>
-
                                                             {line}
-
                                                         </span>
-
                                                     ))
 
                                                     : (
 
                                                         <span>
-
                                                             {item.value}
-
                                                         </span>
-
                                                     )
-
                                             }
-
                                         </ContactContent>
-
                                     </ContactItem>
-
                                 );
-
                             })
-
                         }
-
                     </FooterColumn>
 
                     {/* =========================
@@ -202,62 +151,38 @@ const Footer = () => {
                     ========================= */}
 
                     <FooterColumn>
-
                         <FooterTitle>
-
-                            Síguenos
-
+                            {t(footerDataConfig.columnTitlesConfig.third)}
                         </FooterTitle>
 
                         <SocialLinks>
-
                             {
-
-                                footerData.socialLinks.map((item) => {
-
+                                footerDataConfig.socialLinksConfig.map((item) => {
                                     const Icon = item.icon;
-
                                     return (
-
                                         <SocialButton
-                                            key={item.title}
+                                            key={item.titleKey}
                                             href={item.href}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-
                                             <Icon />
-
                                             <div>
-
                                                 <strong>
-
-                                                    {item.title}
-
+                                                    {item.titleKey}
                                                 </strong>
 
                                                 <span>
-
                                                     {item.subtitle}
-
                                                 </span>
-
                                             </div>
-
                                             <FiExternalLink />
-
                                         </SocialButton>
-
                                     );
-
                                 })
-
                             }
-
                         </SocialLinks>
-
                     </FooterColumn>
-
                 </FooterGrid>
 
                 {/* =========================
@@ -265,43 +190,27 @@ const Footer = () => {
                 ========================= */}
 
                 <FooterBottom>
-
                     <Copyright>
-
-                        © 2026 Espeletia Trips Murillo.
-                        Todos los derechos reservados.
-
+                        {t(footerDataConfig.columnTitlesConfig.copyright)}
                     </Copyright>
 
                     <BottomLinks>
-
                         {
-
-                            footerData.bottomLinks.map((item) => (
+                            footerDataConfig.bottomLinksConfig.map((item) => (
 
                                 <FooterLink
-                                    key={item.title}
+                                    key={item.titleKey}
                                     href={item.href}
                                 >
-
-                                    {item.title}
-
+                                    {t(item.titleKey)}
                                 </FooterLink>
-
                             ))
-
                         }
-
                     </BottomLinks>
-
                 </FooterBottom>
-
             </FooterContent>
-
         </FooterWrapper>
-
     );
-
 };
 
 export default Footer;

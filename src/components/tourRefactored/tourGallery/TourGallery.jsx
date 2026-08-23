@@ -1,23 +1,23 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { toursDetailPlainConfig } from "../../../config/pages/allTours/allTours";
 
 import {
     Section,
     Header,
     Title,
     Description,
-
     GalleryGrid,
-
     MainImage,
     SecondaryImage,
-
     ViewGalleryButton
-
 } from "./TourGallery.styles";
 
 import GalleryModal from "./galleryModal/GalleryModal";
 
 const TourGallery = ({ gallery, previewCount = 5 }) => {
+
+    const {t} = useTranslation("tour");
 
     const [currentImage, setCurrentImage] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
@@ -40,15 +40,11 @@ const TourGallery = ({ gallery, previewCount = 5 }) => {
             <Header>
 
                 <Title>
-
-                    Momentos de la experiencia
-
+                    {t(toursDetailPlainConfig.gallery.titleKey)}
                 </Title>
 
                 <Description>
-
-                    Explora algunos de los increíbles paisajes que encontrarás durante esta aventura.
-
+                    {t(toursDetailPlainConfig.gallery.descriptionKey)}
                 </Description>
 
             </Header>
@@ -81,9 +77,7 @@ const TourGallery = ({ gallery, previewCount = 5 }) => {
             <ViewGalleryButton
             onClick={() => handleOpenModal(0)}
             >
-
-                Ver todas las fotografías
-
+                {t(toursDetailPlainConfig.gallery.buttonKey)}
             </ViewGalleryButton>
 
             <GalleryModal 

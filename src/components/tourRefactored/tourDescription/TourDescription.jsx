@@ -7,76 +7,68 @@ import {
     HighlightGrid,
     HighlightItem,
     HighlightIcon,
-    HighlightText
+    HighlightText,
+    HighlightTitle,
+    HighlightDescription
 } from "./TourDescription.styles";
-
-import { FiCheckCircle } from "react-icons/fi";
+import ConlusionCard from "./components/ConclusionCard";
+import { useTranslation } from "react-i18next";
+import { tourConfig } from "../../../config/pages/allTours/allTours";
 
 const TourDescription = ({ description }) => {
+
+    const {t} = useTranslation("tour");
 
     return (
 
         <Section>
 
             <Header>
-
                 <Title>
-
-                    Sobre esta experiencia
-
+                    {t(tourConfig.toursDetailPlainConfig.description.title)}
                 </Title>
-
             </Header>
 
             <Intro>
-
-                {description.introduction}
-
+                {t(description.introductionKey)}
             </Intro>
 
             <Content>
-
-                {description.content}
-
+                {t(description.contentKey)}
             </Content>
 
             <HighlightGrid>
-
                 {
+                    description.highlights.map((item,index)=>{
+                        const Icon = item.icon;
 
-                    description.highlights.map((item,index)=>(
+                        return (
+                            <HighlightItem key={index}>
+                                <HighlightIcon>
+                                    <Icon/>
+                                </HighlightIcon>
 
-                        <HighlightItem
-                            key={index}
-                        >
+                                <HighlightText>
+                                    <HighlightTitle>
+                                        {t(item.titleKey)}
+                                    </HighlightTitle>
 
-                            <HighlightIcon>
-
-                                <FiCheckCircle/>
-
-                            </HighlightIcon>
-
-                            <HighlightText>
-
-                                {/* arreglar */}
-
-                                <p>{item.title}</p>
-                                
-
-                            </HighlightText>
-
-                        </HighlightItem>
-
-                    ))
-
+                                    <HighlightDescription>
+                                        {t(item.descriptionKey)}
+                                    </HighlightDescription>
+                                </HighlightText>
+                            </HighlightItem>
+                        )
+                    })
                 }
-
             </HighlightGrid>
 
+            <ConlusionCard>
+                {t(description.conclusionKey)}
+            </ConlusionCard>
+
         </Section>
-
     );
-
 };
 
 export default TourDescription;

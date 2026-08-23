@@ -8,10 +8,13 @@ import {
     FeatureTitle,
     FeatureDescription
 } from "./ToursFeatures.styles";
-
-import { features } from "./ToursFeatures.data";
+import { featuresConfig } from "../../../../config/pages/allTours/hero";
+import { useTranslation } from "react-i18next";
 
 const ToursFeatures = () => {
+
+    const {t} = useTranslation("tour");
+
     return (
         <FeaturesSection>
 
@@ -19,7 +22,7 @@ const ToursFeatures = () => {
 
                 <FeaturesGrid>
 
-                    {features.map((feature) => {
+                    {featuresConfig.map((feature) => {
 
                         const Icon = feature.icon;
 
@@ -28,19 +31,17 @@ const ToursFeatures = () => {
                             <FeatureCard key={feature.id}>
 
                                 <FeatureIcon>
-
                                     <Icon />
-
                                 </FeatureIcon>
 
                                 <FeatureContent>
 
                                     <FeatureTitle>
-                                        {feature.title}
+                                        {t(feature.titleKey)}
                                     </FeatureTitle>
 
                                     <FeatureDescription>
-                                        {feature.description}
+                                        {t(feature.descriptionKey)}
                                     </FeatureDescription>
 
                                 </FeatureContent>

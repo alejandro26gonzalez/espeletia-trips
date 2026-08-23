@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { FiCheck, FiMapPin, FiCheckCircle } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
+import { tourConfig } from "../../../config/pages/allTours/allTours";
 
 import {
     Section,
@@ -43,12 +45,14 @@ const TourItinerary = ({
         return () => clearInterval(interval);
     }, [tips]);
 
+    const {t} = useTranslation("tour");
+
     return (
 
         <Section>
             <Content>
                 <Timeline>
-                    <h2>Itinerario</h2>
+                    <h2>{t(tourConfig.toursDetailPlainConfig.itinerary.titleKey)}</h2>
                     {
                         itinerary?.map((item, index) => (
                             <TimelineItem key={index}>
@@ -62,7 +66,7 @@ const TourItinerary = ({
                                     </TimelineTime>
 
                                     <TimelineDescription>
-                                        {item.activity}
+                                        {t(item.activityKey)}
                                     </TimelineDescription>
                                 </TimelineContent>
                             </TimelineItem>
@@ -73,22 +77,22 @@ const TourItinerary = ({
                 <Sidebar>
                     <EquipmentCard>
                         <EquipmentTitle>
-                            ¿Qué llevar?
+                            {t(tourConfig.toursDetailPlainConfig.itinerary.titleRightKey)}
                         </EquipmentTitle>
 
                         <EquipmentList>
                             {
                                 equipment?.map((group,index)=>(
                                     <div key={index}>
-                                        <h4>{group.title}</h4>
+                                        <h4>{t(group.titleKey)}</h4>
                                         <EquipmentList>
                                             {
-                                                group.items.map((item, i) => (
+                                                group.itemsKey.map((item, i) => (
                                                     <EquipmentItem key={i}>
                                                         <EquipmentIcon>
                                                             <FiCheck />
                                                         </EquipmentIcon>
-                                                        {item}
+                                                        {t(item)}
                                                     </EquipmentItem>
                                                 ))
                                             }
@@ -106,11 +110,11 @@ const TourItinerary = ({
                                 </TipIcon>
 
                                 <TipTitle>
-                                    {tips[currentTip].title}
+                                    {t(tips[currentTip].titleKey)}
                                 </TipTitle>
 
                                 <TipDescription>
-                                    {tips[currentTip].description}
+                                    {t(tips[currentTip].descriptionKey)}
                                 </TipDescription>
                             </TipsCard>
                         )

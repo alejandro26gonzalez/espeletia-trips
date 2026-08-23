@@ -9,25 +9,27 @@ import {
 import { FiChevronUp } from "react-icons/fi";
 import useScrollingTop from '../../hooks/useScrollingTop';
 import scrollToTop from '../../helpers/scrollToTop'
+import { useTranslation } from "react-i18next";
 
-
-import { socialLinks } from "./FloatingSocialBar.data";
+import { floatingSocialbarConfig } from "../../config/components/socialbar";
 
 const FloatingSocialBar = () => {
+
+    const { t } = useTranslation("socialbar");
 
     const isScrolled = useScrollingTop(300);
 
     const actions = [...(
         isScrolled ? [{
             id: "Volver arriba",
-            title: "Volver arriba",
-            subtitle: "Ir al inicio",
+            title: t(floatingSocialbarConfig.actionsText.actionsTitle),
+            subtitle: t(floatingSocialbarConfig.actionsText.actionsSubtitle),
             icon: FiChevronUp,
             color: "#8DBB42",
             onClick: scrollToTop
         }]
         : []
-    ), ...socialLinks];
+    ), ...floatingSocialbarConfig.socialLinks];
 
     const handleClick = (e, social) => {
         if (social.onClick) {
@@ -61,7 +63,7 @@ const FloatingSocialBar = () => {
                             </SocialTitle>
 
                             <SocialSubtitle>
-                                {social.subtitle}
+                                {t(social.subtitleKey)}
                             </SocialSubtitle>
                         </SocialCard>
                     </SocialItem>

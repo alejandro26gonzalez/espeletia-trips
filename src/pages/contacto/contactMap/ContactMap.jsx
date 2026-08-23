@@ -13,22 +13,25 @@ import {
 } from "./ContactMap.styles";
 
 import { FiArrowUpRight } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
-import { contactMap } from "../Contact.data";
+import { ContactConfig } from "../../../config/pages/contact/contactConfig";
 
 const ContactMap = () => {
+
+    const {t} = useTranslation("reachUs");
+
     return (
         <Section>
 
             <Header>
 
                 <Title>
-                    Encuéntranos
+                    {t(ContactConfig.contactMapConfig.titleKey)}
                 </Title>
-
+                    {t(ContactConfig.contactMapConfig.subtitleKey)}
                 <Subtitle>
-                    Estamos ubicados en Murillo, Tolima, punto de partida para
-                    descubrir la magia del Parque Nacional Natural Los Nevados.
+                    
                 </Subtitle>
 
             </Header>
@@ -36,7 +39,7 @@ const ContactMap = () => {
             <MapWrapper>
 
                 <MapFrame
-                    src={contactMap.embed}
+                    src={ContactConfig.contactMapConfig.embed}
                     loading="lazy"
                     allowFullScreen
                     referrerPolicy="no-referrer-when-downgrade"
@@ -45,19 +48,19 @@ const ContactMap = () => {
                 <FloatingCard>
 
                     <CardTitle>
-                        {contactMap.title}
+                        {ContactConfig.contactMapConfig.title}
                     </CardTitle>
 
                     <CardText>
-                        {contactMap.address}
+                        {ContactConfig.contactMapConfig.address}
                     </CardText>
 
                     <DirectionsButton
-                        href={contactMap.url}
+                        href={ContactConfig.contactMapConfig.url}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Abrir en Google Maps
+                        {t(ContactConfig.contactMapConfig.buttonKey)}
 
                         <FiArrowUpRight />
 

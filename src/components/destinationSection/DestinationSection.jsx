@@ -1,5 +1,6 @@
 import DestinationCard from "./card/DestinationCard";
-import { destinations } from "./destinations";
+import { useTranslation } from "react-i18next";
+import { destinationConfig } from "../../config/components/destination";
 import ICONOS from "../../assets/icons";
 import {
     Title,
@@ -12,37 +13,34 @@ import {
 
 const DestinationSection = () => {
 
+    const { t } = useTranslation("destination");
+
     return (
         <Section >
-
             <Title>
                 <Decoration>
                     <Line />
-                    <strong>NUESTROS</strong>
+                    <strong>{t(destinationConfig.titlesConfig.part1)}</strong>
                     <Leaf src={ICONOS.certificateIcons.mainIcon} alt="Espeletia" />
-                    <strong>DESTINOS</strong>
+                    <strong>{t(destinationConfig.titlesConfig.part2)}</strong>
                     <Line />
                 </Decoration>
-                <h1>Planes turísticos que ofrecemos</h1>
-                <p>Descubre lugares únicos, vive experiencias inolvidables y conéctate con la magia de la naturaleza.</p>
+                <h1>{t(destinationConfig.titlesConfig.subtitle)}</h1>
+                <p>{t(destinationConfig.titlesConfig.paragraph)}</p>
             </Title>
 
             <CardsGrid>
-                {destinations.map((destination) => (
+                {destinationConfig.cardsInfoConfig.map((destination) => (
                     <DestinationCard 
                         key={destination.id}
                         link={destination.link}
                         image={destination.image}
                         icon={destination.icon}
                         titulo={destination.title}
-                        descripcion={destination.description}
+                        descripcion={t(destination.description)}
                     />
                 ))}
             </CardsGrid>
-
-
-
-
         </Section>
     )
 }

@@ -19,7 +19,7 @@ const TourSidebar = ({ tour }) => {
             <SidebarStack>
 
                 <TourPricingCard
-                    prices={tour.prices}
+                    data={tour}
                     name={tour.name}
                 />
 

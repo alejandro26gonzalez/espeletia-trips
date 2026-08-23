@@ -1,0 +1,29 @@
+{
+    "hero_background_alt": "Moorland Landscape",
+    "hero_content": {
+        "top_badge": "Adventure • Nature • Connection",
+        "heading": "YOUR NEXT <0>ADVENTURE</0>",
+        "subtitle": "It's waiting for you",
+        "description": "Explore the moorland, connect with nature, <0>and live transformative experiences</0>.",
+        "cta_button": "Explore Tours"
+    },
+    "features": {
+        "sustainability": {
+            "title": "Sustainable Tourism",
+            "description": "We take care of what you love to explore."
+        },
+        "groups": {
+            "title": "Small Groups",
+            "description": "Closer and more authentic experiences."
+        },
+        "security": {
+            "title": "Guaranteed Safety",
+            "description": "Expert guides and top-quality equipment."
+        },
+        "memories": {
+            "title": "Unforgettable Memories",
+            "description": "Unique moments that will stay with you forever."
+        }
+    },
+    "stats_data": "More than 500 travelers have experienced Espeletia Trips."
+}

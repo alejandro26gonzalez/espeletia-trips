@@ -11,67 +11,47 @@ import {
     StatsLabel
 } from "./testimoniosStyles/stats.styles";
 
+import { useTranslation } from "react-i18next";
+import { statsConfig } from "../../config/components/testimonios";
+
 const TestimonialStats = ({ side }) => {
 
     const isLeft = side === "left";
+    const {t} = useTranslation("testimonios");
 
     return (
 
         <StatsCard>
-
             <StatsOverlay />
 
             <StatsIcon>
-
                 {
                     isLeft ?
-
                         <FiUsers />
-
                         :
-
                         <FiHeart />
-
                 }
-
             </StatsIcon>
 
             <StatsNumber>
-
                 {
-
                     isLeft ?
-
                         "+500"
-
                         :
-
                         "4.9/5"
-
                 }
-
             </StatsNumber>
 
             <StatsLabel>
-
                 {
-
                     isLeft ?
-
-                        "Viajeros satisfechos"
-
+                        t(statsConfig.leftKey)
                         :
-
-                        "Calificación promedio"
-
+                        t(statsConfig.rightKey)
                 }
-
             </StatsLabel>
-
         </StatsCard>
-
     );
-
 };
 
 export default TestimonialStats;

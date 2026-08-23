@@ -1,0 +1,46 @@
+{
+    "hero":{
+        "badge": "ABOUT US",
+        "title": "We are Espeletia Trips",
+        "highlight": "Travel Agency",
+        "description": "We were founded in Murillo, Tolima, with the purpose of sharing the beauty of our region in a responsible, authentic, and sustainable way, connecting people with unforgettable experiences in the heart of the páramo."
+    },
+    "story":{
+        "badge": "OUR STORY",
+        "title": "Passion for our land",
+        "description": "We are a local team that knows, loves, and protects every corner of Murillo. We work alongside local communities to offer tours that generate a positive impact, promote conservation, and strengthen the regional economy.",
+        "stats": {
+            "one": "Years of experience",
+            "two": "Happy travelers",
+            "three": "Unique destinations",
+            "four": "Responsible tourism"
+        }
+    },
+    "values": {
+        "badge": "OUR VALUES",
+        "title": "What guide us",
+        "items": {
+            "one": {
+                "title": "Sustainability",
+                "description": "We care for the páramo and promote responsible practices on every tour."
+            },
+            "two":{
+                "title": "Community",
+                "description": "We work hand in hand with local residents and generate shared benefits."
+            },
+            "three": {
+                "title": "Safety",
+                "description": "We prioritize your well-being with certified guides and safe routes."
+            },
+            "four": {
+                "title": "Authenticity",
+                "description": "We offer real, cultural, and transformative experiences."
+            }
+        }
+    },
+    "cta":{
+        "title": "Travel with purpose",
+        "description": "More than a destination, we invite you to be part of the conservation of a unique ecosystem and the stories that make it special.",
+        "button": "DISCOVER OUR TOURS"
+    }
+}

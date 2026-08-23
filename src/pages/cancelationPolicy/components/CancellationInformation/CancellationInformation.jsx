@@ -1,8 +1,9 @@
-import cancellationInformation from "../../Cancellation.data.jsx";
+import { cancellationConfig } from "../../../../config/pages/cancellation/cancellationConfig.js";
 
 import CancellationCard from "../CancellationCard/CancellationCard";
 import ImportantNotice from "../ImportantNotice/ImportantNotice.jsx";
 import CancellationSummary from "../CancellationSummary/CancellationSummary.jsx";
+import { useTranslation } from "react-i18next";
 
 import {
     Section,
@@ -15,6 +16,8 @@ import {
 } from "./CancellationInformation.styles";
 
 const CancellationInformation = () => {
+    const {t} = useTranslation("cancellation");
+
     return (
         <Section>
 
@@ -25,18 +28,15 @@ const CancellationInformation = () => {
                 <Header>
 
                     <Badge>
-                        Información legal
+                        {t(cancellationConfig.plainTextConfig.information.badgeKey)}
                     </Badge>
 
                     <Title>
-                        Política de Cancelaciones y Reembolsos
+                        {t(cancellationConfig.plainTextConfig.information.titleKey)}
                     </Title>
 
                     <Description>
-                        Consulta nuestras políticas de cancelación,
-                        reembolso y reprogramación para conocer tus
-                        derechos y responsabilidades antes de reservar
-                        cualquiera de nuestras experiencias.
+                        {t(cancellationConfig.plainTextConfig.information.descriptionKey)}
                     </Description>
 
                 </Header>
@@ -45,12 +45,11 @@ const CancellationInformation = () => {
 
                 <Cards>
 
-                    {cancellationInformation.map((item) => (
+                    {cancellationConfig.infoConfig.map((item) => (
 
                         <CancellationCard
-                            key={item.title}
-                            title={item.title}
-                            content={item.content}
+                            key={item.id}
+                            {...item}
                         />
 
                     ))}

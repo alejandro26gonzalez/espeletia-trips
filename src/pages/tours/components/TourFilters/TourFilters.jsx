@@ -3,18 +3,21 @@ import {
     FilterButton
 } from "./TourFilters.styles";
 
-import { filters } from "./TourFilters.data";
+import { useTranslation } from "react-i18next";
+import { sectionConfig } from "../../../../config/pages/allTours/section";
 
 const TourFilters = ({
     activeFilter,
     onFilterChange
 }) => {
 
+    const {t} = useTranslation("tour");
+
     return (
 
         <FiltersContainer>
 
-            {filters.map((filter) => (
+            {sectionConfig.filtersConfig.map((filter) => (
 
                 <FilterButton
                     key={filter.id}
@@ -23,19 +26,12 @@ const TourFilters = ({
                     }
                     onClick={() => onFilterChange(filter.value)}
                 >
-
                     <span />
-
-                    {filter.label}
-
+                    {t(filter.labelKey)}
                 </FilterButton>
-
             ))}
-
         </FiltersContainer>
-
     );
-
 };
 
 export default TourFilters;

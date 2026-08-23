@@ -1,6 +1,5 @@
 import Modal from "./Modal";
-
-import { infoModal } from "./CertificationModals.data";
+import { infoModalConfig } from "../../../config/components/certifications/modal";
 
 const CertificationModals = ({
   selectedModal,
@@ -10,7 +9,7 @@ const CertificationModals = ({
 
   return (
     <Modal 
-      modalData={infoModal[selectedModal]}
+      modalData={infoModalConfig[selectedModal]}
       onHide={closeModal}
     />
   );

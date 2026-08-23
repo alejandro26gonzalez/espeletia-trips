@@ -12,16 +12,20 @@ import {
     FeatureIcon,
     BottomButton
 } from "../AdditionalServices.styles";
+import { useTranslation } from "react-i18next";
 
 const ServiceCard = ({ service }) => {
+
     const BadgeIcon = service.badge;
+
+    const { t } = useTranslation("additional");
 
     return (
         <Card>
 
             <Image
                 src={service.image}
-                alt={service.title}
+                alt={t(service.title)}
             />
 
             <Gradient />
@@ -33,11 +37,11 @@ const ServiceCard = ({ service }) => {
                 </Badge>
 
                 <ServiceTitle>
-                    {service.title}
+                    {t(service.title)}
                 </ServiceTitle>
 
                 <Subtitle>
-                    {service.subtitle}
+                    {t(service.subtitle)}
                 </Subtitle>
 
                 <Divider />
@@ -55,7 +59,7 @@ const ServiceCard = ({ service }) => {
                                 </FeatureIcon>
 
                                 <span>
-                                    {feature.text}
+                                    {t(feature.text)}
                                 </span>
 
                             </Feature>
@@ -65,7 +69,7 @@ const ServiceCard = ({ service }) => {
                 </Features>
 
                 <BottomButton>
-                    {service.button}
+                    {t(service.button)}
                 </BottomButton>
 
             </Content>

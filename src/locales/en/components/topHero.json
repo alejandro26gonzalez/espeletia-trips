@@ -1,0 +1,19 @@
+{
+    "eyebrow": "EXPERIENCE THE MAGIC OF",
+    "subtitle": "Nature, culture, and adventure await you in the heart of Tolima.",
+    "button": "Explore Tours",
+    "features": {
+        "map": {
+            "title": "Murillo, Tolima",
+            "description": "Authentic Destination"
+        },
+        "leaf": {
+            "title": "Sustainable Tourism",
+            "description": "We care for what you love"
+        },
+        "users": {
+            "title": "Unique Experiences",
+            "description": "Unforgettable Memories"
+        }
+    }
+}

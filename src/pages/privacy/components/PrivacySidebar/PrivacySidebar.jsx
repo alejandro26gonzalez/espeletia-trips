@@ -18,12 +18,14 @@ import {
     ContactButton,
     ContactIcon
 } from "./PrivacySidebar.styles";
+import { useTranslation } from "react-i18next";
 
 const PrivacySidebar = ({
     activeTab,
     privacy,
     terms
 }) => {
+    const {t} = useTranslation("privacy");
 
     const currentData =
         activeTab === "privacy"
@@ -35,17 +37,13 @@ const PrivacySidebar = ({
             ? privacy.sections
             : terms.cards;
 
-    console.log({
-        activeTab
-    })
-
     return (
 
         <SidebarContainer>
             <SidebarCard>
                 <SidebarTitle>
                     <FileText size={18}/>
-                    {currentData.title}
+                    {t(currentData.title)}
                 </SidebarTitle>
 
                 <SidebarList>
@@ -55,7 +53,7 @@ const PrivacySidebar = ({
                                 key={index}
                             >
                                 <Bullet/>
-                                {item.title}
+                                {t(item.titleKey)}
                             </SidebarItem>
                         ))
                     }
@@ -65,17 +63,17 @@ const PrivacySidebar = ({
             <SidebarCard>
                 <InfoTitle>
                     <Calendar size={18}/>
-                    Última actualización
+                    {t(privacy.subCard.titleKey)}
                 </InfoTitle>
 
                 <InfoText>
-                    Julio de 2026
+                    {t(privacy.subCard.dateKey)}
                 </InfoText>
             </SidebarCard>
 
             <SidebarCard>
                 <InfoTitle>
-                    ¿Necesitas ayuda?
+                    {t(privacy.subCard.questionKey)}
                 </InfoTitle>
 
                 <Divider/>

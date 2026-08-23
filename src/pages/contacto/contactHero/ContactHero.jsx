@@ -13,10 +13,13 @@ import {
     ContactLabel,
     ContactValue
 } from "./ContactHero.styles";
-
-import { heroContactInfo } from "../Contact.data";
+import { useTranslation, Trans } from "react-i18next";
+import { ContactConfig } from "../../../config/pages/contact/contactConfig";
 
 const ContactHero = () => {
+    
+    const{t} = useTranslation("reachUs");
+
     return (
         <HeroContainer>
 
@@ -25,24 +28,26 @@ const ContactHero = () => {
             <HeroContent>
 
                 <HeroBadge>
-                    CONTACTO
+                    {t(ContactConfig.heroPlainTextConfig.badgeKey)}
                 </HeroBadge>
 
                 <HeroTitle>
-                    ¿Aún necesitas
-                    <HeroHighlight>
-                        ayuda?
-                    </HeroHighlight>
+                    <Trans 
+                    ns="reachUs"
+                    i18nKey={ContactConfig.heroPlainTextConfig.titleKey}
+                    components={[
+                        <HeroHighlight />
+                    ]}
+                    />
                 </HeroTitle>
 
                 <HeroDescription>
-                    Estamos aquí para ti. Escríbenos, llámanos o visítanos.
-                    Con gusto te ayudaremos a planear tu próxima aventura.
+                    {t(ContactConfig.heroPlainTextConfig.descriptionKey)}
                 </HeroDescription>
 
                 <ContactInfoContainer>
 
-                    {heroContactInfo.map((item) => (
+                    {ContactConfig.heroContactInfoConfig.map((item) => (
                         <ContactCard key={item.id}>
 
                             <ContactIcon>
@@ -52,7 +57,7 @@ const ContactHero = () => {
                             <ContactText>
 
                                 <ContactLabel>
-                                    {item.label}
+                                    {t(item.labelKey)}
                                 </ContactLabel>
 
                                 <ContactValue>

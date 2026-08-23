@@ -2,48 +2,44 @@ import {
     FiHeart
 } from "react-icons/fi";
 
-import {
+import { Trans } from "react-i18next";
 
+import {
     StatsContainer,
     HeartIcon,
     StatsText,
     Stars,
     Rating
-
 } from "./heroStyles/heroStats.styles";
 
 const HeroStats = () => {
 
     return (
+        <StatsContainer>
 
-<StatsContainer>
+            <HeartIcon>
+                <FiHeart />
+            </HeartIcon>
 
-    <HeartIcon>
-        <FiHeart />
-    </HeartIcon>
+            <StatsText>
+                <Trans 
+                    ns="hero"
+                    i18nKey={"stats_data"}
+                    components={[
+                        <strong />
+                    ]}
+                />
+            </StatsText>
 
-    <StatsText>
+            <Stars>
+                ★★★★★
+            </Stars>
 
-        Más de <strong>500 viajeros</strong> han vivido la experiencia Espeletia Trips.
-
-    </StatsText>
-
-    <Stars>
-
-        ★★★★★
-
-    </Stars>
-
-    <Rating>
-
-        4.9/5
-
-    </Rating>
-
-</StatsContainer>
-
+            <Rating>
+                4.9/5
+            </Rating>
+        </StatsContainer>
     );
-
 };
 
 export default HeroStats;

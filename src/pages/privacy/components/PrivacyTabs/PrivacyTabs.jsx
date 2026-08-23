@@ -10,29 +10,30 @@ import {
     TabIcon,
     TabLabel
 } from "./PrivacyTabs.styles";
+import { useTranslation } from "react-i18next";
 
 const PrivacyTabs = ({
     tabs,
+    plainText,
     activeTab,
     onChange
 }) => {
+    const {t} = useTranslation("privacy");
 
     return (
 
         <Section>
             <Header>
                 <Subtitle>
-                    DOCUMENTACIÓN
+                    {t(plainText.subtitleKey)}
                 </Subtitle>
 
                 <Title>
-                    Explora la información
+                    {t(plainText.titleKey)}
                 </Title>
 
                 <Description>
-                    Cambia entre nuestra Política de Privacidad y los
-                    Términos y Condiciones para conocer cómo protegemos
-                    tu información y las reglas que rigen nuestros servicios.
+                    {t(plainText.descriptionKey)}
                 </Description>
 
                 <Divider />
@@ -61,7 +62,7 @@ const PrivacyTabs = ({
                                 <TabLabel
                                     $active={active}
                                 >
-                                    {tab.title}
+                                    {t(tab.titleKey)}
                                 </TabLabel>
                             </TabButton>
                         );

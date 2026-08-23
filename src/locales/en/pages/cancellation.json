@@ -1,0 +1,117 @@
+{
+    "hero": {
+        "bread": "Home / Policies / Cancellations and Refunds",
+        "title": "Cancellation and Refund Policy",
+        "description": "Learn about the conditions for cancellations, refunds, rescheduling, and other aspects related to our tourism services. We seek to provide you with total transparency before and during your experience with Espeletia Trips."
+    },
+    "content": {
+        "information": {
+            "title": "Legal information",
+            "badge": "Cancellation and Refund Policy",
+            "description": "Review our cancellation, refund, and rescheduling policies to understand your rights and responsibilities before booking any of our experiences."
+        },
+        "notice": {
+            "title": "Important",
+            "description": "Policies may vary for high-mountain tours, expeditions, or private experiences.",
+            "description2": "This information will be confirmed before finalizing your booking."
+        },
+        "sections": {
+            "general": {
+                "title": "<0>General Overview</0>",
+                "content": "<0>This policy regulates the applicable terms in case of withdrawal, right of rescission, or cancellation of tourism services contracted with Espeletia Trips.</0>"
+            },
+            "retracto": {
+                "title": "<0>ARTICLE 1. Right of Rescission</0>",
+                "fields": {
+                "term": {
+                    "label": "<0>Time Limit</0>",
+                    "value": "<0>5 business days after purchase.</0>"
+                },
+                "condition": {
+                    "label": "<0>Condition</0>",
+                    "value": "<0>As long as the service has not started.</0>"
+                },
+                "refund": {
+                    "label": "<0>Refund</0>",
+                    "value": "<0>100% of the amount paid within 30 calendar days.</0>"
+                }
+                }
+            },
+            "userCancellation": {
+                "title": "<0>ARTICLE 2. Cancellation by the User</0>",
+                "table": {
+                "advance": "<0>Advance Notice</0>",
+                "refund": "<0>Refund Percentage</0>",
+                "rows": {
+                    "moreThan15": "<0>More than 15 days</0>",
+                    "between8And14": "<0>Between 8 and 14 days</0>",
+                    "between2And7": "<0>Between 2 and 7 days</0>",
+                    "lessThan48": "<0>Less than 48 hours / No Show</0>",
+                    "noRefund": "<0>No refund applies</0>"
+                }
+                },
+                "note": "<0>Note: </0>Cancellations must be notified to the agency in writing."
+            },
+            "agencyCancellation": {
+                "title": "<0>ARTICLE 3. Cancellation by the Agency</0>",
+                "items": {
+                "reschedule": "<0>Rescheduling at no cost.</0>",
+                "refund": "<0>Full monetary refund.</0>"
+                }
+            },
+            "exceptionalSituations": {
+                "title": "<0>ARTICLE 4. Exceptional Situations</0>",
+                "content": "<0>In case of natural factors or extraordinary situations (volcanic activity, road closures, landslides, fires, among others), costs already incurred for transportation, meals, lodging, guiding, and insurance policies will not be refundable.</0>"
+            },
+            "reservationTransfer": {
+                "title": "<0>ARTICLE 5. Transfer of Reservation</0>",
+                "items": {
+                "deadline": "<0>Allowed up to 48 hours before the tour.</0>",
+                "notification": "<0>Must be notified in writing.</0>",
+                "requirements": "<0>The new traveler must meet all requirements.</0>"
+                }
+            },
+            "unusedServices": {
+                "title": "<0>ARTICLE 6. Unused Services</0>",
+                "intro": "<0>There will be no refund for:</0>",
+                "items": {
+                "userDecision": "<0>Services not used by user decision.</0>",
+                "lateArrival": "<0>Late arrivals.</0>",
+                "altitudeSickness": "<0>Altitude sickness.</0>",
+                "healthProblems": "<0>Traveler health issues.</0>"
+                }
+            },
+            "contact": {
+                "title": "<0>Do you have questions about this policy?</0>",
+                "intro": "<0>For more information or requests regarding cancellations and refunds, you can reach out to us:</0>"
+            }
+        },
+        "summary": {
+            "badge": "Quick Info",
+            "title": "Policy Summary",
+            "description": "Quickly check the general cancellation and refund conditions before reviewing the full details of each article.",
+            "cards": {
+                "item1": {
+                    "title": "Cancellation over 15 days in advance",
+                    "badge": "90% refund",
+                    "description": "Cancel more than 15 days in advance and receive 90% of the amount paid."
+                },
+                "item2": {
+                    "title": "Between 8 and 14 days",
+                    "badge": "70% refund",
+                    "description": "You will receive 70% of the booking value."
+                },
+                "item3": {
+                    "title": "Between 2 and 7 days",
+                    "badge": "50% refund",
+                    "description": "50% of the amount paid will be refunded."
+                },
+                "item4": {
+                    "title": "Extreme weather",
+                    "badge": "Rescheduling",
+                    "description": "If weather conditions prevent the tour from taking place, you will be able to reschedule."
+                }
+            }
+        }
+    }
+}

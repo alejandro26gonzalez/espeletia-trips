@@ -7,6 +7,8 @@ import {
 } from "react-icons/fi";
 
 import IMAGES from "../../assets/images";
+import { useTranslation, Trans } from "react-i18next";
+import { videoConfig } from "../../config/components/video";
 
 import {
     CardBack,
@@ -25,65 +27,31 @@ import {
 
 const VideoCTARefactored = () => {
 
-    const instagram =
-        "https://www.instagram.com/p/DSNEujljI8e/";
+    const { t } = useTranslation("video");
 
     return (
 
         <Container>
-
             <BackgroundMountains
-                src={IMAGES.componentes.videoSection.background}
+                src={videoConfig.phone.background}
             />
 
             <LeftSide>
-
-                <CardBack
-                    rotate="-18deg"
-                    left="-70px"
-                    top="90px"
-                >
-                    <img
-                        src={IMAGES.componentes.videoSection.backCard1}
-                        alt=""
-                    />
-                </CardBack>
-
-                <CardBack
-                    rotate="-6deg"
-                    left="30px"
-                    top="20px"
-                >
-                    <img
-                        src={IMAGES.componentes.videoSection.backCard2}
-                        alt=""
-                    />
-                </CardBack>
-
-                <CardBack
-                    rotate="10deg"
-                    right="-20px"
-                    top="35px"
-                >
-                    <img
-                        src={IMAGES.componentes.videoSection.backCard3}
-                        alt=""
-                    />
-                </CardBack>
-
-                <CardBack
-                    rotate="22deg"
-                    right="-80px"
-                    top="110px"
-                >
-                    <img
-                        src={IMAGES.componentes.videoSection.backCard4}
-                        alt=""
-                    />
-                </CardBack>
+                {videoConfig.cards.map((card) => (
+                    <CardBack
+                    key={card.id}
+                    rotate={card.rotate}
+                    left={card.left}
+                    right={card.right}
+                    top={card.top}
+                    >
+                        <img src={card.image}
+                        alt="" 
+                        />
+                    </CardBack>
+                ))}
 
                 <Phone>
-
                     <video
                         autoPlay
                         muted
@@ -91,88 +59,61 @@ const VideoCTARefactored = () => {
                         playsInline
                     >
                         <source
-                            src={IMAGES.componentes.videoSection.video}
+                            src={videoConfig.phone.video}
                             type="video/mp4"
                         />
                     </video>
-
                 </Phone>
-
             </LeftSide>
 
             <RightSide>
 
                 <Badge>
-                    EXPERIENCIAS QUE TRANSFORMAN
+                    {t(videoConfig.texts.badgeKey)}
                 </Badge>
 
                 <Title>
-                    Viaja por la vía
-                    <br />
-                    <span>más linda</span>
+                    <Trans 
+                    ns="video"
+                    i18nKey={videoConfig.texts.titleKey}
+                    components={[
+                        <br />,
+                        <span />
+                    ]}
+                    />
                 </Title>
 
                 <Description>
-
-                    Conéctate con la magia del Nevado del Ruiz,
-                    sus paisajes, su gente y cada aventura
-                    que te espera en el camino.
-
+                    {t(videoConfig.texts.descriptionKey)}
                 </Description>
 
                 <Features>
-
-                    <Feature>
-
-                        <FiMap />
-
-                        <span>
-                            Paisajes inolvidables
-                        </span>
-
-                    </Feature>
-
-                    <Feature>
-
-                        <FiUsers />
-
-                        <span>
-                            Encuentros que inspiran
-                        </span>
-
-                    </Feature>
-
-                    <Feature>
-
-                        <FiFeather />
-
-                        <span>
-                            Naturaleza que transforma
-                        </span>
-
-                    </Feature>
-
+                    {
+                        videoConfig.features.map((feature) => {
+                            const Icon = feature.icon;
+                            return (
+                                <Feature>
+                                    <Icon />
+                                    <span>
+                                        {t(feature.textKey)}
+                                    </span>
+                                </Feature>
+                            )
+                        })
+                    }
                 </Features>
 
                 <InstagramButton
-                    href={instagram}
+                    href={videoConfig.instagram}
                     target="_blank"
                 >
-
                     <FiInstagram />
-
-                    Ver video completo en Instagram
-
+                    {t(videoConfig.texts.instagramButtonKey)}
                     <FiArrowRight />
-
                 </InstagramButton>
-
             </RightSide>
-
         </Container>
-
     );
-
 };
 
 export default VideoCTARefactored;

@@ -20,11 +20,14 @@ import {
     ContactContainer,
     ContactItem
 } from "./Accordion.styles";
+import { useTranslation } from "react-i18next";
 
 const Accordion = ({
     item,
     defaultOpen = false
 }) => {
+
+    const {t} = useTranslation("privacy");
 
     const [open, setOpen] = useState(defaultOpen);
 
@@ -43,7 +46,7 @@ const Accordion = ({
                 </IconContainer>
 
                 <Title>
-                    {item.title}
+                    {t(item.titleKey)}
                 </Title>
 
                 <Arrow
@@ -57,17 +60,17 @@ const Accordion = ({
                 open && (
                     <AccordionBody>
                         {
-                            item.content?.map((text,index)=>(
+                            item.contentKey?.map((text,index)=>(
                                 <Paragraph key={index}>
-                                    {text}
+                                    {t(text)}
                                 </Paragraph>
                             ))
                         }
 
                         {
-                            item.note && (
+                            t(item.noteKey) && (
                                 <Note>
-                                    {item.note}
+                                    {t(item.noteKey)}
                                 </Note>
                             )
                         }

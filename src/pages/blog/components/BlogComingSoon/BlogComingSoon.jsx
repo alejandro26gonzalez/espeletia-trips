@@ -4,9 +4,8 @@ import {
     Mail
 } from "lucide-react";
 
-import {
-    BLOG_DATA
-} from "../../data/Blog.data";
+import { blogConfig } from "../../../../config/pages/blog/blogConfig";
+import { useTranslation } from "react-i18next";
 
 import {
     Section,
@@ -26,14 +25,9 @@ import IMAGES from "../../../../assets/images";
 
 const BlogComingSoon = () => {
 
-    const navigate = useNavigate();
+    const {t} = useTranslation("blog");
 
-    const {
-        title,
-        description,
-        primaryButton,
-        secondaryButton
-    } = BLOG_DATA;
+    const navigate = useNavigate();
 
     return (
 
@@ -50,26 +44,26 @@ const BlogComingSoon = () => {
             />
             <Content>
                 <Badge>
-                    EXPLORANDO NUEVAS HISTORIAS
+                    {t(blogConfig.mainTitleKey)}
                 </Badge>
 
                 <Title>
-                    {title}
+                    {t(blogConfig.titleKey)}
                 </Title>
 
                 <Description>
-                    {description}
+                    {t(blogConfig.descriptionKey)}
                 </Description>
 
                 <Buttons>
                     <PrimaryButton onClick={() => navigate("/tours")}>
-                        {primaryButton}
+                        {t(blogConfig.primaryButtonKey)}
                         <ArrowRight size={18}/>
                     </PrimaryButton>
 
                     <SecondaryButton>
                         <Mail size={18}/>
-                        {secondaryButton}
+                        {t(blogConfig.secondaryButtonKey)}
                     </SecondaryButton>
                 </Buttons>
             </Content>

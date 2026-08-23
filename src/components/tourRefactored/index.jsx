@@ -5,6 +5,7 @@ import TourItinerary from "./tourItinerary/TourItinerary";
 import TourSidebar from "./tourSidebar/TourSidebar";
 import TourBenefits from "./tourBenefits/TourBenefits";
 import NavbarHero from "../NavbarHero/NavbarHero";
+import AdditionalCards from "./addSantaIsabel/AdditionalCards";
 
 import {
     PageContainer,
@@ -19,6 +20,8 @@ const TourRefactored = ({ tour, images}) => {
         return <h2>Tour no encontrado.</h2>
     }
 
+    const isSantaIsabel = tour.id === 6;
+
     return (
         <PageContainer>
 
@@ -28,9 +31,6 @@ const TourRefactored = ({ tour, images}) => {
             tour={tour}
             />
 
-            {console.log(tour)}
-
-
             <ContentContainer>
 
                 <MainContent>
@@ -38,6 +38,10 @@ const TourRefactored = ({ tour, images}) => {
                     <TourDescription 
                     description={tour.description}
                     />
+
+                    {isSantaIsabel && (
+                        <AdditionalCards />
+                    )}
 
                     <TourGallery 
                     gallery={images.gallery}

@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { tours } from "../pages/tours/tours.data";
+import { toursDetailConfig as tours } from "../config/pages/allTours/allTours";
 
 const shuffle = (array) => {
     const copy = [...array];

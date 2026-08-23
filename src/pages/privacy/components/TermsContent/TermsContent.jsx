@@ -9,19 +9,21 @@ import {
     CardTitle,
     CardDescription
 } from "./TermsContent.styles";
+import { useTranslation } from "react-i18next";
 
 const TermsContent = ({ data }) => {
+    const {t} = useTranslation("privacy");
 
     return (
 
         <Section>
             <Header>
                 <Title>
-                    {data.title}
+                    {t(data.titleKey)}
                 </Title>
 
                 <Description>
-                    {data.description}
+                    {t(data.descriptionKey)}
                 </Description>
             </Header>
 
@@ -39,11 +41,11 @@ const TermsContent = ({ data }) => {
                                 </IconWrapper>
 
                                 <CardTitle>
-                                    {card.title}
+                                    {t(card.titleKey)}
                                 </CardTitle>
 
                                 <CardDescription>
-                                    {card.description}
+                                    {t(card.descriptionKey)}
                                 </CardDescription>
                             </Card>
                         );

@@ -1,0 +1,48 @@
+{
+    "titles": {
+        "t_1": "Responsible Tourism",
+        "t_2": "Guaranteed Quality",
+        "t_3": "Safety First",
+        "t_4": "Social Commitment"
+    },
+    "texts": {
+        "t_1": "We promote sustainable practices that protect our environment.",
+        "t_2": "We adhere to high standards to offer you unforgettable experiences.",
+        "t_3": "Certified protocols for your peace of mind on every adventure.",
+        "t_4": "We support local communities and strengthen our region."
+    },
+    "badge": "A COMMITMENT THAT SETS US APART",
+    "main": {
+        "title": "Certified in <0>ecotourism and sustainability</0>",
+        "description": "We prioritize nature and instill a sense of <0>belonging</0> in new travelers."
+    },
+    "form": {
+        "title": "We'll call you <0>for free</0>",
+        "description": "Please fill out the form so we can contact you <0>for free</0>",
+        "boxes": {
+            "email": {
+                "label": "Email",
+                "placeholder": "Enter your email address"
+            },
+            "name": {
+                "label": "Name",
+                "placeholder": "Enter your name"
+            },
+            "phone": {
+                "label": "Phone number",
+                "placeholder": "Enter your best phone number"
+            }
+        },
+        "checkbox": "I authorize the processing of my personal data"
+    },
+    "modals": {
+        "submit": {
+            "sending": "Sending...",
+            "confirmed": "We'll call you"
+        },
+        "success": {
+            "initial": "Thank you for your interest!",
+            "ack": "We have successfully received your information. We’ll be in touch with you very soon."
+        }
+    }
+}

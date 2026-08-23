@@ -11,18 +11,23 @@ import {
     ValueDescription
 } from "./ValuesSection.styles";
 
+import { useTranslation } from "react-i18next";
+
 const ValuesSection = ({ values }) => {
+
+    const {t} = useTranslation("about");
+
     return (
         <ValuesSectionContainer>
 
             <ValuesHeader>
 
                 <ValuesBadge>
-                    {values.badge}
+                    {t(values.badgeKey)}
                 </ValuesBadge>
 
                 <ValuesTitle>
-                    {values.title}
+                    {t(values.titleKey)}
                 </ValuesTitle>
 
                 <ValuesDivider />
@@ -30,41 +35,25 @@ const ValuesSection = ({ values }) => {
             </ValuesHeader>
 
             <ValuesGrid>
-
                 {values.items.map((item) => {
-
                     const Icon = item.icon;
-
                     return (
-
                         <ValueCard key={item.id}>
-
                             <ValueIcon>
-
                                 <Icon />
-
                             </ValueIcon>
 
                             <ValueTitle>
-
-                                {item.title}
-
+                                {t(item.titleKey)}
                             </ValueTitle>
 
                             <ValueDescription>
-
-                                {item.description}
-
+                                {t(item.descriptionKey)}
                             </ValueDescription>
-
                         </ValueCard>
-
                     );
-
                 })}
-
             </ValuesGrid>
-
         </ValuesSectionContainer>
     );
 };

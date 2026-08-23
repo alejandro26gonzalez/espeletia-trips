@@ -10,11 +10,13 @@ import {
     NoticeTitle,
     NoticeDescription,
     MountainDecoration,
-} from "./ImprotantNotice.styles";
-
-import IMAGES from "../../../../assets/images";
+} from "./ImportantNotice.styles";
+import { useTranslation } from "react-i18next";
+import { cancellationConfig } from "../../../../config/pages/cancellation/cancellationConfig";
 
 const ImportantNotice = () => {
+    const {t} = useTranslation("cancellation");
+
     return (
         <NoticeContainer>
 
@@ -29,16 +31,15 @@ const ImportantNotice = () => {
                 <NoticeText>
 
                     <NoticeTitle>
-                        Importante
+                        {t(cancellationConfig.plainTextConfig.importantNotice.titleKey)}
                     </NoticeTitle>
 
                     <NoticeDescription>
-                        Las políticas pueden variar en tours de alta montaña,
-                        expediciones o experiencias privadas.
+                        {t(cancellationConfig.plainTextConfig.importantNotice.descriptionKey)}
                     </NoticeDescription>
 
                     <NoticeDescription>
-                        Esta información se confirmará antes de finalizar tu reserva.
+                        {t(cancellationConfig.plainTextConfig.importantNotice.descriptionKey2)}
                     </NoticeDescription>
 
                 </NoticeText>
@@ -46,7 +47,7 @@ const ImportantNotice = () => {
             </NoticeContent>
 
             <MountainDecoration
-                src={IMAGES.helpers.cancellation.mountain}
+                src={cancellationConfig.plainTextConfig.importantNotice.decorator}
                 alt=""
             />
 

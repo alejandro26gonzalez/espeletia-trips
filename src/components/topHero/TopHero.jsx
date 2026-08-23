@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import {
     FiMapPin,
     FiUsers,
@@ -23,15 +24,17 @@ import {
     FeatureDescription
 } from "./topHero.styles";
 
-import { heroData } from "./topHero.data";
+import { heroDataConfig } from "../../config/components/topHero";
 
 const TopHero = () => {
 
     const navigate = useNavigate();
 
+    const { t } = useTranslation("topHero");
+
     return (
 
-        <HeroSection background={heroData.background}> 
+        <HeroSection background={heroDataConfig.background}> 
 
             <Overlay />
 
@@ -40,75 +43,52 @@ const TopHero = () => {
                 <HeroContent>
 
                     <Eyebrow>
-                        {heroData.eyebrow}
+                        {t(heroDataConfig.eyebrow)}
                     </Eyebrow>
 
                     <Title>
-
-                        {heroData.title.map((line) => (
+                        {heroDataConfig.title.map((line) => (
                             <span key={line}>{line}</span>
                         ))}
-
                     </Title>
 
                     <Subtitle>
-                        {heroData.subtitle}
+                        {t(heroDataConfig.subtitle)}
                     </Subtitle>
 
                     <CTAButton onClick={() => navigate("/tours")}>
-
                         <FiArrowRight />
-
-                        {heroData.button}
-
+                        {t(heroDataConfig.button)}
                     </CTAButton>
 
                 </HeroContent>
-
             </HeroContainer>
 
             <BottomFeatures>
-
-                {heroData.features.map((feature) => (
+                {heroDataConfig.features.map((feature) => (
 
                     <Feature key={feature.title}>
 
                         <FeatureIcon>
-
                             {feature.icon === "map" && <FiMapPin />}
-
                             {feature.icon === "leaf" && <FiLeaf />}
-
                             {feature.icon === "users" && <FiUsers />}
-
                         </FeatureIcon>
 
                         <FeatureText>
-
                             <FeatureTitle>
-
-                                {feature.title}
-
+                                {t(feature.title)}
                             </FeatureTitle>
 
                             <FeatureDescription>
-
-                                {feature.description}
-
+                                {t(feature.description)}
                             </FeatureDescription>
-
                         </FeatureText>
-
                     </Feature>
-
                 ))}
-
             </BottomFeatures>
-
         </HeroSection>
-
     );
-
 };
 
 export default TopHero;

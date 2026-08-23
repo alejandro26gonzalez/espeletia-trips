@@ -28,6 +28,9 @@ import {
     FiStar
 } from "react-icons/fi";
 
+import { useTranslation } from "react-i18next";
+import { toursSectionPlainConfig } from "../../../../config/pages/allTours/section";
+
 import { useNavigate } from "react-router-dom";
 
 const TourCard = ({ tour }) => {
@@ -37,6 +40,8 @@ const TourCard = ({ tour }) => {
     const handleNavigate = () => {
         navigate(`/tours/${tour.slug}`);
     };
+
+    const {t} = useTranslation("tour");
 
     return (
 
@@ -49,9 +54,9 @@ const TourCard = ({ tour }) => {
                     alt={tour.title}
                 />
                 <CardOverlay />
-                {tour.badge && (
+                {t(tour.badgeKey) && (
                     <CardBadge>
-                        {tour.badge}
+                        {t(tour.badgeKey)}
                     </CardBadge>
                 )}
 
@@ -75,30 +80,30 @@ const TourCard = ({ tour }) => {
                 </CardTitle>
 
                 <CardDescription>
-                    {tour.shortDescription}
+                    {t(tour.shortDescriptionKey)}
                 </CardDescription>
 
                 <CardInfo>
                     <InfoItem>
                         <FiClock />
-                        {tour.duration}
+                        {t(tour.durationKey)}
                     </InfoItem>
 
                     <InfoItem>
                         <FiTrendingUp />
-                        {tour.difficulty}
+                        {t(tour.difficultyKey)}
                     </InfoItem>
 
                     <InfoItem>
                         <FiUsers />
-                        {tour.people}
+                        {t(tour.peopleKey)}
                     </InfoItem>
                 </CardInfo>
 
                 <CardFooter>
                     <PriceContainer>
                         <PriceLabel>
-                            Desde
+                            {t(toursSectionPlainConfig.priceLabelKey)}
                         </PriceLabel>
 
                         <Price>
@@ -107,7 +112,7 @@ const TourCard = ({ tour }) => {
                     </PriceContainer>
 
                     <ExploreButton>
-                        Ver experiencia
+                        {t(toursSectionPlainConfig.buttonKey)}
                         <FiArrowRight />
                     </ExploreButton>
                 </CardFooter>

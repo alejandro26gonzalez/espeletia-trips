@@ -2,9 +2,9 @@ import {
     FiArrowRight,
     FiMap
 } from "react-icons/fi";
+import { useTranslation, Trans } from "react-i18next";
 
 import {
-
     HeroGrid,
     LeftColumn,
     TopBadge,
@@ -18,10 +18,11 @@ import {
     ImageWrapper,   
     RouteDecoration,
     Marker
-
 } from "./heroStyles/heroContent.styles";
 
 const HeroContent = () => {
+
+    const { t } = useTranslation("hero");
 
     return (
 
@@ -30,74 +31,57 @@ const HeroContent = () => {
             <LeftColumn>
 
                 <TopBadge>
-
                     <FiMap />
-
                     <span>
-                        Aventura • Naturaleza • Conexión
+                        {t("hero_content.top_badge")}
                     </span>
-
                 </TopBadge>
 
                 <HeroHeading>
 
                     <Title>
-
-                        TU PRÓXIMA
-
-                        <Highlight>
-
-                            AVENTURA
-
-                        </Highlight>
-
+                        <Trans 
+                            ns="hero"
+                            i18nKey="hero_content.heading"
+                            components={[
+                                <Highlight />
+                            ]}
+                        />
                     </Title>
 
                     <Subtitle>
-
-                        Te está esperando
-
+                        {t("hero_content.subtitle")}
                     </Subtitle>
 
                 </HeroHeading>
 
                 <Description>
-
-                    Explora el páramo, conecta con la naturaleza
-                    y vive <strong>experiencias que te transforman.</strong>
-
+                    <Trans 
+                        ns="hero"
+                        i18nKey="hero_content.description"
+                        components={[
+                            <strong />
+                        ]}
+                    />
                 </Description>
 
                 <CTAButton type="button" to='/tours'>
-
                     <span>
-
-                        Explorar Tours
-
+                        {t("hero_content.cta_button")}
                     </span>
-
                     <FiArrowRight />
-
                 </CTAButton>
 
             </LeftColumn>
 
             <RightColumn>
-
                 <ImageWrapper>
-
                     <RouteDecoration />
-
                     <Marker />
-
                 </ImageWrapper>
-
             </RightColumn>
-
         </HeroGrid>
-
     );
-
 };
 
 export default HeroContent;

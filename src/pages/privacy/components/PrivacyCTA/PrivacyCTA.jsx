@@ -15,10 +15,13 @@ import {
     SecondaryButton,
     Plant
 } from "./PrivacyCTA.styles";
+import { useTranslation } from "react-i18next";
 
 import IMAGES from "../../../../assets/images";
 
 const PrivacyCTA = ({ data }) => {
+
+    const {t} = useTranslation("privacy");
 
     return (
 
@@ -26,7 +29,7 @@ const PrivacyCTA = ({ data }) => {
             <BackgroundDecoration />
 
             <Plant
-                src={IMAGES.helpers.privacy.plant}
+                src={data.background}
                 alt="Frailejón"
             />
             <Content>
@@ -35,16 +38,16 @@ const PrivacyCTA = ({ data }) => {
                 </Badge>
 
                 <Title>
-                    {data.title}
+                    {t(data.titleKey)}
                 </Title>
 
                 <Description>
-                    {data.description}
+                    {t(data.descriptionKey)}
                 </Description>
 
                 <Actions>
                     <PrimaryButton>
-                        Contáctanos
+                        {t(data.buttonKey)}
                         <ArrowRight
                             size={20}
                         />
@@ -54,7 +57,7 @@ const PrivacyCTA = ({ data }) => {
                         <House
                             size={18}
                         />
-                        Inicio
+                        {t(data.homeKey)}
                     </SecondaryButton>
                 </Actions>
             </Content>

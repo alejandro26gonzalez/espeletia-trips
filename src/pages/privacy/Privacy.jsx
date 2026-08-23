@@ -1,8 +1,5 @@
 import { useState } from "react";
-
-import {
-    PRIVACY_PAGE_DATA
-} from "./data/Privacy.data";
+import { privacyConfig } from "../../config/pages/privacy/privacyConfig";
 
 import PrivacyHero from "./components/PrivacyHero/PrivacyHero";
 import PrivacyTabs from "./components/PrivacyTabs/PrivacyTabs";
@@ -28,13 +25,12 @@ const Privacy = () => {
     const {
         hero,
         tabs,
-        highlights,
+        plainTextTabs,
         privacy,
         terms,
-        cta
-    } = PRIVACY_PAGE_DATA;
-
-
+        cta,
+        highlights
+    } = privacyConfig;
 
     return (
 
@@ -47,11 +43,13 @@ const Privacy = () => {
             <PrivacyWrapper>
                 <PrivacyTabs
                     tabs={tabs}
+                    plainText={plainTextTabs}
                     activeTab={activeTab}
                     onChange={setActiveTab}
                 />
                 <PrivacyHighlights
                     items={highlights}
+                    plainText={plainTextTabs}
                 />
 
                 <ContentGrid>

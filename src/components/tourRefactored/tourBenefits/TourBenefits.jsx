@@ -8,16 +8,19 @@ import {
     Subtitle
 } from "./TourBenefits.styles";
 
-import { benefits } from "./TourBenefits.data";
+import { useTranslation } from "react-i18next";
+import { tourConfig } from "../../../config/pages/allTours/allTours";
 
 const TourBenefits = () => {
+
+    const {t} = useTranslation("tour");
 
     return (
 
         <Section>
             <Grid>
                 {
-                    benefits.map((benefit)=>{
+                    tourConfig.benefitsConfig.map((benefit)=>{
                         const Icon = benefit.icon;
                         return(
                             <BenefitCard
@@ -29,11 +32,11 @@ const TourBenefits = () => {
 
                                 <TextContainer>
                                     <Title>
-                                        {benefit.title}
+                                        {t(benefit.titleKey)}
                                     </Title>
 
                                     <Subtitle>
-                                        {benefit.subtitle}
+                                        {t(benefit.subtitleKey)}
                                     </Subtitle>
                                 </TextContainer>
                             </BenefitCard>

@@ -1,0 +1,48 @@
+{
+    "titles": {
+        "t_1": "Turismo Responsable",
+        "t_2": "Calidad Garantizada",
+        "t_3": "Seguridad Primero",
+        "t_4": "Compromiso Social"
+    },
+    "texts": {
+        "t_1": "Promovemos prácticas sostenibles que cuidan nuestro entorno.",
+        "t_2": "Cumplimos con altos estándares para ofrecerte experiencias inolvidables.",
+        "t_3": "Protocolos certificados para tu tranquilidad en cada aventura.",
+        "t_4": "Apoyamos a comunidades locales y fortalecemos nuestra región."
+    },
+    "badge": "COMPROMISO QUE NOS CERTIFICA",
+    "main": {
+        "title": "Certificados en <0>ecoturismo y sostenibilidad</0>",
+        "description": "Priorizamos la naturaleza e infundamos el sentimiento de <0>pertenencia</0> a los nuevos viajeros."
+    },
+    "form": {
+        "title": "Te llamamos <0>gratis</0>",
+        "description": "Por favor llena el formulario para poderte contactar <0>gratis</0>",
+        "boxes": {
+            "email": {
+                "label": "Correo electrónico",
+                "placeholder": "Ingresa tu correo electrónico"
+            },
+            "name": {
+                "label": "Nombre",
+                "placeholder": "Ingresa tu nombre"
+            },
+            "phone": {
+                "label": "Número de tele´fono",
+                "placeholder": "Ingresa el mejor número de teléfono"
+            }
+        },
+        "checkbox": "Autorizo el tratamiento de mis datos personales"
+    },
+    "modals": {
+        "submit": {
+            "sending": "Enviando...",
+            "confirmed": "Te llamamos"
+        },
+        "success": {
+            "initial": "¡Gracias por tu interés!",
+            "ack": "Hemos recibido tu información correctamente. Muy pronto nos pondremos en contacto contigo."
+        }
+    }
+}

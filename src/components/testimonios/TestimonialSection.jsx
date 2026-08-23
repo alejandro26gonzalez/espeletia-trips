@@ -1,8 +1,9 @@
-import { testimonials } from "./testimonialData";
 import TestimonialStats from "./TestimonialStats";
 import TestimonialCard from './TestimonialCard'
 import TestimonialFeatures from './TestimonialFeatures'
 import useSliding from "../../hooks/useSlidingTestimonial";
+import { useTranslation } from "react-i18next";
+import { testimonioConfig } from "../../config/components/testimonios";
 import {
     Section,
     Header,
@@ -14,76 +15,57 @@ import {
     Dot
 } from "./testimoniosStyles/section.styles";
 
-
 const TestimonialSection = () => {
+
+    const { t } = useTranslation("testimonios");
 
     const {
         currentIndex,
-        currentItem: testimonial,
+        currentItem: testimonio,
         nextSlide,
         previousSlide,
         goToSlide
-    } = useSliding(testimonials)
+    } = useSliding(testimonioConfig.avatarsConfig)
 
     return (
         <Section>
 
             <Header>
-
                 <SmallTitle>
-
-                    EXPERIENCIAS REALES
-
+                    {t(testimonioConfig.plainTextConfig.smallText)}
                 </SmallTitle>
 
                 <Title>
-
-                    Esto es lo que ya han vivido otros clientes
-
+                    {t(testimonioConfig.plainTextConfig.title)}
                 </Title>
 
                 <Subtitle>
-
-                    Tú puedes ser el siguiente
-
+                    {t(testimonioConfig.plainTextConfig.subtitle)}
                 </Subtitle>
-
             </Header>
 
             <CarouselContainer>
-
                 <TestimonialStats side="left"/>
-
                 <TestimonialCard
-                    testimonial={testimonial}
+                    testimonial={testimonio}
                     nextSlide={nextSlide}
                     previousSlide={previousSlide}
                 />
-
                 <TestimonialStats side="right"/>
-
             </CarouselContainer>
 
             <Indicators>
-
                 {
-
-                    testimonials.map((item,index)=>(
-
+                    testimonioConfig.avatarsConfig.map((item,index)=>(
                         <Dot
                             key={item.id}
                             active={index===currentIndex}
                             onClick={()=>goToSlide(index)}
                         />
-
                     ))
-
                 }
-
             </Indicators>
-
             <TestimonialFeatures/>
-
         </Section>
     )
 }

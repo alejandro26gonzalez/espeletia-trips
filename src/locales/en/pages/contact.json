@@ -1,0 +1,75 @@
+{
+    "hero":{
+        "cards": {
+            "one": "Call Us",
+            "two": "Email",
+            "three": "Location"
+        },
+        "plain": {
+            "badge": "CONTACT",
+            "title": "Still need <0>help?</0>",
+            "description": "We're here for you. Email us, call us, or visit us. We'd be happy to help you plan your next adventure."
+        }
+    },
+    "section":{
+        "cards": {
+            "title": "Contact information",
+            "one": "Phone",
+            "two": "Email",
+            "three": "Address",
+            "four": {
+                "label": "Operation hours",
+                "value": "Monday through Sunday · 7:00 AM - 6:00 PM"
+            }
+        },
+        "plain": {
+            "title": "Contact Us",
+            "subtitle": "Fill out the form and we'll get back to you as soon as possible.",
+            "placeholders":{
+                "name": "Full name",
+                "email": "Email address",
+                "subject": "Subject",
+                "body": "Your message",
+                "checkbox": "I agree to the privacy policy and the processing of my data."
+            },
+            "submit": "Send message"
+        }
+    },
+    "features":{
+        "plain": {
+            "title": "We're here to help you",
+            "subtitle": "We want your experience to be unforgettable from the very first contact."
+        },
+        "cards": {
+            "one": {
+                "title": "Sustainable tourism",
+                "description": "Each experience is designed to protect the páramo ecosystem and promote responsible practices toward nature."
+            },
+            "two": {
+                "title": "Guaranteed safety",
+                "description": "We have protocols, equipment, and constant support throughout every tour."
+            },
+            "three": {
+                "title": "Local guides",
+                "description": "Our team knows the area, its biodiversity, and the region's culture to provide you with an authentic experience."
+            },
+            "four": {
+                "title": "Unique trails",
+                "description": "Explore trails, lagoons, and unique landscapes in Los Nevados National Natural Park."
+            },
+            "five": {
+                "title": "Certified quality",
+                "description": "We operate according to high standards of service and are committed to responsible tourism."
+            },
+            "six": {
+                "title": "Memorable Experiences", 
+                "description": "We create personalized tours so you can experience an unforgettable adventure with your loved ones."
+            }
+        }
+    },
+    "map":{
+       "title": "Find us",
+        "subtitle": "We are located in Murillo, Tolima, the starting point for discovering the magic of Los Nevados National Natural Park.",
+        "button": "Open in Google Maps"
+    }
+}

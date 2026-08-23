@@ -5,20 +5,20 @@ import {
     Header,
     Title,
     Subtitle,
-
     RecommendationList,
     RecommendationItem,
-
     TourImage,
-
     TourInfo,
     TourName,
     TourMeta,
-
     ViewAllButton
 } from "./TourRecommendations.styles";
+import { useTranslation } from "react-i18next";
+import { toursDetailPlainConfig } from "../../../../config/pages/allTours/allTours";
 
 const TourRecommendations = ({ tours }) => {
+
+    const {t} = useTranslation("tour");
 
     return (
 
@@ -27,11 +27,11 @@ const TourRecommendations = ({ tours }) => {
             <Header>
 
                 <Title>
-                    También te puede interesar
+                    {t(toursDetailPlainConfig.recommendations.titleKey)}
                 </Title>
 
                 <Subtitle>
-                    Descubre otras experiencias que podrían gustarte.
+                    {t(toursDetailPlainConfig.recommendations.subtitleKey)}
                 </Subtitle>
 
             </Header>
@@ -40,49 +40,36 @@ const TourRecommendations = ({ tours }) => {
 
                 {
                     tours.map((tour) => (
-
                         <RecommendationItem
                             key={tour.id}
                             to={`/tours/${tour.slug}`}
                         >
-
                             <TourImage
                                 src={tour.heroImage}
                                 alt={tour.name}
                             />
-
                             <TourInfo>
-
                                 <TourName>
-                                    {tour.name}
+                                    {t(tour.nameKey)}
                                 </TourName>
 
                                 <TourMeta>
-
-                                    {tour.duration}
-
+                                    {t(tour.durationKey)}
                                 </TourMeta>
-
                             </TourInfo>
-
                         </RecommendationItem>
-
                     ))
                 }
-
             </RecommendationList>
 
             <ViewAllButton
                 as={Link}
                 to="/tours"
             >
-                Ver todos los tours
+                {t(toursDetailPlainConfig.recommendations.buttonKey)}
             </ViewAllButton>
-
         </Card>
-
     );
-
 };
 
 export default TourRecommendations;

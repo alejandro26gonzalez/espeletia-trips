@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import { tours } from "../pages/tours/tours.data";
+import { toursDetailConfig as tours } from "../config/pages/allTours/allTours";
 
 const useTour = () => {
     const { slug } = useParams();

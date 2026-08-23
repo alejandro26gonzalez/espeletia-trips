@@ -1,13 +1,4 @@
 import {
-    FiCalendar,
-    FiShield,
-    FiHeadphones,
-    FiAward
-} from "react-icons/fi";
-
-import { features } from "./ToursBottomFeatures.data";
-
-import {
     Section,
     Container,
     FeaturesGrid,
@@ -17,21 +8,19 @@ import {
     FeatureTitle,
     FeatureDescription
 } from "./ToursBottomFeatures.styles";
-
-const iconMap = {
-    calendar: FiCalendar,
-    shield: FiShield,
-    support: FiHeadphones,
-    award: FiAward
-};
+import { useTranslation } from "react-i18next";
+import { featuresConfig } from "../../../../config/pages/allTours/cta";
 
 const ToursBottomFeatures = () => {
+
+    const {t} = useTranslation("tour");
+
     return (
         <Section>
             <Container>
                 <FeaturesGrid>
-                    {features.map((feature) => {
-                        const Icon = iconMap[feature.icon];
+                    {featuresConfig.map((feature) => {
+                        const Icon = feature.icon;
 
                         return (
                             <FeatureCard key={feature.id}>
@@ -41,11 +30,11 @@ const ToursBottomFeatures = () => {
 
                                 <FeatureContent>
                                     <FeatureTitle>
-                                        {feature.title}
+                                        {t(feature.titleKey)}
                                     </FeatureTitle>
 
                                     <FeatureDescription>
-                                        {feature.description}
+                                        {t(feature.descriptionKey)}
                                     </FeatureDescription>
                                 </FeatureContent>
                             </FeatureCard>

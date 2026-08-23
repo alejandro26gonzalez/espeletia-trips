@@ -9,6 +9,8 @@ import {
     CardTitle,
     Button
 } from "./DestinationCard.styles"
+import { useTranslation } from "react-i18next";
+import { destinationConfig } from "../../../config/components/destination";
 
 const DestinationCard = ({ 
     link,
@@ -17,6 +19,7 @@ const DestinationCard = ({
     titulo,
     descripcion
 }) => {
+    const {t} = useTranslation("destination")
 
     return (
         <Card to={link} $image={image}>
@@ -35,7 +38,7 @@ const DestinationCard = ({
             </Text>
 
             <Button>
-                <span>Ver más</span>
+                <span>{t(destinationConfig.titlesConfig.buttonKey)}</span>
                 <FiArrowRight size={20} />
             </Button>
 

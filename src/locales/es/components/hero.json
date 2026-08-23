@@ -1,0 +1,29 @@
+{
+    "hero_background_alt": "Paisaje del páramo",
+    "hero_content": {
+        "top_badge": "Aventura • Naturaleza • Conexión",
+        "heading": "TU PRÓXIMA <0>AVENTURA</0>",
+        "subtitle": "Te está esperando",
+        "description": "Explora el páramo, conecta con la naturaleza y vive <0>experiencias que te transforman.</0>",
+        "cta_button": "Explorar Tours"
+    },
+    "features": {
+        "sustainability": {
+            "title": "Turismo sostenible",
+            "description": "Cuidamos lo que amas explorar."
+        },
+        "groups": {
+            "title": "Grupos pequeños",
+            "description": "Experiencias más cercanas y auténticas."
+        },
+        "security": {
+            "title": "Seguridad garantizada",
+            "description": "Guías expertos y equipos de primera calidad."
+        },
+        "memories": {
+            "title": "Recuerdos inolvidables",
+            "description": "Momentos únicos que te acompañarán siempre."
+        }
+    },
+    "stats_data": "Más de <0>500 viajeros</0> han vivido la experiencia Espeletia Trips."
+}

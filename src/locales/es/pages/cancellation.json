@@ -1,0 +1,117 @@
+{
+    "hero": {
+        "bread": "Inicio / Políticas / Cancelaciones y Reembolsos",
+        "title": "Política de Cancelaciones y Reembolsos",
+        "description": "Conoce las condiciones para cancelaciones, reembolsos, reprogramaciones y demás aspectos relacionados con nuestros servicios turísticos. Buscamos brindarte total transparencia antes y durante tu experiencia con Espeletia Trips."
+    },
+    "content": {
+        "information": {
+            "title": "Información legal",
+            "badge": "Política de Cancelaciones y Reembolsos",
+            "description": "Consulta nuestras políticas de cancelación, reembolso y reprogramación para conocer tus derechos y responsabilidades antes de reservar cualquiera de nuestras experiencias."
+        },
+        "notice": {
+            "title": "Importante",
+            "description": "Las políticas pueden variar en tours de alta montaña, expediciones o experiencias privadas.",
+            "description2": "Esta información se confirmará antes de finalizar tu reserva."
+        },
+        "sections":{
+            "general":{
+                "title": "<0>Descripción general</0>",
+                "content": "<0>Esta política regula los términos aplicables en caso de desistimiento, retracto o cancelación de los servicios turísticos contratados con Espeletia Trips.</0>"
+            },
+            "retracto": {
+                "title": "<0>ARTÍCULO 1. Derecho de Retracto</0>",
+                "fields":{
+                    "term": {
+                        "label": "<0>Plazo</0>",
+                        "value": "<0>5 días hábiles posteriores a la compra.</0>"
+                    },
+                    "condition":{
+                        "label": "<0>Condición</0>",
+                        "value": "<0>Siempre que el servicio no haya iniciado.</0>"
+                    },
+                    "refund":{
+                        "label": "<0>Devolución</0>",
+                        "value": "<0>100% del valor pagado dentro de los 30 días calendario.</0>"
+                    }
+                }
+            },
+            "userCancellation":{
+                "title": "<0>ARTÍCULO 2. Cancelación por parte del usuario</0>",
+                "table":{
+                    "advance": "<0>Anticipación</0>",
+                    "refund": "<0>Porcentaje de devolución</0>",
+                    "rows": {
+                        "moreThan15": "<0>Más de 15 días</0>",
+                        "between8And14": "<0>Entre 8 y 14 días</0>",
+                        "between2And7": "<0>Entre 2 y 7 días</0>",
+                        "lessThan48": "<0>Menos de 48 horas / No Show</0>",
+                        "noRefund": "<0>No aplica devolución</0>"
+                    }
+                },
+                "note": "<0>Nota: </0>Las cancelaciones deberán notificarse por escrito a la agencia."
+            },
+            "agencyCancellation":{
+                "title": "<0>ARTÍCULO 3. Cancelación por parte de la agencia</0>",
+                "items":{
+                    "reschedule": "<0>Reprogramación sin costo.</0>",
+                    "refund": "<0>Devolución total del dinero.</0>"
+                }
+            },
+            "exceptionalSituations":{
+                "title": "<0>ARTÍCULO 4. Situaciones excepcionales</0>",
+                "content": "<0>En caso de factores naturales o situaciones extraordinarias (actividad volcánica, cierre de vías, deslizamientos, incendios, entre otros), los costos ya ejecutados por transporte, alimentación, hospedaje, guianza y pólizas no serán reembolsables.</0>"
+            },
+            "reservationTransfer":{
+                "title": "<0>ARTÍCULO 5. Cesión de la reserva</0>",
+                "items": {
+                    "deadline": "<0>Permitida hasta 48 horas antes del tour.</0>",
+                    "notification": "<0>Debe notificarse por escrito.</0>",
+                    "requirements": "<0>El nuevo viajero debe cumplir todos los requisitos.</0>"
+                }
+            },
+            "unusedServices":{
+                "title": "<0>ARTÍCULO 6. Servicios no utilizados</0>",
+                "intro": "<0>No habrá devolución por:</0>",
+                "items":{
+                    "userDecision": "<0>Servicios no utilizados por decisión del usuario.</0>",
+                    "lateArrival": "<0>Llegadas tardías.</0>",
+                    "altitudeSickness": "<0>Mal de altura.</0>",
+                    "healthProblems": "<0>Problemas de salud del viajero.</0>"
+                }
+            },
+            "contact":{
+                "title": "<0>¿Tienes dudas sobre esta política?</0>",
+                "intro": "<0>Para mayor información o solicitudes relacionadas con cancelaciones y reembolsos puedes comunicarte con nosotros:</0>"
+            }
+        },
+        "summary":{
+            "badge": "Información rápida",
+            "title": "Resumen de nuestras políticas",
+            "description": "Consulta rápidamente las condiciones generales de cancelación y reembolso antes de revisar el detalle completo de cada artículo.",
+            "cards":{
+                "item1":{
+                    "title": "Cancelación con más de 15 días",
+                    "badge": "90% de devolución",
+                    "description": "Cancela con más de 15 días de anticipación y recibe el 90% del valor pagado."
+                },
+                "item2":{
+                    "title": "Entre 8 y 14 días",
+                    "badge": "70% de devolución",
+                    "description": "Recibirás el 70% del valor de la reserva."
+                },
+                "item3":{
+                    "title": "Entre 2 y 7 días",
+                    "badge": "50% de devolución",
+                    "description": "Se devolverá el 50% del valor pagado."
+                },
+                "item4":{
+                    "title": "Clima extremo",
+                    "badge": "Reprogramación",
+                    "description": "Si las condiciones climáticas impiden realizar el tour podrás reprogramarlo."
+                }
+            }
+        }
+    }
+}

@@ -15,7 +15,12 @@ import {
     StoryStatLabel
 } from "./StorySection.styles";
 
+import { useTranslation } from "react-i18next";
+
 const StorySection = ({ data }) => {
+
+    const {t} = useTranslation("about");
+
     return (
         <StorySectionContainer>
 
@@ -25,7 +30,7 @@ const StorySection = ({ data }) => {
 
                     <StoryImage
                         src={data.image}
-                        alt={data.title}
+                        alt={t(data.badgeKey)}
                         loading="lazy"
                     />
 
@@ -34,59 +39,42 @@ const StorySection = ({ data }) => {
                 <StoryContent>
 
                     <StoryBadge>
-                        {data.badge}
+                        {t(data.badgeKey)}
                     </StoryBadge>
 
                     <StoryTitle>
-                        {data.title}
+                        {t(data.titleKey)}
                     </StoryTitle>
 
                     <StoryDivider />
 
                     <StoryDescription>
-                        {data.description}
+                        {t(data.descriptionKey)}
                     </StoryDescription>
 
                     <StoryStatsGrid>
 
                         {data.stats.map((item) => {
-
                             const Icon = item.icon;
-
                             return (
-
                                 <StoryStatCard key={item.id}>
-
                                     <StoryStatIcon>
-
                                         <Icon />
-
                                     </StoryStatIcon>
 
                                     <StoryStatValue>
-
                                         {item.value}
-
                                     </StoryStatValue>
 
                                     <StoryStatLabel>
-
-                                        {item.label}
-
+                                        {t(item.labelKey)}
                                     </StoryStatLabel>
-
                                 </StoryStatCard>
-
                             );
-
                         })}
-
                     </StoryStatsGrid>
-
                 </StoryContent>
-
             </StoryGrid>
-
         </StorySectionContainer>
     );
 };

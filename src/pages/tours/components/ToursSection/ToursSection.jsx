@@ -9,9 +9,8 @@ import {
     Description,
     ToursGrid
 } from "./ToursSection.styles";
-
-import { sectionData } from "./ToursSection.data";
-import { tours } from "./Tours.data";
+import { useTranslation } from "react-i18next";
+import { sectionConfig } from "../../../../config/pages/allTours/section";
 
 import TourFilters from "../TourFilters/TourFilters";
 import TourCard from "../TourCard/TourCard";
@@ -20,9 +19,11 @@ const ToursSection = () => {
 
     const [activeFilter, setActiveFilter] = useState("all");
 
+    const {t} = useTranslation("tour");
+
     const filteredTours = activeFilter === "all"
-    ? tours
-    : tours.filter(
+    ? sectionConfig.toursConfig
+    : sectionConfig.toursConfig.filter(
         (tour) => tour.categories.includes(activeFilter)
     );
 
@@ -34,19 +35,19 @@ const ToursSection = () => {
                 <Header>
 
                     <Badge>
-                        {sectionData.badge}
+                        {t(sectionConfig.plainSectionConfig.badgeKey)}
                     </Badge>
 
                     <Title>
-                        {sectionData.title}
+                        {t(sectionConfig.plainSectionConfig.titleKey)}
                         <Highlight>
                             {" "}
-                            {sectionData.highlight}
+                            {t(sectionConfig.plainSectionConfig.highlightKey)}
                         </Highlight>
                     </Title>
 
                     <Description>
-                        {sectionData.description}
+                        {t(sectionConfig.plainSectionConfig.descriptionKey)}
                     </Description>
 
                 </Header>

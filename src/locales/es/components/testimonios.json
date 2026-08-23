@@ -1,0 +1,31 @@
+{
+    "one": "Hacer el trekking al Páramo de Ocetá con Espeletia Trips fue una de las mejores decisiones de mi vida. La organización fue impecable desde el minuto uno. Los guías no solo conocen la ruta a la perfección, sino que te enseñan a respetar y entender la importancia de los frailejones. ¡El seguro de viaje me dio mucha tranquilidad!",
+    "two": "Como fotógrafo de naturaleza, buscaba una agencia comprometida con el medio ambiente, y su certificación de Sello Verde de Cortolima me convenció. El paisaje es de otro mundo. El equipo tuvo paciencia con mis tiempos para tomar fotos y el transporte fue supercómodo. Recomiendo este viaje al 100%.",
+    "three": "Fuimos con nuestros hijos adolescentes y, aunque el ascenso estuvo un poco exigente físicamente, los guías nos ayudaron a mantener un ritmo excelente para todos. Se nota la preparación y la calidez humana de la agencia. El almuerzo típico de montaña al final del recorrido fue el cierre perfecto.",
+    "badge": "EXPERIENCIAS REALES",
+    "title": "Esto es lo que ya han vivido otros clientes",
+    "subtitle": "Tú puedes ser el siguiente",
+    "bubble": "Experiencia destacada",
+    "features": {
+        "first": {
+            "title": "Historias reales",
+            "description": "Personas reales, experiencias inolvidables."
+        },
+        "second": {
+            "title": "Confianza",
+            "description": "Opiniones verificadas de viajeros como tú."
+        },
+        "third": {
+            "title": "Inspiración",
+            "description": "Descubre lo que te espera en cada aventura."
+        },
+        "fourth": {
+            "title": "Momentos únicos",
+            "description": "Recuerdos que se quedan para siempre."
+        }
+    },
+    "stats": {
+        "left": "Viajeros satisfechos",
+        "right": "Calificación promedio"
+    }
+}

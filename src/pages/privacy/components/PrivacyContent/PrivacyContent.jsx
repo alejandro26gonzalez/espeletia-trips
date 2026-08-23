@@ -7,19 +7,21 @@ import {
     Description,
     AccordionContainer
 } from "./PrivacyContent.styles";
+import { useTranslation } from "react-i18next";
 
 const PrivacyContent = ({ data }) => {
+    const {t} = useTranslation("privacy");
 
     return (
 
         <Section>
             <Header>
                 <Title>
-                    {data.title}
+                    {t(data.title)}
                 </Title>
 
                 <Description>
-                    {data.description}
+                    {t(data.description)}
                 </Description>
             </Header>
 

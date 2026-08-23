@@ -1,0 +1,121 @@
+{
+    "modals": {
+        "escnna": {
+            "title": "Certificación ESCNNA",
+            "subtitle": "Protección de niños, niñas y adolescentes en el turismo",
+            "commitment": "\"En Espeletia Trips, la naturaleza nos enseña que cada ser vivo merece protección. Los niños y adolescentes son nuestra prioridad absoluta: su seguridad no es opcional, es el corazón de lo que hacemos.\"",
+            "footer": {
+                "pill": "🏅 Cert. ESCNNA Vigente"
+            },
+            "blocks": {
+                "whatIs": {
+                    "title": "🔍 ¿Qué es la ESCNNA?",
+                    "content": "La <0>Explotación Sexual Comercial de Niños, Niñas y Adolescentes (ESCNNA)</0> es una de las formas más graves de vulneración de derechos humanos. En el sector turístico puede ocurrir de manera encubierta dentro de la cadena de servicios recreativos y de hospedaje. Por ello, el Ministerio de Comercio, Industria y Turismo de Colombia creó esta certificación: un reconocimiento oficial que distingue a los operadores que han implementado políticas activas de prevención, detección y denuncia."
+                },
+                "requirements": {
+                    "title": "📋 ¿Qué implica tener esta certificación?",
+                    "content": "Para obtener y mantener la certificación, <0>Espeletia Trips</0> cumple con estándares concretos: capacitación continua de todo nuestro equipo en identificación de situaciones de riesgo, adopción de un <1>Código de Conducta</1> interno, articulación directa con el <0>ICBF</0> y las autoridades competentes para la denuncia inmediata, y verificación de buenas prácticas en cada aliado: hospedajes, transportadores y guías locales."
+                },
+                "importance": {
+                    "title": "🏡 ¿Por qué importa en Murillo, Tolima?",
+                    "content": "El ecoturismo en zonas rurales y de alta montaña atrae a familias y grupos escolares. En entornos donde el control formal puede ser menor, la vigilancia activa del operador cobra un valor decisivo. Con <0>Espeletia Trips</0>, padres, madres y cuidadores pueden confiar en que cada punto de la ruta y cada aliado ha sido evaluado bajo los parámetros de esta certificación."
+                },
+                "verification": {
+                    "title": "👁️ Transparencia que puedes verificar",
+                    "content": "Nuestro certificado está vigente y puede consultarse en el <0>Registro Nacional de Turismo</0>. Si detectas alguna situación de alarma durante tu experiencia, nuestro equipo tiene el deber y el protocolo de actuar de forma inmediata. También puedes llamar directamente a la <0>Línea 141 del ICBF</0>, disponible las 24 horas."
+                }
+            }
+        },
+        "cortolima": {
+            "title": "Sello Verde Cortolima",
+            "subtitle": "Turismo sostenible en el páramo de Murillo",
+            "commitment": "\"El páramo de Murillo es un ser vivo que nos prestó su belleza. Nuestra tarea es devolverla intacta —y si podemos, un poco más próspera— a quienes vengan después.\"",
+            "footer": {
+                "pill": "🌿 Sello Verde Cortolima Vigente"
+            },
+            "blocks": {
+                "whatIs": {
+                    "title": "🌎 ¿Qué es el Sello Verde de Cortolima?",
+                    "content": "La <0>Corporación Autónoma Regional del Tolima (Cortolima)</0> otorga el <1>Sello Verde</1> a los prestadores de servicios turísticos que demuestran un compromiso verificable con la conservación de los ecosistemas del departamento. En el páramo de <0>Los Nevados</0>, uno de los más biodiversos del mundo, este reconocimiento certifica que nuestra operación no solo minimiza su impacto ambiental, sino que contribuye activamente a la regeneración del territorio."
+                },
+                "requirements": {
+                    "title": "🔬 ¿Qué criterios evalúa Cortolima?",
+                    "content": "La certificación comprende cuatro ejes: <0>gestión del agua</0> (uso responsable en campamentos y rutas), <0>manejo de residuos</0> (política de cero basura en páramo y zonas de amortiguación), <0>educación ambiental</0> (inducción obligatoria del ecosistema antes de cada salida) y <0>huella de carbono</0> (rutas diseñadas para minimizar desplazamientos motorizados con transporte compartido local). Cortolima realiza visitas de seguimiento periódicas para verificar el cumplimiento continuo."
+                },
+                "importance": {
+                    "title": "🌸 Espeletia: la planta que nos inspira y protegemos",
+                    "content": "No es casualidad que llevemos el nombre del <0>frailejón</0>: esta planta endémica del páramo produce agua y regula el clima de toda la región. Parte de cada viaje contratado con nosotros se destina a proyectos comunitarios de restauración de frailejones, en alianza con guardabosques locales de Murillo. Viajar con <1>Espeletia Trips</1> significa dejar el páramo un poco mejor de como lo encontraste."
+                },
+                "verification": {
+                    "title": "🤝 Economía local y turismo regenerativo",
+                    "content": "El 100% de nuestros guías son habitantes de Murillo y veredas vecinas, y priorizamos proveedores gastronómicos y de hospedaje con productos de la despensa local. Así, cada experiencia fortalece la economía campesina, desincentiva la deforestación y convierte al viajero en un aliado de la conservación."
+                }
+            }
+        },
+        "colasistencia": {
+            "title": "Seguro de Viaje Colasistencia",
+            "subtitle": "Asistencia integral para cada aventura en el páramo",
+            "commitment": "\"Queremos que tu única preocupación sea disfrutar el paisaje. El respaldo ante lo inesperado corre por nuestra cuenta: por eso elegimos a Colasistencia como nuestro aliado en cada salida.\"",
+            "footer": {
+                "pill": "🩺 Póliza Colasistencia Incluida"
+            },
+            "blocks": {
+                "whatIs": {
+                    "title": "🔐 ¿Qué es el seguro de viaje de Colasistencia?",
+                    "content": "<0>Colasistencia</0> es una de las aseguradoras de asistencia en viaje con mayor trayectoria en Colombia. Su póliza cubre a cada viajero desde el momento en que inicia la experiencia hasta el regreso a casa, brindando respaldo médico, logístico y de emergencia en destinos nacionales, incluyendo zonas de alta montaña como el <0>páramo de Murillo</0>. En <0>Espeletia Trips</0>, todos nuestros paquetes incluyen esta póliza de forma automática, sin costo adicional."
+                },
+                "requirements": {
+                    "title": "🏥 Asistencia médica y evacuación de emergencia",
+                    "content": "En caso de accidente o emergencia de salud durante la ruta, la póliza cubre <0>atención médica de urgencias</0>, traslado en ambulancia y, si las condiciones del terreno lo requieren, <0>evacuación aérea</0> desde zonas de difícil acceso. Nuestras rutas en páramo y alta montaña transitan por áreas remotas; por ello, contar con este respaldo no es un lujo, es una necesidad que asumimos por ti."
+                },
+                "importance": {
+                    "title": "💊 Gastos farmacéuticos y hospitalización",
+                    "content": "La cobertura incluye <0>medicamentos de urgencia</0> prescritos durante la atención médica amparada, así como gastos de hospitalización hasta el monto estipulado en la póliza. Esto aplica tanto para accidentes ocurridos en la ruta como para emergencias médicas sobrevenidas durante la estadía en Murillo."
+                },
+                "verification": {
+                    "title": "🧳 Pérdida de equipaje y asistencia logística",
+                    "content": "Si durante el traslado hacia Murillo o en el retorno se presenta <0>extravío, robo o daño de equipaje</0>, la póliza contempla una compensación económica según el valor declarado. Adicionalmente, en casos de cancelación o interrupción involuntaria del viaje por causas de fuerza mayor (condiciones climáticas extremas, cierre de vías), Colasistencia brinda orientación y asistencia logística para reencausar el plan."
+                },
+                "contacto": {
+                    "title": "📞 Línea de emergencias 24/7",
+                    "content": "Todos los viajeros asegurados tienen acceso a una <0>central de asistencia disponible las 24 horas</0>, los 7 días de la semana. Nuestros guías llevan el número de contacto directo y el número de póliza del grupo durante toda la expedición. Al reservar con nosotros, recibirás tu certificado individual de cobertura por correo electrónico antes de la salida."
+                }
+            }
+        },
+        "confirmation": "Entendido"
+    },
+    "mainCertificate": {
+        "mainer": {
+            "title": "Seguro y Certificado",
+            "subtitle": "Tu tranquilidad es nuestra prioridad. Contamos con aliados y certificaciones que respladan cada experiencia que vivimos juntos."
+        },
+        "info_cards": {
+            "colasistencia_description": "Contamos con seguro de viaje a través de Colasistencia para que disfrutes con total tranquilidad",
+            "cortolima_description": "Contamos con certificado de Sello Verde a traves de Cortolima, comprometidos con el turismo sostenible y responsable.",
+            "escnna_description": "Contamos con certificación ESCNNA, garantizando la seguridad y bienestar de nuestros visitantes."
+        },
+        "features": {
+            "main": {
+                "title": "Turismo responsable",
+                "description": "Cuidamos de ti, de nuestra gente y de los lugares que hacen únicas nuestras experiencias."
+            },
+            "first": {
+                "title": "Experiencias",
+                "subtitle": "seguras"
+            },
+            "second": {
+                "title": "Compromiso con",
+                "subtitle": "el medio ambiente"
+            },
+            "third": {
+                "title": "Aliados que",
+                "subtitle": "nos respaldan"
+            },
+            "fourth": {
+                "title": "Viaja tranquilo,",
+                "subtitle": "viaja con propósito"
+            }
+        },
+        "view_cert": "Ver certificación"
+    }
+}

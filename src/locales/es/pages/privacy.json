@@ -1,0 +1,162 @@
+{
+    "cta":{
+        "title": "¿Tienes preguntas?",
+        "description": "Si deseas ejercer tus derechos sobre tus datos personales o tienes dudas sobre nuestras políticas, escríbenos. Estamos para ayudarte.",
+        "button": "Contáctanos",
+        "home": "Inicio"
+    },
+    "hero": {
+        "title": "Privacidad y Términos",
+        "description": "Transparencia, confianza y respeto por tu información. Conoce cómo protegemos tus datos y las condiciones que rigen nuestros servicios.",
+        "badge": "Privacidad • Transparencia • Confianza"
+    },
+    "tabs":{
+        "1": "Política de privacidad",
+        "2": "Términos y condiciones",
+        "plain_text": {
+            "subtitle": "DOCUMENTACIÓN",
+            "title": "Explora la información",
+            "description": "Cambia entre nuestra Política de Privacidad y los Términos y Condiciones para conocer cómo protegemos  tu información y las reglas que rigen nuestros servicios."
+        }
+    },
+    "highlights": {
+        "plain_text": {
+            "title": "PRIVACIDAD Y SEGURIDAD",
+            "subtitle": "Nuestros principios"
+        },
+        "1":{
+            "title": "Protegemos tu información",
+            "description": "Aplicamos medidas técnicas y organizativas para mantener tus datos seguros."
+        },
+        "2":{
+            "title": "Usamos tus datos con responsabilidad",
+            "description": "Solo recopilamos la información necesaria para brindarte la mejor experiencia."
+        },
+        "3":{
+            "title": "Transparencia total",
+            "description": "Te informamos de manera clara cómo recopilamos, usamos y protegemos tu información."
+        },
+        "4":{
+            "title": "Cumplimos la ley",
+            "description": "Cumplimos con la Ley 1581 de 2012 y demás normas colombianas sobre protección de datos."
+        }
+    },
+    "privacy":{
+        "title": "Política de privacidad",
+        "description": "En Espeletia Trips valoramos tu privacidad y nos comprometemos con el tratamiento responsable de tu información personal.",
+        "sections": {
+            "sub_card":{
+                "latest": "Última actualización",
+                "date": "Julio 2026",
+                "help": "¿Necesitas ayuda?"
+            },
+            "1":{
+                "title": "¿Quiénes somos?",
+                "content":{
+                    "1": "Nos comprometemos con tu privacidad y el manejo responsable de la información.",
+                    "2": "En este aviso explicamos cómo tratamos los datos personales que nos facilitas para reservas y atención."
+                }
+            },
+            "2":{
+                "title": "¿Qué datos recolectamos?",
+                "content":{
+                    "1": "Nombre completo",
+                    "2": "Correo electrónico",
+                    "3": "Número de teléfono (WhatsApp)",
+                    "note": "No recolectamos datos sensibles ni información financiera desde la plataforma."
+                }
+            },
+            "3":{
+                "title": "¿Para qué usamos tus datos?",
+                "content":{
+                    "1": "Confirmar reservas",
+                    "2": "Coordinar el tour",
+                    "3": "Contactarte por correo o WhatsApp",
+                    "4": "Responder solicitudes"
+                }
+            },
+            "4":{
+                "title": "Comunicación y manejo de reservas",
+                "content":{
+                    "1": "Las reservas se gestionan por WhatsApp o correo.",
+                    "2": "No almacenamos tarjetas.",
+                    "3": "No procesamos pagos desde el sitio web."
+                }
+            },
+            "5":{
+                "title": "Seguridad de la información",
+                "content":{
+                    "1": "Protegemos tus datos mediante medidas técnicas y organizativas.",
+                    "2": "Solo el personal autorizado puede acceder a la información."
+                }
+            },
+            "6":{
+                "title": "Derechos del titular",
+                "content":{
+                    "1": "Acceder a tus datos",
+                    "2": "Rectificar información",
+                    "3": "Solicitar eliminación",
+                    "4": "Revocar el consentimiento"
+                }
+            },
+            "7":{
+                "title": "Tiempo de conservación",
+                "content":{
+                    "1": "Mientras la reserva esté activa.",
+                    "2": "Durante el tiempo requerido por la ley.",
+                    "3": "Hasta resolver solicitudes posteriores."
+                }
+            },
+            "8":{
+                "title": "Si decides no proporcionar tus datos",
+                "content":{
+                    "1": "No podremos confirmar la reserva.",
+                    "2": "No podremos coordinar pagos.",
+                    "3": "No podremos comunicarnos contigo."
+                }
+            },
+            "9":{
+                "title": "Aceptación del aviso",
+                "content":{
+                    "1": "Aceptas esta política.",
+                    "2": "Comprendes el tratamiento de tus datos.",
+                    "3": "Autorizas el uso para los fines descritos."
+                }
+            }
+        }
+    },
+    "terms":{
+        "title": "Términos y condiciones",
+        "description": "Al utilizar nuestros servicios turísticos aceptas las siguientes condiciones.",
+        "cards": {
+            "1":{
+                "title": "Aceptación de los términos",
+                "description": "El uso del sitio implica la aceptación de estas condiciones."
+            },
+            "2":{
+                "title": "Servicios",
+                "description": "Ofrecemos experiencias turísticas enfocadas en naturaleza, aventura y sostenibilidad."
+            },
+            "3":{
+                "title": "Reservas y pagos",
+                "description": "Las reservas están sujetas a disponibilidad y el pago se coordina directamente."
+            },
+            "4":{
+                "title": "Cancelaciones",
+                "description": "Las condiciones de cancelación se especifican en cada tour."
+            },
+            "5":{
+                "title": "Responsabilidades",
+                "description": "No respondemos por eventos externos fuera de nuestro control."
+            },
+            "6":{
+                "title": "Propiedad intelectual",
+                "description": "Todo el contenido del sitio pertenece a Espeletia Trips."
+            },
+            "7":{
+                "title": "Cambios",
+                "description": "Podemos actualizar estos términos cuando sea necesario."
+            }
+        }
+    }
+}

@@ -10,12 +10,15 @@ import {
     Stars,
     RatingText,
 } from "./TourHero.styles";
-
 import { FaStar } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import { toursDetailPlainConfig } from "../../../config/pages/allTours/allTours";
 
 import { Link } from "react-router-dom";
 
 const TourHero = ({ tour }) => {
+
+    const {t} = useTranslation("tour");
 
     return (
 
@@ -26,67 +29,44 @@ const TourHero = ({ tour }) => {
             <HeroContainer>
 
                 <Breadcrumb>
-
                     <Link to="/">
-                        Inicio
+                        {t(toursDetailPlainConfig.homeKey)}
                     </Link>
-
                     /
-
                     <Link to="/tours">
                         Tours
                     </Link>
-
                     /
-
                     <span>
-                        {tour.name}
+                        {tour.nameKey}
                     </span>
-
                 </Breadcrumb>
 
                 <Badge>
-
-                    {tour.category}
-
+                    {t(tour.categoryKey)}
                 </Badge>
 
                 <Title>
-
-                    {tour.name}
-
+                    {tour.nameKey}
                 </Title>
 
                 <Description>
-
-                    {tour.shortDescription}
-
+                    {t(tour.shortDescriptionKey)}
                 </Description>
 
                 <Rating>
-
                     <Stars>
-
                         <FaStar />
-
                         <FaStar />
-
                         <FaStar />
-
                         <FaStar />
-
                         <FaStar />
-
                     </Stars>
 
                     <RatingText>
-
                         {tour.rating}
-
                         {" "}
-
-                        ({tour.reviews} opiniones)
-
+                        ({tour.reviews} {t(toursDetailPlainConfig.opinionsKey)})
                     </RatingText>
 
                 </Rating>

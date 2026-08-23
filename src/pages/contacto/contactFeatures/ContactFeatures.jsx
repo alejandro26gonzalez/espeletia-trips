@@ -9,28 +9,32 @@ import {
     CardTitle,
     CardDescription
 } from "./ContactFeatures.styles";
+import { useTranslation } from "react-i18next";
 
-import { features } from "../Contact.data";
+import { ContactConfig } from "../../../config/pages/contact/contactConfig";
 
 const ContactFeatures = () => {
+
+    const {t} = useTranslation("reachUs");
+
     return (
         <Section>
 
             <Header>
 
                 <Title>
-                    Estamos para ayudarte
+                    {t(ContactConfig.featuresPlainConfig.titleKey)}
                 </Title>
 
                 <Subtitle>
-                    Queremos que tu experiencia sea inolvidable desde el primer contacto.
+                    {t(ContactConfig.featuresPlainConfig.subtitleKey)}
                 </Subtitle>
 
             </Header>
 
             <Cards>
 
-                {features.map((feature) => (
+                {ContactConfig.featuresConfig.map((feature) => (
 
                     <Card key={feature.id}>
 
@@ -39,11 +43,11 @@ const ContactFeatures = () => {
                         </IconContainer>
 
                         <CardTitle>
-                            {feature.title}
+                            {t(feature.titleKey)}
                         </CardTitle>
 
                         <CardDescription>
-                            {feature.description}
+                            {t(feature.descriptionKey)}
                         </CardDescription>
 
                     </Card>

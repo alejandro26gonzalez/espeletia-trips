@@ -1,0 +1,121 @@
+{
+    "modals": {
+        "escnna": {
+            "title": "ESCNNA Certification",
+            "subtitle": "Protection of Children and Adolescents in Tourism",
+            "commitment": "\"At Espeletia Trips, nature teaches us that every living being deserves protection. Children and adolescents are our top priority: their safety is not optional—it is at the heart of everything we do.\"",
+            "footer": {
+                "pill": "🏅 Current ESCNNA Certification"
+            },
+            "blocks": {
+                "whatIs": {
+                    "title": "🔍 What is ESCNNA?",
+                    "content": "<0>Commercial Sexual Exploitation of Children and Adolescents (ESCNNA)</0>  is one of the most serious forms of human rights violations. In the tourism sector, it can occur covertly within the chain of recreational and lodging services. For this reason, Colombia's Ministry of Commerce, Industry, and Tourism created this certification: an official recognition that distinguishes operators who have implemented active policies for prevention, detection, and reporting."
+                },
+                "requirements": {
+                    "title": "📋 What does this certification entail?",
+                    "content": "To obtain and maintain the certification, <0>Espeletia Trips</0> complies with specific standards: ongoing training for our entire team in identifying risky situations, adoption of an internal <1>Code of Conduct</1>, direct articulation with <0>ICBF</0> and the competent authorities for immediate reporting, and verification of good practices in each partner: accommodations, transporters and local guides."
+                },
+                "importance": {
+                    "title": "🏡 Why does this matter in Murillo, Tolima?",
+                    "content": "Ecotourism in rural and high-mountain areas attracts families and school groups. In environments where formal oversight may be less stringent, the operator's active monitoring becomes crucial. With <0>Espeletia Trips</0>, rents and caregivers can be confident that every point along the route and every partner has been evaluated according to the parameters of this certification."
+                },
+                "verification": {
+                    "title": "👁️ Transparency you can verify,",
+                    "content": "Our certificate is valid and can be verified in the <0>National Tourism Registry</0>. If you notice any alarming situation during your stay, our team is obligated and has protocols in place to act immediately. You can also call the <0>ICBF's 24-hour hotline, 141</0>."
+                }
+            }
+        },
+        "cortolima": {
+            "title": "Cortolima Green Seal",
+            "subtitle": "Sustainable Tourism in the Murillo Páramo",
+            "commitment": "\"The Murillo Páramo is a living entity that has lent us its beauty. Our task is to return it intact—and if we can, a little more prosperous—to those who come after us.\"",
+            "footer": {
+                "pill": "🌿 Cortolima Green Seal in Effect"
+            },
+            "blocks": {
+                "whatIs": {
+                    "title": "🌎 What is the Cortolima Green Seal?",
+                    "content": "The <0>Regional Autonomous Corporation of Tolima (Cortolima)</0> awards the <1>Green Seal</1> to tourism service providers who demonstrate a verifiable commitment to the conservation of the department's ecosystems. In the <0>Los Nevados</0> páramo, one of the most biodiverse in the world, this recognition certifies that our operation not only minimizes its environmental impact but also actively contributes to the regeneration of the territory."
+                },
+                "requirements": {
+                    "title": "🔬 What criteria does Cortolima evaluate?",
+                    "content": "The certification comprises four pillars: <0>water management</0> (responsible use in camps and on routes), <0>waste management</0> (zero-waste policy in the páramo and buffer zones), <0>environmental education</0> (mandatory ecosystem induction before each outing), and <0>carbon footprint</0> (routes designed to minimize motorized travel with local shared transportation). Cortolima conducts regular follow-up visits to verify ongoing compliance."
+                },
+                "importance": {
+                    "title": "🌸 Espeletia: the plant that inspires us and that we protect",
+                    "content": "It's no coincidence that we bear the name of the <0>frailejón</0>: this endemic páramo plant produces water and regulates the climate of the entire region. Part of each trip booked with us goes towards community projects restoring frailejones, in partnership with local rangers in Murillo. Traveling with <1>Espeletia Trips</1> means leaving the páramo a little better than you found it."
+                },
+                "verification": {
+                    "title": "🤝 Local Economy and Regenerative Tourism",
+                    "content": "100% of our guides are residents of Murillo and neighboring villages, and we prioritize food and lodging providers that use locally sourced products. In this way, each experience strengthens the rural economy, discourages deforestation, and makes the traveler an ally of conservation."
+                }
+            }
+        },
+        "colasistencia": {
+            "title": "Colasistencia Travel Insurance",
+            "subtitle": "Comprehensive assistance for every adventure in the highlands",
+            "commitment": "\"We want your only concern to be enjoying the scenery. We've got you covered for the unexpected: that's why we've chosen Colasistencia as our partner for every trip.\"",
+            "footer": {
+                "pill": "🩺 Colasistencia Policy Included"
+            },
+            "blocks": {
+                "whatIs": {
+                    "title": "🔐 What is Colasistencia Travel Insurance?",
+                    "content": "<0>Colasistencia</0> is one of the most established travel assistance insurers in Colombia. Its policy covers every traveler from the moment their trip begins until their return home, providing medical, logistical, and emergency support in domestic destinations, including high-altitude areas like the <0>Murillo Páramo</0>. At <0>Espeletia Trips</0>, all our packages automatically include this policy at no extra cost."
+                },
+                "requirements": {
+                    "title": "🏥 Medical Assistance and Emergency Evacuation",
+                    "content": "In case of an accident or health emergency during the route, the policy covers <0>emergency medical care</0>, ambulance transport, and, if terrain conditions require it, <0>air evacuation</0> from hard-to-reach areas. Our routes in the high Andean plains and mountains pass through remote areas; therefore, having this coverage is not a luxury, it's a necessity that we assume for you."
+                },
+                "importance": {
+                    "title": "💊 Pharmaceutical Expenses and Hospitalization",
+                    "content": "Coverage includes <0>emergency medications</0> prescribed during the covered medical care, as well as hospitalization expenses up to the amount stipulated in the policy. This applies both to accidents occurring on the route and to medical emergencies that arise during your stay in Murillo."
+                },
+                "verification": {
+                    "title": "🧳 Lost Luggage and Logistical Assistance",
+                    "content": "If luggage is lost, stolen, or damaged during the transfer to Murillo or on the return trip, the policy provides financial compensation based on the declared value. Additionally, in cases of cancellation or involuntary interruption of the trip due to force majeure (extreme weather conditions, road closures), Colasistencia provides guidance and logistical assistance to reschedule the trip."
+                },
+                "contacto": {
+                    "title": "📞 24/7 Emergency Line",
+                    "content": "All insured travelers have access to a 24/7 assistance center. Our guides carry the direct contact number and the group's policy number throughout the expedition. When you book with us, you will receive your individual coverage certificate by email before departure."
+                }
+            }
+        },
+        "confirmation": "Understood"
+    },
+    "mainCertificate": {
+        "mainer": {
+            "title": "Safe and Certified",
+            "subtitle": "Your peace of mind is our priority. We have partners and certifications that support every experience we share."
+        },
+        "info_cards": {
+            "colasistencia_description": "We have travel insurance through Colasistencia so you can enjoy your trip with complete peace of mind.",
+            "cortolima_description": "We have the Green Seal certification through Cortolima, committed to sustainable and responsible tourism.",
+            "escnna_description": "We have ESCNNA certification, guaranteeing the safety and well-being of our visitors."
+        },
+        "features": {
+            "main": {
+                "title": "Responsible Tourism",
+                "description": "We take care of you, our people, and the places that make our experiences unique."
+            },
+            "first": {
+                "title": "Safe",
+                "subtitle": "experiences"
+            },
+            "second": {
+                "title": "Commitment",
+                "subtitle": "with the Environment"
+            },
+            "third": {
+                "title": "Partners",
+                "subtitle": "who support us"
+            },
+            "fourth": {
+                "title": "Travel",
+                "subtitle": "with peace of mind"
+            }
+        },
+        "view_cert": "View Certification"
+    }
+}
