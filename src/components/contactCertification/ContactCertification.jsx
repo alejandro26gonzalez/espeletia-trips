@@ -152,7 +152,7 @@ const ContactCertification = () => {
                                 <Input
                                     type="email"
                                     name="email"
-                                    placeholder={t(contactCertificationConfig.titlesConfig.name_place)}
+                                    placeholder={t(contactCertificationConfig.titlesConfig.email_place)}
                                     value={formData.email}
                                     onChange={handleChange}
                                     required
