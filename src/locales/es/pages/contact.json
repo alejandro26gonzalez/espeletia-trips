@@ -30,9 +30,14 @@
                 "email": "Correo electrónico",
                 "subject": "Asunto",
                 "body": "Tu mensaje",
+                "phone": "Tu teléfono de contacto",
                 "checkbox": "Acepto la política de privacidad y el tratamiento de mis datos."
             },
-            "submit": "Enviar mensaje"
+            "submit": "Enviar mensaje",
+            "successModal": {
+                "title": "¡Mensaje enviado!",
+                "description": "Hemos recibido tu mensaje. El equipo de Espeletia Trips se pondrá en contacto contigo próximamente."
+            }
         }
     },
     "features":{

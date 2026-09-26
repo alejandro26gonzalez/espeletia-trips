@@ -29,7 +29,7 @@
                 "placeholder": "Ingresa tu nombre"
             },
             "phone": {
-                "label": "Número de tele´fono",
+                "label": "Número de teléfono",
                 "placeholder": "Ingresa el mejor número de teléfono"
             }
         },

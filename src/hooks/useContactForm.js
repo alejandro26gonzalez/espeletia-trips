@@ -1,10 +1,12 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
+
 
 const initialState = {
-    email: "",
     name: "",
+    email: "",
+    subject: "",
     phone: "",
+    message: "",
     authorize: false,
 };
 
@@ -15,6 +17,12 @@ export const useContactForm = () => {
     const [loading, setLoading] = useState(false);
 
     const [formData, setFormData] = useState(initialState);
+
+    const [captchaToken, setCaptchaToken] = useState("")
+
+    const handleCaptchaVerify = (token) => {
+        setCaptchaToken(token);
+    };
 
     const handleChange = ({ target }) => {
 
@@ -43,65 +51,71 @@ export const useContactForm = () => {
             return;
         }
 
+        if (!captchaToken) {
+            alert("Por favor, completa la verificación de seguridad.");
+            return;
+        }
+
         setLoading(true);
 
         try {
 
-            await emailjs.send(
-
-                import.meta.env.VITE_EMAIL_SERVICE_ID,
-
-                import.meta.env.VITE_EMAIL_TEMPLATE_ID,
-
+            const response = await fetch(
+                "https://api.web3forms.com/submit",
                 {
-                    from_name: formData.name,
-                    from_email: formData.email,
-                    from_phone: formData.phone,
-                    to_name: "Espeletia Trips",
-                },
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Accept: "application/json",
+                    },
+                    body: JSON.stringify({
+                        access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+                        name: formData.name,
+                        email: formData.email,
+                        subject: formData.subject,
+                        phone: formData.phone,
+                        message: formData.message,
+                        "h-captcha-response": captchaToken,
+                    }),
+                }
+            )
 
-                import.meta.env.VITE_EMAIL_PUBLIC_KEY
+            const result = await response.json();
 
-            );
+            if (!result.success) {
+                throw new Error(
+                    result.message || "Error al enviar el formulario."
+                );
+            }
 
             setShowModal(true);
 
             resetForm();
 
-        }
+        } catch (error) {
 
-        catch (error) {
-
-            console.error(error);
+            console.error(
+                "Error enviando formulario:",
+                error
+            );
 
             alert(
                 "No fue posible enviar el formulario. Intenta nuevamente."
             );
 
-        }
-
-        finally {
-
+        } finally {
             setLoading(false);
-
         }
-
     };
 
     return {
-
         formData,
-
         loading,
-
+        captchaToken,
         showModal,
-
-        handleChange,
-
-        handleSubmit,
-
         closeModal,
-
+        handleChange,
+        handleSubmit,
+        handleCaptchaVerify
     };
-
 };

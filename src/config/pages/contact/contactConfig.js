@@ -81,11 +81,16 @@ export const contactFormPlainConfig ={
         nameKey: "section.plain.placeholders.name",
         emailKey: "section.plain.placeholders.email",
         subjectKey: "section.plain.placeholders.subject",
-        messageKey: "section.plain.placeholders.body"
+        messageKey: "section.plain.placeholders.body",
+        phoneKey: "section.plain.placeholders.phone"
     },
     checkboxKey: "section.plain.placeholders.checkbox",
     buttonKey: "section.plain.submit",
-    asideTitleKey: "section.cards.title"
+    asideTitleKey: "section.cards.title",
+    successModal: {
+        title: "section.plain.successModal.title",
+        description: "section.plain.successModal.description"
+    }
 }
 
 /* ===========================================

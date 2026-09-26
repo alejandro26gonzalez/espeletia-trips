@@ -30,9 +30,14 @@
                 "email": "Email address",
                 "subject": "Subject",
                 "body": "Your message",
+                "phone": "Your best contact phone number",
                 "checkbox": "I agree to the privacy policy and the processing of my data."
             },
-            "submit": "Send message"
+            "submit": "Send message",
+            "successModal": {
+                "title": "Message sent!",
+                "description": "We have received your message. The Espeletia Trips team will be in touch with you soon."
+            }
         }
     },
     "features":{

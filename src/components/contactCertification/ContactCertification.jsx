@@ -41,6 +41,7 @@ import { useTranslation, Trans } from "react-i18next";
 
 import { useContactForm } from "../../hooks/useContactForm";
 import SuccessModal from './SuccessModal';
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 const ContactCertification = () => {
 
@@ -53,6 +54,7 @@ const ContactCertification = () => {
         handleChange,
         handleSubmit,
         closeModal,
+        handleCaptchaVerify
     } = useContactForm();
 
 
@@ -201,9 +203,15 @@ const ContactCertification = () => {
                                 </CheckboxText>
                             </CheckboxContainer>
 
+                            <HCaptcha 
+                            sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
+                            reCaptchaCompat={false}
+                            onVerify={handleCaptchaVerify}
+                            />
+
                             <Button
                                 type="submit"
-                                disabled={loading}
+                                disabled={status === "loading"}
                             >
                                 <ButtonIcon>
                                     <FiPhone />
